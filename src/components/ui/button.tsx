@@ -5,7 +5,7 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-medium ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
   {
     variants: {
       variant: {
@@ -15,16 +15,18 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        athletic: "bg-primary text-primary-foreground font-display uppercase tracking-wider text-lg hover:shadow-[0_0_30px_hsl(24_100%_50%/0.5)] hover:scale-105",
-        athleticOutline: "border-2 border-primary text-primary font-display uppercase tracking-wider text-lg hover:bg-primary hover:text-primary-foreground hover:shadow-[0_0_30px_hsl(24_100%_50%/0.5)]",
-        hero: "bg-foreground text-background font-display uppercase tracking-wider text-xl px-10 py-6 hover:bg-primary hover:text-primary-foreground hover:shadow-[0_0_40px_hsl(24_100%_50%/0.6)] hover:scale-105",
-        heroOutline: "border-2 border-foreground text-foreground font-display uppercase tracking-wider text-xl px-10 py-6 hover:border-primary hover:text-primary hover:shadow-[0_0_40px_hsl(24_100%_50%/0.4)]",
+        athletic: "bg-primary text-primary-foreground font-display font-semibold tracking-tight hover:opacity-90 hover:scale-[1.02]",
+        athleticOutline: "border-2 border-primary text-primary font-display font-semibold tracking-tight hover:bg-primary hover:text-primary-foreground",
+        hero: "bg-primary text-primary-foreground font-display font-semibold text-lg px-8 py-6 rounded-xl hover:opacity-90 hover:scale-[1.02]",
+        heroOutline: "border-2 border-primary text-primary font-display font-semibold text-lg px-8 py-6 rounded-xl hover:bg-primary hover:text-primary-foreground",
+        clean: "bg-foreground text-background font-display font-medium rounded-full hover:opacity-90",
+        cleanOutline: "border border-foreground text-foreground font-display font-medium rounded-full hover:bg-foreground hover:text-background",
       },
       size: {
-        default: "h-10 px-4 py-2",
-        sm: "h-9 rounded-md px-3",
-        lg: "h-11 rounded-md px-8",
-        xl: "h-14 rounded-md px-10 text-lg",
+        default: "h-11 px-5 py-2",
+        sm: "h-9 rounded-lg px-4",
+        lg: "h-12 rounded-xl px-8",
+        xl: "h-14 rounded-xl px-10 text-base",
         icon: "h-10 w-10",
       },
     },

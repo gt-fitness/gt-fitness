@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import gtLogo from "@/assets/gt-logo-dark.png";
 
 const navItems = [
   { name: "Community", href: "#community" },
@@ -23,11 +24,11 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-lg border-b border-border/50">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
-          <Link to="/" className="font-display text-3xl tracking-wider text-foreground hover:text-primary transition-colors">
-            APEX<span className="text-primary">FIT</span>
+        <div className="flex items-center justify-between h-16 md:h-20">
+          <Link to="/" className="flex items-center gap-2">
+            <img src={gtLogo} alt="GT Fitness" className="h-10 md:h-12 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -36,22 +37,22 @@ const Header = () => {
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="font-display text-lg tracking-wider text-muted-foreground hover:text-primary transition-colors"
+                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
               >
                 {item.name}
               </button>
             ))}
-            <Button variant="athletic" size="sm">
+            <Button variant="clean" size="sm">
               Join Now
             </Button>
           </nav>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-foreground"
+            className="md:hidden text-foreground p-2"
             onClick={() => setIsOpen(!isOpen)}
           >
-            {isOpen ? <X size={28} /> : <Menu size={28} />}
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
@@ -63,12 +64,12 @@ const Header = () => {
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className="font-display text-2xl tracking-wider text-muted-foreground hover:text-primary transition-colors text-left"
+                  className="text-lg font-medium text-muted-foreground hover:text-foreground transition-colors text-left py-2"
                 >
                   {item.name}
                 </button>
               ))}
-              <Button variant="athletic" className="mt-4 w-full">
+              <Button variant="clean" className="mt-4 w-full">
                 Join Now
               </Button>
             </div>
