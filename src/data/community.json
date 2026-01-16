@@ -1,0 +1,55 @@
+{
+  "tagline": "More Than That.",
+  "description": "GT Fitness isn't just a fitness community — it's a movement. We believe that every person has untapped potential waiting to be unleashed. We provide the tools, the guidance, and the support to help you become the strongest version of yourself.",
+  "mission": "Founded by athletes who saw something missing in the fitness world — a community that truly supports, challenges, and elevates its members. Today, GT Fitness spans across 50+ countries with thousands of active members pushing their limits every single day.",
+  "values": [
+    {
+      "icon": "Users",
+      "title": "Brotherhood",
+      "description": "We train together, we grow together. Every member is family."
+    },
+    {
+      "icon": "Target",
+      "title": "Discipline",
+      "description": "Consistency beats intensity. Show up every single day."
+    },
+    {
+      "icon": "Trophy",
+      "title": "Excellence",
+      "description": "Good enough is never good enough. We push for greatness."
+    },
+    {
+      "icon": "Heart",
+      "title": "Passion",
+      "description": "Love the process. The results will follow."
+    }
+  ],
+  "stats": [
+    { "value": "50K+", "label": "Athletes" },
+    { "value": "200+", "label": "Workouts" },
+    { "value": "15", "label": "Challenges" },
+    { "value": "98%", "label": "Success Rate" }
+  ],
+  "team": [
+    {
+      "name": "Marcus Chen",
+      "role": "Founder & Head Coach",
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80"
+    },
+    {
+      "name": "Sarah Williams",
+      "role": "Strength & Conditioning",
+      "image": "https://images.unsplash.com/photo-1594381898411-846e7d193883?w=400&q=80"
+    },
+    {
+      "name": "James Rodriguez",
+      "role": "Nutrition Specialist",
+      "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80"
+    },
+    {
+      "name": "Emily Park",
+      "role": "Community Manager",
+      "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80"
+    }
+  ]
+}

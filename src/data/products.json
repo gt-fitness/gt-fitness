@@ -1,0 +1,77 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "GT Performance Tee",
+      "description": "Lightweight, moisture-wicking fabric engineered for peak performance. Features anti-odor technology and four-way stretch for unrestricted movement.",
+      "price": 49.99,
+      "colors": [
+        { "name": "Black", "hex": "#1A1A1A" },
+        { "name": "White", "hex": "#FAFAFA" },
+        { "name": "Grey", "hex": "#6B7280" }
+      ],
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&q=80"
+    },
+    {
+      "id": 2,
+      "name": "Elite Training Shorts",
+      "description": "Maximum mobility with built-in compression liner. Quick-dry fabric with zippered pockets keeps your essentials secure.",
+      "price": 59.99,
+      "colors": [
+        { "name": "Black", "hex": "#1A1A1A" },
+        { "name": "Navy", "hex": "#1E3A5F" }
+      ],
+      "sizes": ["S", "M", "L", "XL"],
+      "image": "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?w=600&q=80"
+    },
+    {
+      "id": 3,
+      "name": "GT Signature Hoodie",
+      "description": "Premium heavyweight hoodie for recovery and warmth. Kangaroo pocket, ribbed cuffs, and oversized fit for ultimate comfort.",
+      "price": 89.99,
+      "colors": [
+        { "name": "Black", "hex": "#1A1A1A" },
+        { "name": "Charcoal", "hex": "#374151" },
+        { "name": "White", "hex": "#FAFAFA" }
+      ],
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600&q=80"
+    },
+    {
+      "id": 4,
+      "name": "Warrior Tank",
+      "description": "Deep cut armholes for unrestricted movement. Elongated back hem and breathable mesh panels keep you cool.",
+      "price": 39.99,
+      "colors": [
+        { "name": "Black", "hex": "#1A1A1A" },
+        { "name": "White", "hex": "#FAFAFA" }
+      ],
+      "sizes": ["S", "M", "L", "XL"],
+      "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=600&q=80"
+    },
+    {
+      "id": 5,
+      "name": "GT Joggers",
+      "description": "Tailored athletic fit with tapered leg. Soft fleece interior with moisture-wicking exterior. Perfect from gym to street.",
+      "price": 79.99,
+      "colors": [
+        { "name": "Black", "hex": "#1A1A1A" },
+        { "name": "Grey", "hex": "#6B7280" }
+      ],
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "image": "https://images.unsplash.com/photo-1552902865-b72c031ac5ea?w=600&q=80"
+    },
+    {
+      "id": 6,
+      "name": "Compression Tights",
+      "description": "Second-skin fit with graduated compression for enhanced blood flow. Flatlock seams prevent chafing during long sessions.",
+      "price": 69.99,
+      "colors": [
+        { "name": "Black", "hex": "#1A1A1A" }
+      ],
+      "sizes": ["S", "M", "L", "XL"],
+      "image": "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=600&q=80"
+    }
+  ]
+}

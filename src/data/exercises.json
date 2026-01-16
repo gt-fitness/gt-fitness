@@ -1,0 +1,86 @@
+{
+  "categories": ["All", "Legs", "Arms", "Full Body", "Core", "Cardio"],
+  "exercises": [
+    {
+      "id": 1,
+      "name": "Barbell Squat",
+      "target": "Quadriceps, Glutes, Hamstrings",
+      "category": "Legs",
+      "description": "Stand with feet shoulder-width apart. Lower your body by bending knees and hips until thighs are parallel to the floor. Drive through your heels to return to starting position.",
+      "image": "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&q=80",
+      "video": "https://cdn.coverr.co/videos/coverr-woman-training-in-a-gym-7421/1080p.mp4"
+    },
+    {
+      "id": 2,
+      "name": "Bicep Curls",
+      "target": "Biceps, Forearms",
+      "category": "Arms",
+      "description": "Stand holding dumbbells at your sides. Curl the weights up while keeping your upper arms stationary. Squeeze at the top, then lower with control.",
+      "image": "https://images.unsplash.com/photo-1581009146145-b5ef050c149a?w=600&q=80",
+      "video": "https://cdn.coverr.co/videos/coverr-man-doing-dumbbell-curls-8367/1080p.mp4"
+    },
+    {
+      "id": 3,
+      "name": "Burpees",
+      "target": "Full Body, Cardio",
+      "category": "Full Body",
+      "description": "Start standing, drop into a squat with hands on the floor, kick feet back to plank, do a push-up, jump feet to hands, then explosively jump up with arms overhead.",
+      "image": "https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?w=600&q=80",
+      "video": "https://cdn.coverr.co/videos/coverr-doing-push-ups-at-the-gym-5310/1080p.mp4"
+    },
+    {
+      "id": 4,
+      "name": "Deadlift",
+      "target": "Back, Glutes, Hamstrings",
+      "category": "Legs",
+      "description": "Stand with feet hip-width apart, barbell over mid-foot. Hinge at hips, grip bar outside knees. Keep back flat, drive through heels to stand tall. Reverse to lower.",
+      "image": "https://images.unsplash.com/photo-1534368959876-26bf04f2c947?w=600&q=80",
+      "video": ""
+    },
+    {
+      "id": 5,
+      "name": "Tricep Dips",
+      "target": "Triceps, Shoulders",
+      "category": "Arms",
+      "description": "Grip parallel bars with arms straight. Lower your body by bending elbows until upper arms are parallel to floor. Press back up to starting position.",
+      "image": "https://images.unsplash.com/photo-1530822847156-5df684ec5ee1?w=600&q=80",
+      "video": ""
+    },
+    {
+      "id": 6,
+      "name": "Mountain Climbers",
+      "target": "Core, Cardio, Full Body",
+      "category": "Full Body",
+      "description": "Start in high plank position. Drive one knee toward chest, then quickly switch legs. Continue alternating at a rapid pace while maintaining plank form.",
+      "image": "https://images.unsplash.com/photo-1601422407692-ec73c6de0dd8?w=600&q=80",
+      "video": ""
+    },
+    {
+      "id": 7,
+      "name": "Plank Hold",
+      "target": "Core, Shoulders",
+      "category": "Core",
+      "description": "Start in forearm plank position with elbows under shoulders. Keep body in straight line from head to heels. Engage core and hold position.",
+      "image": "https://images.unsplash.com/photo-1566241142559-40e1dab266c6?w=600&q=80",
+      "video": ""
+    },
+    {
+      "id": 8,
+      "name": "Box Jumps",
+      "target": "Legs, Explosiveness",
+      "category": "Cardio",
+      "description": "Stand facing a sturdy box. Swing arms back, then explosively jump onto the box, landing softly with both feet. Step down and repeat.",
+      "image": "https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=600&q=80",
+      "video": ""
+    },
+    {
+      "id": 9,
+      "name": "Russian Twists",
+      "target": "Obliques, Core",
+      "category": "Core",
+      "description": "Sit with knees bent, lean back slightly. Hold weight at chest, rotate torso to touch weight to floor on each side while keeping hips stable.",
+      "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&q=80",
+      "video": ""
+    }
+  ]
+}

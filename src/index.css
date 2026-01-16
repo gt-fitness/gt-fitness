@@ -2,63 +2,92 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
 @layer base {
   :root {
-    --background: 0 0% 5%;
-    --foreground: 0 0% 98%;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 8%;
 
-    --card: 0 0% 8%;
-    --card-foreground: 0 0% 98%;
+    --card: 0 0% 98%;
+    --card-foreground: 0 0% 8%;
 
-    --popover: 0 0% 8%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 8%;
 
-    --primary: 24 100% 50%;
+    --primary: 0 0% 8%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 12%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 8%;
 
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 65%;
+    --muted: 0 0% 94%;
+    --muted-foreground: 0 0% 45%;
 
-    --accent: 24 100% 55%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 0 0% 92%;
+    --accent-foreground: 0 0% 8%;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 18%;
-    --input: 0 0% 18%;
-    --ring: 24 100% 50%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 0 0% 8%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
-    /* Custom athletic tokens */
-    --gradient-hero: linear-gradient(135deg, hsl(24 100% 50%) 0%, hsl(0 100% 50%) 100%);
-    --gradient-dark: linear-gradient(180deg, hsl(0 0% 5%) 0%, hsl(0 0% 2%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 10%) 0%, hsl(0 0% 6%) 100%);
-    --shadow-glow: 0 0 60px hsl(24 100% 50% / 0.3);
-    --shadow-card: 0 20px 40px hsl(0 0% 0% / 0.5);
-
-    --font-display: 'Bebas Neue', sans-serif;
+    /* Custom GT Fitness tokens */
+    --font-display: 'Space Grotesk', sans-serif;
     --font-body: 'Inter', sans-serif;
 
-    --sidebar-background: 0 0% 8%;
-    --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 24 100% 50%;
+    --shadow-soft: 0 4px 20px hsl(0 0% 0% / 0.05);
+    --shadow-medium: 0 8px 30px hsl(0 0% 0% / 0.08);
+    --shadow-large: 0 20px 50px hsl(0 0% 0% / 0.1);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 0 0% 8%;
+    --sidebar-primary: 0 0% 8%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 0 0% 15%;
-    --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-border: 0 0% 18%;
-    --sidebar-ring: 24 100% 50%;
+    --sidebar-accent: 0 0% 94%;
+    --sidebar-accent-foreground: 0 0% 8%;
+    --sidebar-border: 0 0% 90%;
+    --sidebar-ring: 0 0% 8%;
   }
 
   .dark {
-    --background: 0 0% 5%;
+    --background: 0 0% 6%;
     --foreground: 0 0% 98%;
+
+    --card: 0 0% 9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 6%;
+
+    --secondary: 0 0% 14%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 18%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 0 0% 18%;
+    --accent-foreground: 0 0% 98%;
+
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 0 0% 98%;
+
+    --sidebar-background: 0 0% 9%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 0 0% 98%;
+    --sidebar-primary-foreground: 0 0% 6%;
+    --sidebar-accent: 0 0% 14%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 0 0% 18%;
+    --sidebar-ring: 0 0% 98%;
   }
 }
 
@@ -68,53 +97,44 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
     font-family: var(--font-body);
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
-    letter-spacing: 0.02em;
+    font-weight: 600;
+    letter-spacing: -0.02em;
   }
 }
 
 @layer components {
+  .section-padding {
+    @apply py-20 md:py-28 lg:py-32;
+  }
+
   .section-title {
-    @apply text-5xl md:text-7xl lg:text-8xl font-bold uppercase tracking-tight;
+    @apply text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight;
     font-family: var(--font-display);
   }
 
   .section-subtitle {
-    @apply text-lg md:text-xl text-muted-foreground max-w-2xl;
+    @apply text-lg md:text-xl text-muted-foreground leading-relaxed;
   }
 
-  .card-athletic {
-    @apply rounded-lg p-6 transition-all duration-300;
-    background: var(--gradient-card);
-    box-shadow: var(--shadow-card);
+  .card-clean {
+    @apply rounded-2xl bg-card p-6 transition-all duration-300;
+    box-shadow: var(--shadow-soft);
   }
 
-  .card-athletic:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-glow);
+  .card-clean:hover {
+    box-shadow: var(--shadow-medium);
+    transform: translateY(-2px);
   }
 
-  .btn-athletic {
-    @apply px-8 py-4 font-bold uppercase tracking-wider transition-all duration-300;
-    font-family: var(--font-display);
-    font-size: 1.1rem;
-  }
-
-  .gradient-text {
-    background: var(--gradient-hero);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-
-  .video-overlay {
+  .video-overlay-clean {
     @apply absolute inset-0;
-    background: linear-gradient(180deg, transparent 0%, hsl(0 0% 5% / 0.7) 60%, hsl(0 0% 5%) 100%);
+    background: linear-gradient(180deg, transparent 0%, hsl(0 0% 6% / 0.4) 50%, hsl(0 0% 6% / 0.95) 100%);
   }
 
   .animate-fade-up {
@@ -123,14 +143,19 @@
   }
 
   .animate-fade-in {
-    animation: fadeIn 1s ease-out forwards;
+    animation: fadeIn 0.6s ease-out forwards;
+    opacity: 0;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.5s ease-out forwards;
     opacity: 0;
   }
 
   @keyframes fadeUp {
     from {
       opacity: 0;
-      transform: translateY(40px);
+      transform: translateY(30px);
     }
     to {
       opacity: 1;
@@ -139,11 +164,18 @@
   }
 
   @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes scaleIn {
     from {
       opacity: 0;
+      transform: scale(0.95);
     }
     to {
       opacity: 1;
+      transform: scale(1);
     }
   }
 
@@ -151,4 +183,22 @@
   .stagger-2 { animation-delay: 0.2s; }
   .stagger-3 { animation-delay: 0.3s; }
   .stagger-4 { animation-delay: 0.4s; }
+
+  /* Clean scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--muted-foreground) / 0.3);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--muted-foreground) / 0.5);
+  }
 }

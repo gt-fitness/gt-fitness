@@ -1,0 +1,92 @@
+{
+  "categories": ["All", "Training", "Workouts", "Events", "Community"],
+  "items": [
+    {
+      "id": 1,
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&q=80",
+      "alt": "Team training session",
+      "category": "Training"
+    },
+    {
+      "id": 2,
+      "type": "video",
+      "thumbnail": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&q=80",
+      "src": "https://cdn.coverr.co/videos/coverr-doing-push-ups-at-the-gym-5310/1080p.mp4",
+      "alt": "Workout highlight",
+      "category": "Workouts"
+    },
+    {
+      "id": 3,
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=800&q=80",
+      "alt": "Competition day",
+      "category": "Events"
+    },
+    {
+      "id": 4,
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=800&q=80",
+      "alt": "Victory moment",
+      "category": "Events"
+    },
+    {
+      "id": 5,
+      "type": "video",
+      "thumbnail": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&q=80",
+      "src": "https://cdn.coverr.co/videos/coverr-man-doing-abs-workout-1573/1080p.mp4",
+      "alt": "Training montage",
+      "category": "Training"
+    },
+    {
+      "id": 6,
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=800&q=80",
+      "alt": "Team celebration",
+      "category": "Community"
+    },
+    {
+      "id": 7,
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80",
+      "alt": "Morning run",
+      "category": "Training"
+    },
+    {
+      "id": 8,
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=800&q=80",
+      "alt": "Outdoor training",
+      "category": "Training"
+    },
+    {
+      "id": 9,
+      "type": "video",
+      "thumbnail": "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=800&q=80",
+      "src": "https://cdn.coverr.co/videos/coverr-woman-training-in-a-gym-7421/1080p.mp4",
+      "alt": "Strength training",
+      "category": "Workouts"
+    },
+    {
+      "id": 10,
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=800&q=80",
+      "alt": "Community event",
+      "category": "Community"
+    },
+    {
+      "id": 11,
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1599058917765-a780eda07a3e?w=800&q=80",
+      "alt": "Personal record",
+      "category": "Events"
+    },
+    {
+      "id": 12,
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1434682881908-b43d0467b798?w=800&q=80",
+      "alt": "Group workout",
+      "category": "Community"
+    }
+  ]
+}
