@@ -5,6 +5,7 @@ import ChallengesSection from "@/components/ChallengesSection";
 import WorkoutsSection from "@/components/WorkoutsSection";
 import ClothingSection from "@/components/ClothingSection";
 import GallerySection from "@/components/GallerySection";
+import JoinSection from "@/components/JoinSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -18,6 +19,7 @@ const Index = () => {
         <WorkoutsSection />
         <ClothingSection />
         <GallerySection />
+        <JoinSection />
       </main>
       <Footer />
     </div>
