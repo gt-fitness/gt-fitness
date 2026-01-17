@@ -1,15 +1,15 @@
 import { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Menu, X, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import gtLogo from "@/assets/gt-logo-dark.png";
 
 const navItems = [
-  { name: "Community", href: "#community" },
-  { name: "Challenges", href: "#challenges" },
-  { name: "Workouts", href: "#workouts" },
-  { name: "Shop", href: "#clothing" },
-  { name: "Gallery", href: "#gallery" },
+  { name: "Community", href: "#community", page: "/community" },
+  { name: "Challenges", href: "#challenges", page: "/challenges" },
+  { name: "Workouts", href: "#workouts", page: "/workouts" },
+  { name: "Shop", href: "#clothing", page: "/shop" },
+  { name: "Gallery", href: "#gallery", page: "/gallery" },
 ];
 
 const Header = () => {
@@ -17,20 +17,24 @@ const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("");
   const navigate = useNavigate();
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
       
-      // Detect active section
-      const sections = navItems.map(item => item.href.replace('#', ''));
-      for (const section of sections) {
-        const element = document.getElementById(section);
-        if (element) {
-          const rect = element.getBoundingClientRect();
-          if (rect.top <= 100 && rect.bottom >= 100) {
-            setActiveSection(section);
-            break;
+      // Detect active section (only on home page)
+      if (isHomePage) {
+        const sections = navItems.map(item => item.href.replace('#', ''));
+        for (const section of sections) {
+          const element = document.getElementById(section);
+          if (element) {
+            const rect = element.getBoundingClientRect();
+            if (rect.top <= 100 && rect.bottom >= 100) {
+              setActiveSection(section);
+              break;
+            }
           }
         }
       }
@@ -38,14 +42,28 @@ const Header = () => {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [isHomePage]);
 
-  const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+  const handleNavClick = (item: typeof navItems[0]) => {
+    if (isHomePage) {
+      // On home page, scroll to section
+      const element = document.querySelector(item.href);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      // On other pages, navigate to the page
+      navigate(item.page);
     }
     setIsOpen(false);
+  };
+
+  // Determine if nav item is active (either by section on home or by current page)
+  const isNavActive = (item: typeof navItems[0]) => {
+    if (isHomePage) {
+      return activeSection === item.href.replace('#', '');
+    }
+    return location.pathname === item.page;
   };
 
   return (
@@ -74,12 +92,11 @@ const Header = () => {
           <nav className="hidden lg:flex items-center">
             <div className="flex items-center bg-secondary/50 backdrop-blur-sm rounded-full px-2 py-1.5 border border-border/30">
               {navItems.map((item) => {
-                const sectionId = item.href.replace('#', '');
-                const isActive = activeSection === sectionId;
+                const isActive = isNavActive(item);
                 return (
                   <button
                     key={item.name}
-                    onClick={() => scrollToSection(item.href)}
+                    onClick={() => handleNavClick(item)}
                     className={`relative px-4 py-2 text-sm font-medium transition-all duration-300 rounded-full ${
                       isActive 
                         ? "text-primary-foreground" 
@@ -133,8 +150,12 @@ const Header = () => {
             {navItems.map((item, index) => (
               <button
                 key={item.name}
-                onClick={() => scrollToSection(item.href)}
-                className="w-full flex items-center justify-between px-4 py-3 text-lg font-medium text-muted-foreground hover:text-foreground hover:bg-secondary/50 rounded-xl transition-all duration-300"
+                onClick={() => handleNavClick(item)}
+                className={`w-full flex items-center justify-between px-4 py-3 text-lg font-medium rounded-xl transition-all duration-300 ${
+                  isNavActive(item)
+                    ? "text-foreground bg-secondary/50"
+                    : "text-muted-foreground hover:text-foreground hover:bg-secondary/50"
+                }`}
                 style={{ animationDelay: `${index * 50}ms` }}
               >
                 {item.name}
