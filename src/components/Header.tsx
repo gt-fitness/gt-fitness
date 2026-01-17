@@ -69,9 +69,9 @@ const Header = () => {
   return (
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled 
+        scrolled || !isHomePage
           ? "bg-background/95 backdrop-blur-xl shadow-lg border-b border-border/30" 
-          : "bg-transparent"
+          : "bg-background/50 backdrop-blur-sm"
       }`}
     >
       <div className="container mx-auto px-4">
