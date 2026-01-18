@@ -1,10 +1,36 @@
+import { useState, useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Play, Clock, Flame, Users } from "lucide-react";
+import { Play, Clock, Flame, Users, X } from "lucide-react";
 import challengesData from "@/data/challenges.json";
 
 const Challenges = () => {
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [selectedChallenge, setSelectedChallenge] = useState<typeof challengesData.challenges[0] | null>(null);
+
+  // Open challenge from URL param
+  useEffect(() => {
+    const challengeId = searchParams.get("challenge");
+    if (challengeId) {
+      const challenge = challengesData.challenges.find(c => c.id === parseInt(challengeId));
+      if (challenge) {
+        setSelectedChallenge(challenge);
+      }
+    }
+  }, [searchParams]);
+
+  const closeModal = () => {
+    setSelectedChallenge(null);
+    setSearchParams({});
+  };
+
+  const openChallenge = (challenge: typeof challengesData.challenges[0]) => {
+    setSelectedChallenge(challenge);
+    setSearchParams({ challenge: challenge.id.toString() });
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -28,7 +54,8 @@ const Challenges = () => {
             {challengesData.challenges.map((challenge) => (
               <div
                 key={challenge.id}
-                className="group rounded-2xl overflow-hidden bg-card shadow-sm hover:shadow-lg transition-all duration-300"
+                className="group rounded-2xl overflow-hidden bg-card shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer"
+                onClick={() => openChallenge(challenge)}
               >
                 {/* Thumbnail */}
                 <div className="relative aspect-video overflow-hidden">
@@ -64,7 +91,7 @@ const Challenges = () => {
                   <p className="text-muted-foreground text-sm mb-5">
                     {challenge.description}
                   </p>
-                  <Button variant="athletic" className="w-full">
+                  <Button variant="athletic" className="w-full" onClick={(e) => e.stopPropagation()}>
                     Join Challenge
                   </Button>
                 </div>
@@ -73,6 +100,62 @@ const Challenges = () => {
           </div>
         </div>
       </section>
+
+      {/* Challenge Modal */}
+      {selectedChallenge && (
+        <div
+          className="fixed inset-0 z-50 bg-foreground/95 flex items-center justify-center p-4 overflow-y-auto"
+          onClick={closeModal}
+        >
+          <button
+            className="absolute top-6 right-6 text-background hover:text-background/80 transition-colors"
+            onClick={closeModal}
+          >
+            <X className="w-8 h-8" />
+          </button>
+          <div
+            className="max-w-3xl w-full bg-background rounded-2xl overflow-hidden"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {selectedChallenge.video ? (
+              <video
+                autoPlay
+                controls
+                className="w-full aspect-video"
+                src={selectedChallenge.video}
+                poster={selectedChallenge.thumbnail}
+              />
+            ) : (
+              <img
+                src={selectedChallenge.thumbnail}
+                alt={selectedChallenge.title}
+                className="w-full aspect-video object-cover"
+              />
+            )}
+            <div className="p-6">
+              <div className="flex flex-wrap items-center gap-4 mb-4">
+                <span className="flex items-center gap-1.5 text-sm text-muted-foreground">
+                  <Clock className="w-4 h-4" />
+                  {selectedChallenge.duration}
+                </span>
+                <span className="flex items-center gap-1.5 text-sm font-medium">
+                  <Flame className="w-4 h-4" />
+                  {selectedChallenge.intensity}
+                </span>
+                <span className="flex items-center gap-1.5 text-sm text-muted-foreground">
+                  <Users className="w-4 h-4" />
+                  {selectedChallenge.participants} participants
+                </span>
+              </div>
+              <h2 className="font-display text-3xl font-semibold mb-3">{selectedChallenge.title}</h2>
+              <p className="text-muted-foreground mb-6">{selectedChallenge.description}</p>
+              <Button variant="athletic" size="lg" className="w-full">
+                Join This Challenge
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
 
       <Footer />
     </div>
