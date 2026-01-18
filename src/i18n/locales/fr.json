@@ -1,0 +1,80 @@
+{
+  "hero": {
+    "tagline": "Plus Que Ça.",
+    "subtitle": "Rejoins le mouvement. Transforme ton corps. Deviens inarrêtable.",
+    "startTraining": "Commencer l'Entraînement",
+    "watchStory": "Voir l'Histoire"
+  },
+  "nav": {
+    "community": "Communauté",
+    "challenges": "Défis",
+    "workouts": "Entraînements",
+    "shop": "Boutique",
+    "gallery": "Galerie",
+    "join": "Rejoindre"
+  },
+  "stats": {
+    "athletes": "Athlètes",
+    "workouts": "Entraînements",
+    "challenges": "Défis",
+    "successRate": "Taux de Réussite"
+  },
+  "community": {
+    "ourStory": "Notre Histoire",
+    "whoWeAre": "Qui Nous Sommes",
+    "ourMission": "Notre Mission",
+    "ourValues": "Nos Valeurs",
+    "meetTheTeam": "Rencontre l'Équipe",
+    "readyToJoin": "Prêt à Nous Rejoindre?",
+    "joinCta": "Rejoins GT Fitness Aujourd'hui",
+    "yearsStrong": "Années de Force",
+    "watchOurStory": "Regarde Notre Histoire",
+    "ourJourney": "Notre Parcours"
+  },
+  "challenges": {
+    "title": "Défis",
+    "subtitle": "Repousse tes limites avec nos défis structurés",
+    "duration": "Durée",
+    "difficulty": "Difficulté",
+    "participants": "Participants",
+    "joinChallenge": "Rejoindre le Défi",
+    "viewDetails": "Voir les Détails"
+  },
+  "workouts": {
+    "title": "Bibliothèque d'Entraînements",
+    "subtitle": "Exercices conçus par des experts pour chaque groupe musculaire",
+    "target": "Cible",
+    "category": "Catégorie",
+    "watchVideo": "Voir la Vidéo"
+  },
+  "shop": {
+    "title": "Vêtements GT",
+    "subtitle": "Vêtements de fitness premium conçus pour la performance",
+    "preOrder": "Pré-commander",
+    "selectSize": "Choisir la Taille",
+    "selectColor": "Choisir la Couleur",
+    "quantity": "Quantité",
+    "email": "Email",
+    "submitPreOrder": "Soumettre la Pré-commande",
+    "preOrderSuccess": "Pré-commande soumise avec succès!"
+  },
+  "gallery": {
+    "title": "Galerie",
+    "subtitle": "Moments de notre communauté mondiale"
+  },
+  "join": {
+    "title": "Rejoins GT Fitness",
+    "subtitle": "Commence ta transformation aujourd'hui",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "email": "Email",
+    "phone": "Téléphone",
+    "submit": "Rejoindre"
+  },
+  "footer": {
+    "followUs": "Suivez-nous",
+    "quickLinks": "Liens Rapides",
+    "contact": "Contact",
+    "allRightsReserved": "Tous droits réservés"
+  }
+}
