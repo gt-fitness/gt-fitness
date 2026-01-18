@@ -1,0 +1,80 @@
+{
+  "hero": {
+    "tagline": "More Than That.",
+    "subtitle": "Join the movement. Transform your body. Become unstoppable.",
+    "startTraining": "Start Training",
+    "watchStory": "Watch Story"
+  },
+  "nav": {
+    "community": "Community",
+    "challenges": "Challenges",
+    "workouts": "Workouts",
+    "shop": "Shop",
+    "gallery": "Gallery",
+    "join": "Join"
+  },
+  "stats": {
+    "athletes": "Athletes",
+    "workouts": "Workouts",
+    "challenges": "Challenges",
+    "successRate": "Success Rate"
+  },
+  "community": {
+    "ourStory": "Our Story",
+    "whoWeAre": "Who We Are",
+    "ourMission": "Our Mission",
+    "ourValues": "Our Values",
+    "meetTheTeam": "Meet The Team",
+    "readyToJoin": "Ready to Join?",
+    "joinCta": "Join GT Fitness Today",
+    "yearsStrong": "Years Strong",
+    "watchOurStory": "Watch Our Story",
+    "ourJourney": "Our Journey"
+  },
+  "challenges": {
+    "title": "Challenges",
+    "subtitle": "Push your limits with our structured fitness challenges",
+    "duration": "Duration",
+    "difficulty": "Difficulty",
+    "participants": "Participants",
+    "joinChallenge": "Join Challenge",
+    "viewDetails": "View Details"
+  },
+  "workouts": {
+    "title": "Workout Library",
+    "subtitle": "Expert-designed exercises for every muscle group",
+    "target": "Target",
+    "category": "Category",
+    "watchVideo": "Watch Video"
+  },
+  "shop": {
+    "title": "GT Apparel",
+    "subtitle": "Premium fitness clothing designed for performance",
+    "preOrder": "Pre-Order",
+    "selectSize": "Select Size",
+    "selectColor": "Select Color",
+    "quantity": "Quantity",
+    "email": "Email",
+    "submitPreOrder": "Submit Pre-Order",
+    "preOrderSuccess": "Pre-order submitted successfully!"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "Moments from our global community"
+  },
+  "join": {
+    "title": "Join GT Fitness",
+    "subtitle": "Start your transformation today",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "phone": "Phone",
+    "submit": "Join Now"
+  },
+  "footer": {
+    "followUs": "Follow Us",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "allRightsReserved": "All rights reserved"
+  }
+}

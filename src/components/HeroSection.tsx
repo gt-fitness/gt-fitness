@@ -1,14 +1,27 @@
 import { Button } from "@/components/ui/button";
 import { Play, ChevronDown } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import gtLogoWhite from "@/assets/gt-logo-white.png";
 import communityData from "@/data/community.json";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
+  const { t } = useTranslation();
+
   const scrollToContent = () => {
     const element = document.querySelector("#community");
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
+  };
+
+  const handleStartTraining = () => {
+    navigate("/workouts");
+  };
+
+  const handleWatchStory = () => {
+    navigate("/community?story=true");
   };
 
   return (
@@ -51,12 +64,20 @@ const HeroSection = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up stagger-3">
-            <Button variant="hero" className="bg-background text-foreground hover:bg-background/90">
-              Start Training
+            <Button 
+              variant="hero" 
+              className="bg-background text-foreground hover:bg-background/90"
+              onClick={handleStartTraining}
+            >
+              {t("hero.startTraining")}
             </Button>
-            <Button variant="heroOutline" className="border-background text-background hover:bg-background hover:text-foreground gap-3">
+            <Button 
+              variant="heroOutline" 
+              className="border-background text-background hover:bg-background hover:text-foreground gap-3"
+              onClick={handleWatchStory}
+            >
               <Play className="w-5 h-5" />
-              Watch Story
+              {t("hero.watchStory")}
             </Button>
           </div>
         </div>
