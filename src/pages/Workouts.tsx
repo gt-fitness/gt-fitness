@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -6,13 +7,35 @@ import { Play, X } from "lucide-react";
 import exercisesData from "@/data/exercises.json";
 
 const Workouts = () => {
+  const [searchParams, setSearchParams] = useSearchParams();
   const [activeCategory, setActiveCategory] = useState("All");
   const [selectedExercise, setSelectedExercise] = useState<typeof exercisesData.exercises[0] | null>(null);
+
+  // Open exercise from URL param
+  useEffect(() => {
+    const exerciseId = searchParams.get("exercise");
+    if (exerciseId) {
+      const exercise = exercisesData.exercises.find(e => e.id === parseInt(exerciseId));
+      if (exercise) {
+        setSelectedExercise(exercise);
+      }
+    }
+  }, [searchParams]);
 
   const filteredExercises =
     activeCategory === "All"
       ? exercisesData.exercises
       : exercisesData.exercises.filter((e) => e.category === activeCategory);
+
+  const closeModal = () => {
+    setSelectedExercise(null);
+    setSearchParams({});
+  };
+
+  const openExercise = (exercise: typeof exercisesData.exercises[0]) => {
+    setSelectedExercise(exercise);
+    setSearchParams({ exercise: exercise.id.toString() });
+  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -56,7 +79,7 @@ const Workouts = () => {
               <div
                 key={exercise.id}
                 className="group relative rounded-2xl overflow-hidden bg-secondary cursor-pointer"
-                onClick={() => setSelectedExercise(exercise)}
+                onClick={() => openExercise(exercise)}
               >
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <img
@@ -91,11 +114,11 @@ const Workouts = () => {
       {selectedExercise && (
         <div
           className="fixed inset-0 z-50 bg-foreground/95 flex items-center justify-center p-4 overflow-y-auto"
-          onClick={() => setSelectedExercise(null)}
+          onClick={closeModal}
         >
           <button
             className="absolute top-6 right-6 text-background hover:text-background/80 transition-colors"
-            onClick={() => setSelectedExercise(null)}
+            onClick={closeModal}
           >
             <X className="w-8 h-8" />
           </button>

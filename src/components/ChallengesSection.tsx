@@ -1,9 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { Play, Clock, Flame, ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import challengesData from "@/data/challenges.json";
 
 const ChallengesSection = () => {
+  const navigate = useNavigate();
+
+  const handleChallengeClick = (challengeId: number) => {
+    navigate(`/challenges?challenge=${challengeId}`);
+  };
+
   return (
     <section id="challenges" className="section-padding bg-secondary">
       <div className="container mx-auto px-4">
@@ -22,7 +28,8 @@ const ChallengesSection = () => {
           {challengesData.challenges.slice(0, 3).map((challenge) => (
             <div
               key={challenge.id}
-              className="group rounded-2xl overflow-hidden bg-background shadow-sm hover:shadow-lg transition-all duration-300"
+              className="group rounded-2xl overflow-hidden bg-background shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer"
+              onClick={() => handleChallengeClick(challenge.id)}
             >
               {/* Thumbnail */}
               <div className="relative aspect-video overflow-hidden">
@@ -54,7 +61,7 @@ const ChallengesSection = () => {
                 <p className="text-muted-foreground text-sm mb-4 line-clamp-2">
                   {challenge.description}
                 </p>
-                <Button variant="athletic" size="sm" className="w-full">
+                <Button variant="athletic" size="sm" className="w-full" onClick={(e) => e.stopPropagation()}>
                   Join Challenge
                 </Button>
               </div>

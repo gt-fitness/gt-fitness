@@ -1,9 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import productsData from "@/data/products.json";
 
 const ClothingSection = () => {
+  const navigate = useNavigate();
+
+  const handleProductClick = (productId: number) => {
+    navigate(`/shop?product=${productId}`);
+  };
+
   return (
     <section id="clothing" className="section-padding bg-secondary">
       <div className="container mx-auto px-4">
@@ -21,7 +27,8 @@ const ClothingSection = () => {
           {productsData.products.slice(0, 4).map((product) => (
             <div
               key={product.id}
-              className="group bg-background rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-lg"
+              className="group bg-background rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-lg cursor-pointer"
+              onClick={() => handleProductClick(product.id)}
             >
               {/* Product Image */}
               <div className="relative aspect-square overflow-hidden bg-muted">
@@ -56,7 +63,7 @@ const ClothingSection = () => {
                   <span className="font-display text-xl font-semibold">
                     ${product.price}
                   </span>
-                  <Button variant="athletic" size="sm">
+                  <Button variant="athletic" size="sm" onClick={(e) => e.stopPropagation()}>
                     Pre-Order
                   </Button>
                 </div>

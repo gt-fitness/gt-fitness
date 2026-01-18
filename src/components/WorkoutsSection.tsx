@@ -1,16 +1,21 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Play, ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import exercisesData from "@/data/exercises.json";
 
 const WorkoutsSection = () => {
   const [activeCategory, setActiveCategory] = useState("All");
+  const navigate = useNavigate();
 
   const filteredExercises =
     activeCategory === "All"
       ? exercisesData.exercises.slice(0, 6)
       : exercisesData.exercises.filter((e) => e.category === activeCategory).slice(0, 6);
+
+  const handleExerciseClick = (exerciseId: number) => {
+    navigate(`/workouts?exercise=${exerciseId}`);
+  };
 
   return (
     <section id="workouts" className="section-padding bg-background">
@@ -49,6 +54,7 @@ const WorkoutsSection = () => {
             <div
               key={exercise.id}
               className="group relative rounded-2xl overflow-hidden bg-secondary cursor-pointer"
+              onClick={() => handleExerciseClick(exercise.id)}
             >
               <div className="relative aspect-[4/3] overflow-hidden">
                 <img
