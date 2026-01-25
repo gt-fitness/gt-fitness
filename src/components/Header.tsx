@@ -8,6 +8,7 @@ const navItems = [
   { name: "Community", href: "#community", page: "/community" },
   { name: "Challenges", href: "#challenges", page: "/challenges" },
   { name: "Workouts", href: "#workouts", page: "/workouts" },
+  { name: "Events", href: "#events", page: "/events" },
   { name: "Shop", href: "#clothing", page: "/shop" },
   { name: "Gallery", href: "#gallery", page: "/gallery" },
 ];

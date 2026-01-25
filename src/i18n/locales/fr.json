@@ -11,6 +11,7 @@
     "workouts": "Entraînements",
     "shop": "Boutique",
     "gallery": "Galerie",
+    "events": "Événements",
     "join": "Rejoindre"
   },
   "stats": {
@@ -61,6 +62,31 @@
   "gallery": {
     "title": "Galerie",
     "subtitle": "Moments de notre communauté mondiale"
+  },
+  "events": {
+    "title": "Événements à Venir",
+    "subtitle": "Rejoins Notre Communauté",
+    "description": "Participe à nos événements fitness, ateliers et compétitions. Connecte-toi avec la communauté et passe au niveau supérieur.",
+    "register": "S'inscrire",
+    "registerNow": "S'inscrire Maintenant",
+    "viewAll": "Voir Tous les Événements",
+    "date": "Date",
+    "time": "Heure",
+    "location": "Lieu",
+    "organizer": "Organisateur",
+    "noEvents": "Aucun événement trouvé pour ce filtre.",
+    "filter": {
+      "all": "Tous",
+      "upcoming": "À venir",
+      "ongoing": "En cours",
+      "completed": "Terminé"
+    },
+    "status": {
+      "upcoming": "À venir",
+      "ongoing": "En cours",
+      "completed": "Terminé",
+      "cancelled": "Annulé"
+    }
   },
   "join": {
     "title": "Rejoins GT Fitness",
