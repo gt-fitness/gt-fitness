@@ -8,13 +8,17 @@ import challengesData from "@/data/challenges.json";
 
 const Challenges = () => {
   const [searchParams, setSearchParams] = useSearchParams();
-  const [selectedChallenge, setSelectedChallenge] = useState<typeof challengesData.challenges[0] | null>(null);
+  const [selectedChallenge, setSelectedChallenge] = useState<
+    (typeof challengesData.challenges)[0] | null
+  >(null);
 
   // Open challenge from URL param
   useEffect(() => {
     const challengeId = searchParams.get("challenge");
     if (challengeId) {
-      const challenge = challengesData.challenges.find(c => c.id === parseInt(challengeId));
+      const challenge = challengesData.challenges.find(
+        (c) => c.id === parseInt(challengeId),
+      );
       if (challenge) {
         setSelectedChallenge(challenge);
       }
@@ -26,7 +30,7 @@ const Challenges = () => {
     setSearchParams({});
   };
 
-  const openChallenge = (challenge: typeof challengesData.challenges[0]) => {
+  const openChallenge = (challenge: (typeof challengesData.challenges)[0]) => {
     setSelectedChallenge(challenge);
     setSearchParams({ challenge: challenge.id.toString() });
   };
@@ -34,15 +38,17 @@ const Challenges = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
+
       {/* Hero */}
       <section className="pt-28 pb-16 bg-secondary">
         <div className="container mx-auto px-4 text-center">
-          <p className="text-sm uppercase tracking-widest text-muted-foreground mb-4">Push Your Limits</p>
+          <p className="text-sm uppercase tracking-widest text-muted-foreground mb-4">
+            Push Your Limits
+          </p>
           <h1 className="section-title mb-6">All Challenges</h1>
           <p className="section-subtitle mx-auto max-w-2xl">
-            Join structured programs designed to test your limits and transform your body. 
-            Compete with athletes worldwide and track your progress.
+            Join structured programs designed to test your limits and transform
+            your body. Compete with athletes worldwide and track your progress.
           </p>
         </div>
       </section>
@@ -87,13 +93,15 @@ const Challenges = () => {
                       {challenge.participants}
                     </span>
                   </div>
-                  <h3 className="font-display text-xl font-semibold mb-2">{challenge.title}</h3>
+                  <h3 className="font-display text-xl font-semibold mb-2">
+                    {challenge.title}
+                  </h3>
                   <p className="text-muted-foreground text-sm mb-5">
                     {challenge.description}
                   </p>
-                  <Button variant="athletic" className="w-full" onClick={(e) => e.stopPropagation()}>
+                  {/* <Button variant="athletic" className="w-full" onClick={(e) => e.stopPropagation()}>
                     Join Challenge
-                  </Button>
+                  </Button> */}
                 </div>
               </div>
             ))}
@@ -147,11 +155,15 @@ const Challenges = () => {
                   {selectedChallenge.participants} participants
                 </span>
               </div>
-              <h2 className="font-display text-3xl font-semibold mb-3">{selectedChallenge.title}</h2>
-              <p className="text-muted-foreground mb-6">{selectedChallenge.description}</p>
-              <Button variant="athletic" size="lg" className="w-full">
+              <h2 className="font-display text-3xl font-semibold mb-3">
+                {selectedChallenge.title}
+              </h2>
+              <p className="text-muted-foreground mb-6">
+                {selectedChallenge.description}
+              </p>
+              {/* <Button variant="athletic" size="lg" className="w-full">
                 Join This Challenge
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>

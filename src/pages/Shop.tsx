@@ -11,11 +11,13 @@ import { useToast } from "@/hooks/use-toast";
 const Shop = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const { toast } = useToast();
-  
-  const [selectedProduct, setSelectedProduct] = useState<typeof productsData.products[0] | null>(null);
+
+  const [selectedProduct, setSelectedProduct] = useState<
+    (typeof productsData.products)[0] | null
+  >(null);
   const [selectedColor, setSelectedColor] = useState(0);
   const [selectedSize, setSelectedSize] = useState("");
-  
+
   // Pre-order popup state
   const [showPreOrder, setShowPreOrder] = useState(false);
   const [preOrderEmail, setPreOrderEmail] = useState("");
@@ -25,7 +27,9 @@ const Shop = () => {
   useEffect(() => {
     const productId = searchParams.get("product");
     if (productId) {
-      const product = productsData.products.find(p => p.id === parseInt(productId));
+      const product = productsData.products.find(
+        (p) => p.id === parseInt(productId),
+      );
       if (product) {
         setSelectedProduct(product);
         setSelectedColor(0);
@@ -34,7 +38,7 @@ const Shop = () => {
     }
   }, [searchParams]);
 
-  const openProduct = (product: typeof productsData.products[0]) => {
+  const openProduct = (product: (typeof productsData.products)[0]) => {
     setSelectedProduct(product);
     setSelectedColor(0);
     setSelectedSize("");
@@ -83,11 +87,13 @@ const Shop = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
+
       {/* Hero */}
       <section className="pt-28 pb-16 bg-secondary">
         <div className="container mx-auto px-4 text-center">
-          <p className="text-sm uppercase tracking-widest text-muted-foreground mb-4">Wear Your Pride</p>
+          <p className="text-sm uppercase tracking-widest text-muted-foreground mb-4">
+            Wear Your Pride
+          </p>
           <h1 className="section-title mb-6">Official Gear</h1>
           <p className="section-subtitle mx-auto max-w-2xl">
             Premium athletic wear designed for performance and built to last.
@@ -114,7 +120,9 @@ const Shop = () => {
                 </div>
 
                 <div className="p-5">
-                  <h3 className="font-display text-xl font-semibold mb-1">{product.name}</h3>
+                  <h3 className="font-display text-xl font-semibold mb-1">
+                    {product.name}
+                  </h3>
                   <p className="text-muted-foreground text-sm mb-3 line-clamp-2">
                     {product.description}
                   </p>
@@ -131,8 +139,12 @@ const Shop = () => {
                   </div>
 
                   <div className="flex items-center justify-between">
-                    <span className="font-display text-2xl font-semibold">${product.price}</span>
-                    <Button variant="athletic" size="sm">View Details</Button>
+                    <span className="font-display text-2xl font-semibold">
+                      ${product.price}
+                    </span>
+                    <Button variant="athletic" size="sm">
+                      View Details
+                    </Button>
                   </div>
                 </div>
               </div>
@@ -165,19 +177,29 @@ const Shop = () => {
               />
             </div>
             <div className="p-6 flex flex-col">
-              <h2 className="font-display text-3xl font-semibold mb-2">{selectedProduct.name}</h2>
-              <p className="font-display text-2xl font-semibold mb-4">${selectedProduct.price}</p>
-              <p className="text-muted-foreground mb-6">{selectedProduct.description}</p>
+              <h2 className="font-display text-3xl font-semibold mb-2">
+                {selectedProduct.name}
+              </h2>
+              <p className="font-display text-2xl font-semibold mb-4">
+                ${selectedProduct.price}
+              </p>
+              <p className="text-muted-foreground mb-6">
+                {selectedProduct.description}
+              </p>
 
               {/* Color Selection */}
               <div className="mb-5">
-                <p className="text-sm font-medium mb-2">Color: {selectedProduct.colors[selectedColor].name}</p>
+                <p className="text-sm font-medium mb-2">
+                  Color: {selectedProduct.colors[selectedColor].name}
+                </p>
                 <div className="flex gap-2">
                   {selectedProduct.colors.map((color, index) => (
                     <button
                       key={index}
                       className={`w-9 h-9 rounded-full border-2 transition-all ${
-                        selectedColor === index ? "border-foreground scale-110" : "border-border"
+                        selectedColor === index
+                          ? "border-foreground scale-110"
+                          : "border-border"
                       }`}
                       style={{ backgroundColor: color.hex }}
                       onClick={() => setSelectedColor(index)}
@@ -207,10 +229,10 @@ const Shop = () => {
               </div>
 
               <div className="mt-auto">
-                <Button 
-                  variant="athletic" 
-                  size="xl" 
-                  className="w-full gap-2" 
+                <Button
+                  variant="athletic"
+                  size="xl"
+                  className="w-full gap-2"
                   disabled={!selectedSize}
                   onClick={handlePreOrder}
                 >
@@ -242,13 +264,15 @@ const Shop = () => {
             className="max-w-md w-full bg-background rounded-2xl overflow-hidden p-6"
             onClick={(e) => e.stopPropagation()}
           >
-            <h2 className="font-display text-2xl font-semibold mb-6 text-center">Complete Pre-Order</h2>
-            
+            <h2 className="font-display text-2xl font-semibold mb-6 text-center">
+              Complete Pre-Order
+            </h2>
+
             {/* Order Summary */}
             <div className="bg-secondary rounded-xl p-4 mb-6">
               <div className="flex gap-4">
-                <img 
-                  src={selectedProduct.image} 
+                <img
+                  src={selectedProduct.image}
                   alt={selectedProduct.name}
                   className="w-20 h-20 rounded-lg object-cover"
                 />
@@ -257,7 +281,9 @@ const Shop = () => {
                   <p className="text-sm text-muted-foreground">
                     Color: {selectedProduct.colors[selectedColor].name}
                   </p>
-                  <p className="text-sm text-muted-foreground">Size: {selectedSize}</p>
+                  <p className="text-sm text-muted-foreground">
+                    Size: {selectedSize}
+                  </p>
                   <p className="font-semibold mt-1">${selectedProduct.price}</p>
                 </div>
               </div>
@@ -265,7 +291,9 @@ const Shop = () => {
 
             {/* Email Input */}
             <div className="mb-4">
-              <label className="text-sm font-medium mb-2 block">Email Address</label>
+              <label className="text-sm font-medium mb-2 block">
+                Email Address
+              </label>
               <Input
                 type="email"
                 placeholder="your@email.com"
@@ -281,11 +309,15 @@ const Shop = () => {
               <div className="flex items-center gap-3">
                 <button
                   className="w-10 h-10 rounded-lg bg-secondary font-semibold transition-colors hover:bg-muted"
-                  onClick={() => setPreOrderQuantity(Math.max(1, preOrderQuantity - 1))}
+                  onClick={() =>
+                    setPreOrderQuantity(Math.max(1, preOrderQuantity - 1))
+                  }
                 >
                   -
                 </button>
-                <span className="w-12 text-center font-semibold text-lg">{preOrderQuantity}</span>
+                <span className="w-12 text-center font-semibold text-lg">
+                  {preOrderQuantity}
+                </span>
                 <button
                   className="w-10 h-10 rounded-lg bg-secondary font-semibold transition-colors hover:bg-muted"
                   onClick={() => setPreOrderQuantity(preOrderQuantity + 1)}
@@ -304,16 +336,16 @@ const Shop = () => {
             </div>
 
             {/* Submit Button */}
-            <Button 
-              variant="athletic" 
-              size="xl" 
+            <Button
+              variant="athletic"
+              size="xl"
               className="w-full gap-2"
               onClick={submitPreOrder}
             >
               <Check className="w-5 h-5" />
               Confirm Pre-Order
             </Button>
-            
+
             <p className="text-muted-foreground text-xs text-center mt-4">
               You'll receive a confirmation email with payment details.
             </p>

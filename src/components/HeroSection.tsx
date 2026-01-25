@@ -36,10 +36,7 @@ const HeroSection = () => {
           className="w-full h-full object-cover opacity-60"
           poster="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=80"
         >
-          <source
-            src="https://cdn.coverr.co/videos/coverr-doing-push-ups-at-the-gym-5310/1080p.mp4"
-            type="video/mp4"
-          />
+          <source src="src/assets/hero-section/main.MP4" type="video/mp4" />
         </video>
         <div className="video-overlay-clean" />
       </div>
@@ -48,31 +45,31 @@ const HeroSection = () => {
       <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
         <div className="max-w-4xl mx-auto">
           {/* Logo */}
-          <img 
-            src={gtLogoWhite} 
-            alt="GT Fitness" 
+          <img
+            src={gtLogoWhite}
+            alt="GT Fitness"
             className="h-24 md:h-32 lg:h-40 w-auto mx-auto mb-8 animate-fade-up"
           />
-          
+
           {/* Tagline */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-semibold text-background tracking-tight mb-6 animate-fade-up stagger-1">
             {communityData.tagline}
           </h1>
-          
+
           <p className="text-lg md:text-xl text-background/70 max-w-xl mx-auto mb-10 animate-fade-up stagger-2">
             Join the movement. Transform your body. Become unstoppable.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up stagger-3">
-            <Button 
-              variant="hero" 
+            <Button
+              variant="hero"
               className="bg-background text-foreground hover:bg-background/90"
               onClick={handleStartTraining}
             >
               {t("hero.startTraining")}
             </Button>
-            <Button 
-              variant="heroOutline" 
+            <Button
+              variant="heroOutline"
               className="border-background text-background hover:bg-background hover:text-foreground gap-3"
               onClick={handleWatchStory}
             >
@@ -97,8 +94,12 @@ const HeroSection = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             {communityData.stats.map((stat) => (
               <div key={stat.label}>
-                <p className="font-display text-2xl md:text-3xl font-semibold">{stat.value}</p>
-                <p className="text-xs md:text-sm text-muted-foreground uppercase tracking-wider">{stat.label}</p>
+                <p className="font-display text-2xl md:text-3xl font-semibold">
+                  {stat.value}
+                </p>
+                <p className="text-xs md:text-sm text-muted-foreground uppercase tracking-wider">
+                  {stat.label}
+                </p>
               </div>
             ))}
           </div>

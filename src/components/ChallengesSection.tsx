@@ -19,8 +19,8 @@ const ChallengesSection = () => {
           </p>
           <h2 className="section-title mb-4">Active Challenges</h2>
           <p className="section-subtitle mx-auto max-w-2xl">
-            Ready to test yourself? Join one of our community challenges and compete 
-            with athletes worldwide.
+            Ready to test yourself? Join one of our community challenges and
+            compete with athletes worldwide.
           </p>
         </div>
 
@@ -57,13 +57,15 @@ const ChallengesSection = () => {
                     {challenge.intensity}
                   </span>
                 </div>
-                <h3 className="font-display text-xl font-semibold mb-2">{challenge.title}</h3>
+                <h3 className="font-display text-xl font-semibold mb-2">
+                  {challenge.title}
+                </h3>
                 <p className="text-muted-foreground text-sm mb-4 line-clamp-2">
                   {challenge.description}
                 </p>
-                <Button variant="athletic" size="sm" className="w-full" onClick={(e) => e.stopPropagation()}>
+                {/* <Button variant="athletic" size="sm" className="w-full" onClick={(e) => e.stopPropagation()}>
                   Join Challenge
-                </Button>
+                </Button> */}
               </div>
             </div>
           ))}

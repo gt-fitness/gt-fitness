@@ -2,63 +2,43 @@
   "challenges": [
     {
       "id": 1,
-      "title": "30-Day Shred",
-      "description": "Transform your body in 30 days with intense daily workouts designed to burn fat and build lean muscle. Each day brings a new challenge, pushing you closer to your goals.",
+      "title": "2000 Push-Up Challenge",
+      "description": "Accumulate 2,000 push-ups over the course of the challenge. Build serious upper-body strength, mental discipline, and endurance with scalable daily targets.",
       "duration": "30 Days",
       "intensity": "High",
-      "participants": "2.3K",
-      "thumbnail": "https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=800&q=80",
-      "video": "https://cdn.coverr.co/videos/coverr-woman-training-in-a-gym-7421/1080p.mp4"
+      "participants": "2.0K",
+      "thumbnail": "https://images.unsplash.com/photo-1598971639058-fab3c3109a00?w=800&q=80",
+      "video": "src/assets/hero-section/main.MP4"
     },
     {
       "id": 2,
-      "title": "Push-Up Master",
-      "description": "From zero to 100 push-ups. Build upper body strength and endurance with this progressive training program. Perfect for all fitness levels.",
-      "duration": "6 Weeks",
+      "title": "100km Run Challenge",
+      "description": "Run a total of 100 kilometers within the challenge period. Designed to build consistency, cardiovascular endurance, and mental toughness at your own pace.",
+      "duration": "30 Days",
       "intensity": "Medium",
-      "participants": "5.1K",
-      "thumbnail": "https://images.unsplash.com/photo-1598971639058-fab3c3109a00?w=800&q=80",
-      "video": "https://cdn.coverr.co/videos/coverr-doing-push-ups-at-the-gym-5310/1080p.mp4"
+      "participants": "1.6K",
+      "thumbnail": "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=800&q=80",
+      "video": "src/assets/hero-section/main.MP4"
     },
     {
       "id": 3,
-      "title": "Core Crusher",
-      "description": "Develop rock-solid abs and core stability with targeted exercises and nutrition guidance. Four weeks to a stronger midsection.",
-      "duration": "4 Weeks",
-      "intensity": "High",
-      "participants": "3.8K",
+      "title": "Plank Hold Endurance",
+      "description": "Strengthen your core with progressive plank holds. Improve posture, stability, and total-body control with daily time-based goals.",
+      "duration": "21 Days",
+      "intensity": "Medium",
+      "participants": "1.3K",
       "thumbnail": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&q=80",
-      "video": "https://cdn.coverr.co/videos/coverr-man-doing-abs-workout-1573/1080p.mp4"
+      "video": "src/assets/hero-section/main.MP4"
     },
     {
       "id": 4,
-      "title": "Runner's Edge",
-      "description": "Improve your running speed and endurance with structured training plans. From 5K to marathon prep.",
-      "duration": "8 Weeks",
-      "intensity": "Medium",
-      "participants": "1.9K",
-      "thumbnail": "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=800&q=80",
-      "video": ""
-    },
-    {
-      "id": 5,
-      "title": "Flexibility Flow",
-      "description": "Increase mobility and reduce injury risk with daily stretching and yoga-inspired routines. Perfect complement to strength training.",
-      "duration": "21 Days",
+      "title": "Full Body Consistency",
+      "description": "A balanced full-body challenge focused on daily movement. Perfect for building habits, improving overall fitness, and staying active without burnout.",
+      "duration": "14 Days",
       "intensity": "Low",
-      "participants": "4.2K",
+      "participants": "2.7K",
       "thumbnail": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80",
-      "video": ""
-    },
-    {
-      "id": 6,
-      "title": "Beast Mode",
-      "description": "The ultimate strength challenge. 12 weeks of progressive overload training designed to maximize muscle growth and power.",
-      "duration": "12 Weeks",
-      "intensity": "Extreme",
-      "participants": "890",
-      "thumbnail": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&q=80",
-      "video": ""
+      "video": "src/assets/hero-section/main.MP4"
     }
   ]
 }

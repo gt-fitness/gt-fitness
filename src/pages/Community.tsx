@@ -5,16 +5,55 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
-import { Users, Target, Trophy, Heart, Globe, Dumbbell, Play, X } from "lucide-react";
+import {
+  Users,
+  Target,
+  Trophy,
+  Heart,
+  Globe,
+  Dumbbell,
+  Play,
+  X,
+} from "lucide-react";
 import communityData from "@/data/community.json";
 
 const extendedValues = [
-  { icon: Users, title: "Brotherhood", description: "We train together, we grow together. Every member is family. When one rises, we all rise." },
-  { icon: Target, title: "Discipline", description: "Consistency beats intensity. Show up every single day, no matter the circumstances." },
-  { icon: Trophy, title: "Excellence", description: "Good enough is never good enough. We push for greatness in everything we do." },
-  { icon: Heart, title: "Passion", description: "Love the process. The results will follow. Find joy in the grind." },
-  { icon: Globe, title: "Global Unity", description: "Athletes from every corner of the world, united by a single mission." },
-  { icon: Dumbbell, title: "Strength", description: "Physical, mental, emotional. We build strength in all its forms." },
+  {
+    icon: Users,
+    title: "Brotherhood",
+    description:
+      "We train together, we grow together. Every member is family. When one rises, we all rise.",
+  },
+  {
+    icon: Target,
+    title: "Discipline",
+    description:
+      "Consistency beats intensity. Show up every single day, no matter the circumstances.",
+  },
+  {
+    icon: Trophy,
+    title: "Excellence",
+    description:
+      "Good enough is never good enough. We push for greatness in everything we do.",
+  },
+  {
+    icon: Heart,
+    title: "Passion",
+    description:
+      "Love the process. The results will follow. Find joy in the grind.",
+  },
+  {
+    icon: Globe,
+    title: "Global Unity",
+    description:
+      "Athletes from every corner of the world, united by a single mission.",
+  },
+  {
+    icon: Dumbbell,
+    title: "Strength",
+    description:
+      "Physical, mental, emotional. We build strength in all its forms.",
+  },
 ];
 
 const Community = () => {
@@ -36,11 +75,13 @@ const Community = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
+
       {/* Hero */}
       <section className="pt-28 pb-16 bg-secondary">
         <div className="container mx-auto px-4 text-center">
-          <p className="text-sm uppercase tracking-widest text-muted-foreground mb-4">{t("community.ourStory")}</p>
+          <p className="text-sm uppercase tracking-widest text-muted-foreground mb-4">
+            {t("community.ourStory")}
+          </p>
           <h1 className="section-title mb-6">{t("community.whoWeAre")}</h1>
           <p className="section-subtitle mx-auto max-w-2xl">
             {communityData.description}
@@ -49,11 +90,18 @@ const Community = () => {
       </section>
 
       {/* Story Video Section */}
-      <section ref={storyRef} className="section-padding bg-foreground text-background">
+      <section
+        ref={storyRef}
+        className="section-padding bg-foreground text-background"
+      >
         <div className="container mx-auto px-4">
           <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-display font-semibold mb-4">{t("community.ourJourney")}</h2>
-            <p className="text-background/70 max-w-xl mx-auto">{t("community.watchOurStory")}</p>
+            <h2 className="text-3xl md:text-4xl font-display font-semibold mb-4">
+              {t("community.ourJourney")}
+            </h2>
+            <p className="text-background/70 max-w-xl mx-auto">
+              {t("community.watchOurStory")}
+            </p>
           </div>
           <div className="relative aspect-video max-w-4xl mx-auto rounded-2xl overflow-hidden">
             <video
@@ -63,10 +111,7 @@ const Community = () => {
               className="w-full h-full object-cover"
               poster="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=80"
             >
-              <source
-                src="https://cdn.coverr.co/videos/coverr-people-working-out-in-the-gym-5306/1080p.mp4"
-                type="video/mp4"
-              />
+              <source src="src/assets/community/story.MP4" type="video/mp4" />
             </video>
             {!showStoryVideo && (
               <button
@@ -83,7 +128,10 @@ const Community = () => {
       </section>
 
       {/* Video Modal */}
-      <Dialog open={showStoryVideo && searchParams.get("story") === "true"} onOpenChange={setShowStoryVideo}>
+      <Dialog
+        open={showStoryVideo && searchParams.get("story") === "true"}
+        onOpenChange={setShowStoryVideo}
+      >
         <DialogContent className="max-w-4xl p-0 bg-black border-none">
           <button
             onClick={() => setShowStoryVideo(false)}
@@ -91,12 +139,7 @@ const Community = () => {
           >
             <X className="w-6 h-6" />
           </button>
-          <video
-            autoPlay
-            controls
-            playsInline
-            className="w-full aspect-video"
-          >
+          <video autoPlay controls playsInline className="w-full aspect-video">
             <source
               src="https://cdn.coverr.co/videos/coverr-people-working-out-in-the-gym-5306/1080p.mp4"
               type="video/mp4"
@@ -110,11 +153,15 @@ const Community = () => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-display font-semibold mb-6">{t("community.ourMission")}</h2>
-              <p className="text-muted-foreground mb-6">{communityData.mission}</p>
+              <h2 className="text-3xl md:text-4xl font-display font-semibold mb-6">
+                {t("community.ourMission")}
+              </h2>
+              <p className="text-muted-foreground mb-6">
+                {communityData.mission}
+              </p>
               <p className="text-muted-foreground">
-                Our mission is simple: to help you become the strongest, most confident, 
-                most unstoppable version of yourself.
+                Our mission is simple: to help you become the strongest, most
+                confident, most unstoppable version of yourself.
               </p>
             </div>
             <div className="relative">
@@ -123,9 +170,11 @@ const Community = () => {
                 alt="Team training"
                 className="rounded-2xl"
               />
-            <div className="absolute -bottom-6 -left-6 bg-foreground text-background p-5 rounded-xl">
+              <div className="absolute -bottom-6 -left-6 bg-foreground text-background p-5 rounded-xl">
                 <p className="font-display text-3xl font-semibold">5+</p>
-                <p className="text-background/70 text-sm">{t("community.yearsStrong")}</p>
+                <p className="text-background/70 text-sm">
+                  {t("community.yearsStrong")}
+                </p>
               </div>
             </div>
           </div>
@@ -142,8 +191,12 @@ const Community = () => {
             {extendedValues.map((value) => (
               <div key={value.title} className="card-clean group">
                 <value.icon className="w-10 h-10 text-foreground mb-4 group-hover:scale-110 transition-transform" />
-                <h3 className="font-display text-xl font-semibold mb-2">{value.title}</h3>
-                <p className="text-muted-foreground text-sm">{value.description}</p>
+                <h3 className="font-display text-xl font-semibold mb-2">
+                  {value.title}
+                </h3>
+                <p className="text-muted-foreground text-sm">
+                  {value.description}
+                </p>
               </div>
             ))}
           </div>
@@ -166,7 +219,9 @@ const Community = () => {
                     className="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
-                <h3 className="font-display text-lg font-semibold">{member.name}</h3>
+                <h3 className="font-display text-lg font-semibold">
+                  {member.name}
+                </h3>
                 <p className="text-muted-foreground text-sm">{member.role}</p>
               </div>
             ))}
@@ -177,11 +232,17 @@ const Community = () => {
       {/* CTA */}
       <section className="section-padding bg-foreground text-background">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-5xl font-display font-semibold mb-6">{t("community.readyToJoin")}</h2>
+          <h2 className="text-3xl md:text-5xl font-display font-semibold mb-6">
+            {t("community.readyToJoin")}
+          </h2>
           <p className="text-background/70 mb-8 max-w-xl mx-auto">
-            Become part of a global community of athletes pushing their limits every day.
+            Become part of a global community of athletes pushing their limits
+            every day.
           </p>
-          <Button variant="hero" className="bg-background text-foreground hover:bg-background/90">
+          <Button
+            variant="hero"
+            className="bg-background text-foreground hover:bg-background/90"
+          >
             {t("community.joinCta")}
           </Button>
         </div>

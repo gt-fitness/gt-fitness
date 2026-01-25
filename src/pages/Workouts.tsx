@@ -9,13 +9,17 @@ import exercisesData from "@/data/exercises.json";
 const Workouts = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const [activeCategory, setActiveCategory] = useState("All");
-  const [selectedExercise, setSelectedExercise] = useState<typeof exercisesData.exercises[0] | null>(null);
+  const [selectedExercise, setSelectedExercise] = useState<
+    (typeof exercisesData.exercises)[0] | null
+  >(null);
 
   // Open exercise from URL param
   useEffect(() => {
     const exerciseId = searchParams.get("exercise");
     if (exerciseId) {
-      const exercise = exercisesData.exercises.find(e => e.id === parseInt(exerciseId));
+      const exercise = exercisesData.exercises.find(
+        (e) => e.id === parseInt(exerciseId),
+      );
       if (exercise) {
         setSelectedExercise(exercise);
       }
@@ -32,7 +36,7 @@ const Workouts = () => {
     setSearchParams({});
   };
 
-  const openExercise = (exercise: typeof exercisesData.exercises[0]) => {
+  const openExercise = (exercise: (typeof exercisesData.exercises)[0]) => {
     setSelectedExercise(exercise);
     setSearchParams({ exercise: exercise.id.toString() });
   };
@@ -40,14 +44,16 @@ const Workouts = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
+
       {/* Hero */}
       <section className="pt-28 pb-16 bg-secondary">
         <div className="container mx-auto px-4 text-center">
-          <p className="text-sm uppercase tracking-widest text-muted-foreground mb-4">Train Smarter</p>
+          <p className="text-sm uppercase tracking-widest text-muted-foreground mb-4">
+            Train Smarter
+          </p>
           <h1 className="section-title mb-6">Workout Library</h1>
           <p className="section-subtitle mx-auto max-w-2xl">
-            Explore our extensive collection of exercises with video tutorials, 
+            Explore our extensive collection of exercises with video tutorials,
             detailed instructions, and expert tips.
           </p>
         </div>
@@ -88,7 +94,7 @@ const Workouts = () => {
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent" />
-                  
+
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                     <div className="w-12 h-12 rounded-full bg-background flex items-center justify-center">
                       <Play className="w-5 h-5 text-foreground ml-0.5" />
@@ -101,8 +107,12 @@ const Workouts = () => {
                 </div>
 
                 <div className="absolute bottom-0 left-0 right-0 p-4 text-background">
-                  <h3 className="font-display text-lg font-semibold mb-1">{exercise.name}</h3>
-                  <p className="text-background/70 text-sm">{exercise.target}</p>
+                  <h3 className="font-display text-lg font-semibold mb-1">
+                    {exercise.name}
+                  </h3>
+                  <p className="text-background/70 text-sm">
+                    {exercise.target}
+                  </p>
                 </div>
               </div>
             ))}
@@ -145,12 +155,18 @@ const Workouts = () => {
               <span className="text-sm font-medium uppercase tracking-wider text-muted-foreground">
                 {selectedExercise.category}
               </span>
-              <h2 className="font-display text-3xl font-semibold mt-2 mb-3">{selectedExercise.name}</h2>
-              <p className="text-sm font-medium mb-4">Target: {selectedExercise.target}</p>
-              <p className="text-muted-foreground">{selectedExercise.description}</p>
-              <Button variant="athletic" className="mt-6">
+              <h2 className="font-display text-3xl font-semibold mt-2 mb-3">
+                {selectedExercise.name}
+              </h2>
+              <p className="text-sm font-medium mb-4">
+                Target: {selectedExercise.target}
+              </p>
+              <p className="text-muted-foreground">
+                {selectedExercise.description}
+              </p>
+              {/* <Button variant="athletic" className="mt-6">
                 Add to Workout
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>
