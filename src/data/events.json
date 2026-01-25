@@ -1,0 +1,74 @@
+{
+  "events": [
+    {
+      "id": "summer-bootcamp-2026",
+      "name": "Summer Bootcamp 2026",
+      "description": "An intensive 3-day outdoor fitness bootcamp featuring HIIT workouts, strength training, and nutrition workshops.",
+      "image": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&h=600&fit=crop",
+      "startDate": "2026-07-15",
+      "startTime": "08:00",
+      "endDate": "2026-07-17",
+      "endTime": "18:00",
+      "location": "Central Park, New York",
+      "organizer": "GT Fitness Team",
+      "status": "upcoming",
+      "registrationUrl": "https://example.com/register/summer-bootcamp"
+    },
+    {
+      "id": "marathon-prep-workshop",
+      "name": "Marathon Preparation Workshop",
+      "description": "Learn essential techniques for marathon training including pacing strategies, injury prevention, and mental preparation.",
+      "image": "https://images.unsplash.com/photo-1452626038306-9aae5e071dd3?w=800&h=600&fit=crop",
+      "startDate": "2026-03-20",
+      "startTime": "10:00",
+      "endDate": "2026-03-20",
+      "endTime": "16:00",
+      "location": "GT Fitness Studio, Los Angeles",
+      "organizer": "Coach Maria Santos",
+      "status": "upcoming",
+      "registrationUrl": "https://example.com/register/marathon-workshop"
+    },
+    {
+      "id": "yoga-retreat-spring",
+      "name": "Spring Yoga Retreat",
+      "description": "A weekend of mindfulness, yoga sessions, and wellness activities in a serene mountain setting.",
+      "image": "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=800&h=600&fit=crop",
+      "startDate": "2026-04-10",
+      "startTime": "09:00",
+      "endDate": "2026-04-12",
+      "endTime": "17:00",
+      "location": "Mountain View Resort, Colorado",
+      "organizer": "GT Wellness",
+      "status": "upcoming",
+      "registrationUrl": "https://example.com/register/yoga-retreat"
+    },
+    {
+      "id": "crossfit-competition",
+      "name": "GT CrossFit Championship",
+      "description": "Annual CrossFit competition featuring athletes from around the world competing in various functional fitness challenges.",
+      "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&h=600&fit=crop",
+      "startDate": "2026-05-25",
+      "startTime": "07:00",
+      "endDate": "2026-05-26",
+      "endTime": "20:00",
+      "location": "GT Arena, Miami",
+      "organizer": "GT Competition Team",
+      "status": "upcoming",
+      "registrationUrl": "https://example.com/register/crossfit-championship"
+    },
+    {
+      "id": "nutrition-seminar",
+      "name": "Sports Nutrition Seminar",
+      "description": "Expert-led seminar on optimizing your diet for peak athletic performance and recovery.",
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&h=600&fit=crop",
+      "startDate": "2026-02-08",
+      "startTime": "14:00",
+      "endDate": "2026-02-08",
+      "endTime": "18:00",
+      "location": "Online Event",
+      "organizer": "Dr. James Wilson",
+      "status": "ongoing",
+      "registrationUrl": "https://example.com/register/nutrition-seminar"
+    }
+  ]
+}

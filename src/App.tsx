@@ -9,6 +9,7 @@ import Challenges from "./pages/Challenges";
 import Workouts from "./pages/Workouts";
 import Shop from "./pages/Shop";
 import Gallery from "./pages/Gallery";
+import Events from "./pages/Events";
 import Join from "./pages/Join";
 import NotFound from "./pages/NotFound";
 
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/workouts" element={<Workouts />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/events" element={<Events />} />
           <Route path="/join" element={<Join />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

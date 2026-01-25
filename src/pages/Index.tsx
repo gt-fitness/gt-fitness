@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import CommunitySection from "@/components/CommunitySection";
 import ChallengesSection from "@/components/ChallengesSection";
 import WorkoutsSection from "@/components/WorkoutsSection";
+import EventsSection from "@/components/EventsSection";
 import ClothingSection from "@/components/ClothingSection";
 import GallerySection from "@/components/GallerySection";
 import JoinSection from "@/components/JoinSection";
@@ -17,6 +18,7 @@ const Index = () => {
         <CommunitySection />
         <ChallengesSection />
         <WorkoutsSection />
+        <EventsSection />
         <ClothingSection />
         <GallerySection />
         <JoinSection />
