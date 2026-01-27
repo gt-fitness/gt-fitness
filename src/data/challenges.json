@@ -2,42 +2,102 @@
   "challenges": [
     {
       "id": 1,
-      "title": "2000 Push-Up Challenge",
-      "description": "Accumulate 2,000 push-ups over the course of the challenge. Build serious upper-body strength, mental discipline, and endurance with scalable daily targets.",
+      "title": "30-Day Squat Foundation",
+      "description": "Renforcez vos jambes et vos fessiers avec ce défi progressif. Commencez doucement et finissez avec une force incroyable. Accessible à tous les niveaux.",
       "duration": "30 Days",
-      "intensity": "High",
-      "participants": "2.0K",
-      "thumbnail": "https://images.unsplash.com/photo-1598971639058-fab3c3109a00?w=800&q=80",
+      "intensity": "Medium",
+      "participants": "3.5K",
+      "thumbnail": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&q=80",
       "video": "src/assets/hero-section/main.MP4"
     },
     {
       "id": 2,
-      "title": "100km Run Challenge",
-      "description": "Run a total of 100 kilometers within the challenge period. Designed to build consistency, cardiovascular endurance, and mental toughness at your own pace.",
-      "duration": "30 Days",
-      "intensity": "Medium",
-      "participants": "1.6K",
-      "thumbnail": "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=800&q=80",
+      "title": "Morning Mobility Streak",
+      "description": "Améliorez votre souplesse et réduisez les douleurs avec 10 minutes d'étirements chaque matin. Le défi ultime pour la santé du dos et des articulations.",
+      "duration": "14 Days",
+      "intensity": "Low",
+      "participants": "5.2K",
+      "thumbnail": "https://images.unsplash.com/photo-1552196563-55cd4e45efb3?w=800&q=80",
       "video": "src/assets/hero-section/main.MP4"
     },
     {
       "id": 3,
-      "title": "Plank Hold Endurance",
-      "description": "Strengthen your core with progressive plank holds. Improve posture, stability, and total-body control with daily time-based goals.",
+      "title": "Core Crusher: Plank Pro",
+      "description": "Développez une sangle abdominale en acier. Passez de 30 secondes à 5 minutes de planche cumulative par jour. Améliore la posture instantanément.",
       "duration": "21 Days",
       "intensity": "Medium",
-      "participants": "1.3K",
-      "thumbnail": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&q=80",
+      "participants": "2.8K",
+      "thumbnail": "https://images.unsplash.com/photo-1566241142559-40e1dab266c6?w=800&q=80",
       "video": "src/assets/hero-section/main.MP4"
     },
     {
       "id": 4,
-      "title": "Full Body Consistency",
-      "description": "A balanced full-body challenge focused on daily movement. Perfect for building habits, improving overall fitness, and staying active without burnout.",
-      "duration": "14 Days",
+      "title": "10,000 Steps Daily",
+      "description": "Le défi de marche classique. Parfait pour la perte de poids et la santé mentale. Restez actif, explorez votre ville et atteignez l'objectif chaque jour.",
+      "duration": "30 Days",
       "intensity": "Low",
-      "participants": "2.7K",
+      "participants": "10.4K",
+      "thumbnail": "https://images.unsplash.com/photo-1519331379826-f10be5486c6f?w=800&q=80",
+      "video": "src/assets/hero-section/main.MP4"
+    },
+    {
+      "id": 5,
+      "title": "Push-Up Power Up",
+      "description": "Maîtrisez le mouvement de base du haut du corps. Que vous fassiez vos pompes sur les genoux ou sur les pieds, gagnez en volume et en endurance pectorale.",
+      "duration": "30 Days",
+      "intensity": "High",
+      "participants": "1.9K",
+      "thumbnail": "https://images.unsplash.com/photo-1598971639058-fab3c3109a00?w=800&q=80",
+      "video": "src/assets/hero-section/main.MP4"
+    },
+    {
+      "id": 6,
+      "title": "HIIT Burnout",
+      "description": "7 minutes de haute intensité par jour. Brûlez un maximum de calories en un minimum de temps. Idéal pour les agendas chargés.",
+      "duration": "7 Days",
+      "intensity": "High",
+      "participants": "4.1K",
+      "thumbnail": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&q=80",
+      "video": "src/assets/hero-section/main.MP4"
+    },
+    {
+      "id": 7,
+      "title": "Yoga Balance Quest",
+      "description": "Travaillez votre équilibre et votre calme intérieur. Un mélange de poses de guerrier et de respiration pour déstresser après le travail.",
+      "duration": "21 Days",
+      "intensity": "Medium",
+      "participants": "2.3K",
       "thumbnail": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80",
+      "video": "src/assets/hero-section/main.MP4"
+    },
+    {
+      "id": 8,
+      "title": "Jump Rope Master",
+      "description": "Améliorez votre coordination et votre cardio avec la corde à sauter. Un défi fun et rythmé pour transformer votre condition physique.",
+      "duration": "14 Days",
+      "intensity": "Medium",
+      "participants": "1.5K",
+      "thumbnail": "https://images.unsplash.com/photo-1544033527-b192daee1f5b?w=800&q=80",
+      "video": "src/assets/hero-section/main.MP4"
+    },
+    {
+      "id": 9,
+      "title": "Lower Body Blast",
+      "description": "Fentes, ponts fessiers et sauts latéraux. Un défi complet pour sculpter le bas du corps sans aucun matériel requis.",
+      "duration": "21 Days",
+      "intensity": "Medium",
+      "participants": "3.2K",
+      "thumbnail": "https://images.unsplash.com/photo-1434682881908-b43d0467b798?w=800&q=80",
+      "video": "src/assets/hero-section/main.MP4"
+    },
+    {
+      "id": 10,
+      "title": "Zero to 5K Run",
+      "description": "Apprenez à courir 5km sans s'arrêter. Une progression douce alternant marche et course pour devenir un véritable runner.",
+      "duration": "30 Days",
+      "intensity": "Medium",
+      "participants": "6.7K",
+      "thumbnail": "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=800&q=80",
       "video": "src/assets/hero-section/main.MP4"
     }
   ]
