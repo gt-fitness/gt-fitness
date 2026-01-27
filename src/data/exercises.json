@@ -187,51 +187,51 @@
 
     
     {
-      "id": 21, "name": "Concentration Curls", "target": "Biceps", "category": "Biceps", "description": "Curling a dumbbell while sitting and bracing the arm against the leg.", "image": "https://images.unsplash.com/photo-1581009146145-b5ef050c149a?w=600&q=80", "video": ""
+      "id": 21, "name": "Concentration Curls", "target": "Biceps", "category": "Biceps", "description": "Curling a dumbbell while sitting and bracing the arm against the leg.", "image": "src/assets/photos/GREG ET TONY.JPEG", "video": "src/assets/workouts/biceps/Concentration Curls.MP4"
     },
     {
-      "id": 22, "name": "Preacher Curls", "target": "Biceps", "category": "Biceps", "description": "Curls performed on a slanted bench to isolate the bicep.", "image": "https://images.unsplash.com/photo-1581009146145-b5ef050c149a?w=600&q=80", "video": ""
+      "id": 22, "name": "Preacher Curls", "target": "Biceps", "category": "Biceps", "description": "Curls performed on a slanted bench to isolate the bicep.", "image": "src/assets/photos/GREG ET TONY.JPEG", "video": "src/assets/workouts/biceps/Preacher Curls.MP4"
     },
     {
-      "id": 23, "name": "Cable Curls", "target": "Biceps", "category": "Biceps", "description": "Curls using a cable machine for constant tension.", "image": "https://images.unsplash.com/photo-1581009146145-b5ef050c149a?w=600&q=80", "video": ""
+      "id": 23, "name": "Cable Curls", "target": "Biceps", "category": "Biceps", "description": "Curls using a cable machine for constant tension.", "image": "src/assets/photos/GREG ET TONY.JPEG", "video": "src/assets/workouts/biceps/Cable Curl.MP4"
     },
     {
-      "id": 24, "name": "Incline DB Curls", "target": "Biceps", "category": "Biceps", "description": "Curls while sitting on an incline bench to stretch the bicep.", "image": "https://images.unsplash.com/photo-1581009146145-b5ef050c149a?w=600&q=80", "video": ""
+      "id": 24, "name": "Incline DB Curls", "target": "Biceps", "category": "Biceps", "description": "Curls while sitting on an incline bench to stretch the bicep.", "image": "src/assets/photos/GREG ET TONY.JPEG", "video": "src/assets/workouts/biceps/Incline DB Curls.MP4"
     },
     {
-      "id": 25, "name": "Spider Curls", "target": "Biceps", "category": "Biceps", "description": "Curls while lying face down on an incline bench.", "image": "https://images.unsplash.com/photo-1581009146145-b5ef050c149a?w=600&q=80", "video": ""
-    },
-
-    {
-      "id": 26, "name": "Bench Press", "target": "Chest", "category": "Pec", "description": "Standard barbell chest press.", "image": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&q=80", "video": ""
-    },
-    {
-      "id": 27, "name": "Incline Press", "target": "Upper Chest", "category": "Pec", "description": "Pressing dumbbells or barbell on an incline bench.", "image": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&q=80", "video": ""
-    },
-    {
-      "id": 28, "name": "Chest Flyes", "target": "Chest", "category": "Pec", "description": "Opening arms wide with dumbbells while lying down.", "image": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&q=80", "video": ""
-    },
-    {
-      "id": 29, "name": "Dips (Chest focus)", "target": "Lower Chest", "category": "Pec", "description": "Leaning forward while doing dips to target pecs.", "image": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&q=80", "video": ""
-    },
-    {
-      "id": 30, "name": "Cable Crossover", "target": "Inner Chest", "category": "Pec", "description": "Pulling cables together in front of the chest.", "image": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&q=80", "video": ""
+      "id": 25, "name": "Spider Curls", "target": "Biceps", "category": "Biceps", "description": "Curls while lying face down on an incline bench.", "image": "src/assets/photos/GREG ET TONY.JPEG", "video": "src/assets/workouts/biceps/Spider Curl.MP4"
     },
 
     {
-      "id": 31, "name": "Military Press", "target": "Shoulders", "category": "Shoulders", "description": "Strict overhead press with a barbell.", "image": "https://images.unsplash.com/photo-1532029837206-abbe2b7620e3?w=600&q=80", "video": ""
+      "id": 26, "name": "Bench Press", "target": "Chest", "category": "Pec", "description": "Standard barbell chest press.", "image": "src/assets/photos/GREG ET TONY.JPEG", "video": "src/assets/workouts/chest/bench press.MP4"
     },
     {
-      "id": 32, "name": "Lateral Raises", "target": "Side Delts", "category": "Shoulders", "description": "Lifting dumbbells out to the sides.", "image": "https://images.unsplash.com/photo-1532029837206-abbe2b7620e3?w=600&q=80", "video": ""
+      "id": 27, "name": "Incline Press", "target": "Upper Chest", "category": "Pec", "description": "Pressing dumbbells or barbell on an incline bench.", "image": "src/assets/photos/GREG ET TONY.JPEG", "video": "src/assets/workouts/chest/incline press.MP4"
     },
     {
-      "id": 33, "name": "Front Raises", "target": "Front Delts", "category": "Shoulders", "description": "Lifting dumbbells straight in front.", "image": "https://images.unsplash.com/photo-1532029837206-abbe2b7620e3?w=600&q=80", "video": ""
+      "id": 28, "name": "Chest Flyes", "target": "Chest", "category": "Pec", "description": "Opening arms wide with dumbbells while lying down.", "image": "src/assets/photos/GREG ET TONY.JPEG", "video": ""
     },
     {
-      "id": 34, "name": "Face Pulls", "target": "Rear Delts", "category": "Shoulders", "description": "Pulling a rope towards your face.", "image": "https://images.unsplash.com/photo-1532029837206-abbe2b7620e3?w=600&q=80", "video": ""
+      "id": 29, "name": "Dips (Chest focus)", "target": "Lower Chest", "category": "Pec", "description": "Leaning forward while doing dips to target pecs.", "image": "src/assets/photos/GREG ET TONY.JPEG", "video": ""
     },
     {
-      "id": 35, "name": "Arnold Press", "target": "Shoulders", "category": "Shoulders", "description": "Shoulder press with a rotating motion.", "image": "https://images.unsplash.com/photo-1532029837206-abbe2b7620e3?w=600&q=80", "video": ""
+      "id": 30, "name": "Cable Crossover", "target": "Inner Chest", "category": "Pec", "description": "Pulling cables together in front of the chest.", "image": "src/assets/photos/GREG ET TONY.JPEG", "video": ""
+    },
+
+    {
+      "id": 31, "name": "Military Press", "target": "Shoulders", "category": "Shoulders", "description": "Strict overhead press with a barbell.", "image": "src/assets/photos/GREG ET TONY.JPEG", "video": "src/assets/workouts/shoulder/military Press.MP4"
+    },
+    {
+      "id": 32, "name": "Lateral Raises", "target": "Side Delts", "category": "Shoulders", "description": "Lifting dumbbells out to the sides.", "image": "src/assets/photos/GREG ET TONY.JPEG", "video": "src/assets/workouts/shoulder/lateral raise.MP4"
+    },
+    {
+      "id": 33, "name": "Front Raises", "target": "Front Delts", "category": "Shoulders", "description": "Lifting dumbbells straight in front.", "image": "src/assets/photos/GREG ET TONY.JPEG", "video": "src/assets/workouts/shoulder/front raise.MP4"
+    },
+    {
+      "id": 34, "name": "Face Pulls", "target": "Rear Delts", "category": "Shoulders", "description": "Pulling a rope towards your face.", "image": "src/assets/photos/GREG ET TONY.JPEG", "video": "src/assets/workouts/shoulder/face pull.MP4"
+    },
+    {
+      "id": 35, "name": "Arnold Press", "target": "Shoulders", "category": "Shoulders", "description": "Shoulder press with a rotating motion.", "image": "src/assets/photos/GREG ET TONY.JPEG", "video": "src/assets/workouts/shoulder/arnold press.MP4"
     },
 
     {

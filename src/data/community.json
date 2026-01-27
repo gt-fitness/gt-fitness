@@ -25,31 +25,21 @@
     }
   ],
   "stats": [
-    { "value": "50K+", "label": "Athletes" },
-    { "value": "200+", "label": "Workouts" },
-    { "value": "15", "label": "Challenges" },
-    { "value": "98%", "label": "Success Rate" }
+    { "value": "10+", "label": "Members" },
+    { "value": "40+", "label": "Workouts" },
+    { "value": "10+", "label": "Challenges" },
+    { "value": "Weekly", "label": "New Content" }
   ],
   "team": [
     {
-      "name": "Marcus Chen",
-      "role": "Founder & Head Coach",
+      "name": "Greg Nathan",
+      "role": "Co-Founder & Head Coach",
       "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80"
     },
     {
-      "name": "Sarah Williams",
-      "role": "Strength & Conditioning",
+      "name": "Tony Adams",
+      "role": "Co-Founder & Head Coach",
       "image": "https://images.unsplash.com/photo-1594381898411-846e7d193883?w=400&q=80"
-    },
-    {
-      "name": "James Rodriguez",
-      "role": "Nutrition Specialist",
-      "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80"
-    },
-    {
-      "name": "Emily Park",
-      "role": "Community Manager",
-      "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80"
     }
   ]
 }
