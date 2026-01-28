@@ -1,5 +1,5 @@
 {
-  "categories": ["All", "Legs", "Full Body", "Core", "Cardio", "Biceps", "Pec", "Shoulders", "Abs", "Triceps"],
+  "categories": ["All", "Legs", "Full Body", "Core", "Cardio", "Biceps", "chest", "Shoulders", "Abs", "Triceps"],
   "exercises": [
     {
       "id": 1,
@@ -203,19 +203,19 @@
     },
 
     {
-      "id": 26, "name": "Bench Press", "target": "Chest", "category": "Pec", "description": "Standard barbell chest press.", "image": "src/assets/photos/GREG ET TONY.JPEG", "video": "src/assets/workouts/chest/bench press.MP4"
+      "id": 26, "name": "Bench Press", "target": "Chest", "category": "chest", "description": "Standard barbell chest press.", "image": "src/assets/photos/bench press.jpeg", "video": "src/assets/workouts/chest/bench press.MP4"
     },
     {
-      "id": 27, "name": "Incline Press", "target": "Upper Chest", "category": "Pec", "description": "Pressing dumbbells or barbell on an incline bench.", "image": "src/assets/photos/GREG ET TONY.JPEG", "video": "src/assets/workouts/chest/incline press.MP4"
+      "id": 27, "name": "Incline Press", "target": "Upper Chest", "category": "chest", "description": "Pressing dumbbells or barbell on an incline bench.", "image": "src/assets/photos/incline press.jpeg", "video": "src/assets/workouts/chest/incline press.MP4"
     },
     {
-      "id": 28, "name": "Chest Flyes", "target": "Chest", "category": "Pec", "description": "Opening arms wide with dumbbells while lying down.", "image": "src/assets/photos/GREG ET TONY.JPEG", "video": ""
+      "id": 28, "name": "Chest Flyes", "target": "Chest", "category": "chest", "description": "Opening arms wide with dumbbells while lying down.", "image": "src/assets/photos/chest flyes.jpeg", "video": "src/assets/workouts/chest/chest flyes.MP4"
     },
     {
-      "id": 29, "name": "Dips (Chest focus)", "target": "Lower Chest", "category": "Pec", "description": "Leaning forward while doing dips to target pecs.", "image": "src/assets/photos/GREG ET TONY.JPEG", "video": ""
+      "id": 29, "name": "Dips (Chest focus)", "target": "Lower Chest", "category": "chest", "description": "Leaning forward while doing dips to target pecs.", "image": "src/assets/photos/dips.jpeg", "video": "src/assets/workouts/chest/dips.MP4"
     },
     {
-      "id": 30, "name": "Cable Crossover", "target": "Inner Chest", "category": "Pec", "description": "Pulling cables together in front of the chest.", "image": "src/assets/photos/GREG ET TONY.JPEG", "video": ""
+      "id": 30, "name": "Cable Crossover", "target": "Inner Chest", "category": "chest", "description": "Pulling cables together in front of the chest.", "image": "src/assets/photos/cable crossover.jpeg", "video": "src/assets/workouts/chest/cable curls.MP4"
     },
 
     {
