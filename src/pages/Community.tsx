@@ -111,10 +111,7 @@ const Community = () => {
               className="w-full h-full object-cover"
               poster="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=80"
             >
-              <source
-                src="src/assets/community/the-work.MP4"
-                type="video/mp4"
-              />
+              <source src="src/assets/community/story.MP4" type="video/mp4" />
             </video>
             {!showStoryVideo && (
               <button
