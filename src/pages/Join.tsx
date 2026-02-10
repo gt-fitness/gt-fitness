@@ -6,37 +6,25 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import { useTranslation } from "react-i18next";
 import gtLogo from "@/assets/gt-logo-dark.png";
 
 const Join = () => {
   const { toast } = useToast();
+  const { t } = useTranslation();
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    phone: "",
-    fitnessGoal: "",
-    message: "",
+    firstName: "", lastName: "", email: "", phone: "", fitnessGoal: "", message: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Validate basic fields
     if (!formData.firstName || !formData.email) {
-      toast({
-        title: "Please fill required fields",
-        description: "First name and email are required.",
-        variant: "destructive",
-      });
+      toast({ title: t("join.fillRequired"), description: t("join.fillRequiredDesc"), variant: "destructive" });
       return;
     }
-    // Simulate form submission
     setIsSubmitted(true);
-    toast({
-      title: "Welcome to GT Fitness!",
-      description: "We'll be in touch soon.",
-    });
+    toast({ title: t("join.welcomeTitle"), description: t("join.welcomeDesc") });
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -48,15 +36,9 @@ const Join = () => {
       <div className="min-h-screen bg-background flex items-center justify-center px-4">
         <div className="text-center max-w-md animate-fade-in">
           <CheckCircle2 className="w-20 h-20 text-primary mx-auto mb-6" />
-          <h1 className="font-display text-4xl font-bold mb-4">You're In!</h1>
-          <p className="text-muted-foreground mb-8">
-            Welcome to the GT Fitness family. We'll reach out soon with next steps to start your journey.
-          </p>
-          <Link to="/">
-            <Button variant="clean" size="lg">
-              Back to Home
-            </Button>
-          </Link>
+          <h1 className="font-display text-4xl font-bold mb-4">{t("join.successTitle")}</h1>
+          <p className="text-muted-foreground mb-8">{t("join.successMessage")}</p>
+          <Link to="/"><Button variant="clean" size="lg">{t("join.backToHome")}</Button></Link>
         </div>
       </div>
     );
@@ -64,13 +46,12 @@ const Join = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border/30">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             <Link to="/" className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors">
               <ArrowLeft className="w-5 h-5" />
-              <span className="text-sm font-medium">Back</span>
+              <span className="text-sm font-medium">{t("join.back")}</span>
             </Link>
             <img src={gtLogo} alt="GT Fitness" className="h-8 w-auto" />
             <div className="w-20" />
@@ -78,110 +59,66 @@ const Join = () => {
         </div>
       </header>
 
-      {/* Form Section */}
       <main className="pt-32 pb-20 px-4">
         <div className="max-w-xl mx-auto">
           <div className="text-center mb-12">
             <span className="inline-block px-4 py-1.5 bg-primary/10 text-primary text-sm font-medium rounded-full mb-4">
-              Join the Movement
+              {t("join.joinTheMovement")}
             </span>
-            <h1 className="font-display text-4xl md:text-5xl font-bold mb-4">
-              Start Your Journey
-            </h1>
-            <p className="text-muted-foreground text-lg">
-              Become part of a community that pushes limits and achieves more.
-            </p>
+            <h1 className="font-display text-4xl md:text-5xl font-bold mb-4">{t("join.startYourJourney")}</h1>
+            <p className="text-muted-foreground text-lg">{t("join.pageSubtitle")}</p>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid md:grid-cols-2 gap-4">
               <div className="space-y-2">
-                <Label htmlFor="firstName">First Name *</Label>
-                <Input
-                  id="firstName"
-                  name="firstName"
-                  placeholder="John"
-                  value={formData.firstName}
-                  onChange={handleChange}
-                  className="h-12 bg-secondary/50 border-border/50 focus:border-primary"
-                />
+                <Label htmlFor="firstName">{t("join.firstName")} *</Label>
+                <Input id="firstName" name="firstName" placeholder="John" value={formData.firstName} onChange={handleChange}
+                  className="h-12 bg-secondary/50 border-border/50 focus:border-primary" />
               </div>
               <div className="space-y-2">
-                <Label htmlFor="lastName">Last Name</Label>
-                <Input
-                  id="lastName"
-                  name="lastName"
-                  placeholder="Doe"
-                  value={formData.lastName}
-                  onChange={handleChange}
-                  className="h-12 bg-secondary/50 border-border/50 focus:border-primary"
-                />
+                <Label htmlFor="lastName">{t("join.lastName")}</Label>
+                <Input id="lastName" name="lastName" placeholder="Doe" value={formData.lastName} onChange={handleChange}
+                  className="h-12 bg-secondary/50 border-border/50 focus:border-primary" />
               </div>
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="email">Email Address *</Label>
-              <Input
-                id="email"
-                name="email"
-                type="email"
-                placeholder="john@example.com"
-                value={formData.email}
-                onChange={handleChange}
-                className="h-12 bg-secondary/50 border-border/50 focus:border-primary"
-              />
+              <Label htmlFor="email">{t("join.emailAddress")} *</Label>
+              <Input id="email" name="email" type="email" placeholder="john@example.com" value={formData.email} onChange={handleChange}
+                className="h-12 bg-secondary/50 border-border/50 focus:border-primary" />
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="phone">Phone Number</Label>
-              <Input
-                id="phone"
-                name="phone"
-                type="tel"
-                placeholder="+1 (555) 000-0000"
-                value={formData.phone}
-                onChange={handleChange}
-                className="h-12 bg-secondary/50 border-border/50 focus:border-primary"
-              />
+              <Label htmlFor="phone">{t("join.phoneNumber")}</Label>
+              <Input id="phone" name="phone" type="tel" placeholder="+1 (555) 000-0000" value={formData.phone} onChange={handleChange}
+                className="h-12 bg-secondary/50 border-border/50 focus:border-primary" />
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="fitnessGoal">What's Your Fitness Goal?</Label>
-              <select
-                id="fitnessGoal"
-                name="fitnessGoal"
-                value={formData.fitnessGoal}
-                onChange={handleChange}
-                className="w-full h-12 px-4 rounded-lg bg-secondary/50 border border-border/50 focus:border-primary focus:outline-none text-foreground"
-              >
-                <option value="">Select a goal...</option>
-                <option value="lose-weight">Lose Weight</option>
-                <option value="build-muscle">Build Muscle</option>
-                <option value="improve-endurance">Improve Endurance</option>
-                <option value="general-fitness">General Fitness</option>
-                <option value="compete">Train for Competition</option>
+              <Label htmlFor="fitnessGoal">{t("join.fitnessGoal")}</Label>
+              <select id="fitnessGoal" name="fitnessGoal" value={formData.fitnessGoal} onChange={handleChange}
+                className="w-full h-12 px-4 rounded-lg bg-secondary/50 border border-border/50 focus:border-primary focus:outline-none text-foreground">
+                <option value="">{t("join.selectGoal")}</option>
+                <option value="lose-weight">{t("join.loseWeight")}</option>
+                <option value="build-muscle">{t("join.buildMuscle")}</option>
+                <option value="improve-endurance">{t("join.improveEndurance")}</option>
+                <option value="general-fitness">{t("join.generalFitness")}</option>
+                <option value="compete">{t("join.trainForCompetition")}</option>
               </select>
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="message">Anything else we should know?</Label>
-              <Textarea
-                id="message"
-                name="message"
-                placeholder="Tell us about your fitness journey..."
-                value={formData.message}
-                onChange={handleChange}
-                className="min-h-[120px] bg-secondary/50 border-border/50 focus:border-primary resize-none"
-              />
+              <Label htmlFor="message">{t("join.anythingElse")}</Label>
+              <Textarea id="message" name="message" placeholder={t("join.tellUs")} value={formData.message} onChange={handleChange}
+                className="min-h-[120px] bg-secondary/50 border-border/50 focus:border-primary resize-none" />
             </div>
 
             <Button type="submit" variant="clean" size="lg" className="w-full h-14 text-base">
-              Join GT Fitness
+              {t("join.joinGtFitness")}
             </Button>
 
-            <p className="text-center text-sm text-muted-foreground">
-              By joining, you agree to our Terms of Service and Privacy Policy.
-            </p>
+            <p className="text-center text-sm text-muted-foreground">{t("join.termsNotice")}</p>
           </form>
         </div>
       </main>
