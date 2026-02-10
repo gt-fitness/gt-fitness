@@ -5,55 +5,16 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
-import {
-  Users,
-  Target,
-  Trophy,
-  Heart,
-  Globe,
-  Dumbbell,
-  Play,
-  X,
-} from "lucide-react";
+import { Users, Target, Trophy, Heart, Globe, Dumbbell, Play, X } from "lucide-react";
 import communityData from "@/data/community.json";
 
-const extendedValues = [
-  {
-    icon: Users,
-    title: "Brotherhood",
-    description:
-      "We train together, we grow together. Every member is family. When one rises, we all rise.",
-  },
-  {
-    icon: Target,
-    title: "Discipline",
-    description:
-      "Consistency beats intensity. Show up every single day, no matter the circumstances.",
-  },
-  {
-    icon: Trophy,
-    title: "Excellence",
-    description:
-      "Good enough is never good enough. We push for greatness in everything we do.",
-  },
-  {
-    icon: Heart,
-    title: "Passion",
-    description:
-      "Love the process. The results will follow. Find joy in the grind.",
-  },
-  {
-    icon: Globe,
-    title: "Global Unity",
-    description:
-      "Athletes from every corner of the world, united by a single mission.",
-  },
-  {
-    icon: Dumbbell,
-    title: "Strength",
-    description:
-      "Physical, mental, emotional. We build strength in all its forms.",
-  },
+const valueKeys = [
+  { icon: Users, key: "brotherhood" },
+  { icon: Target, key: "discipline" },
+  { icon: Trophy, key: "excellence" },
+  { icon: Heart, key: "passion" },
+  { icon: Globe, key: "globalUnity" },
+  { icon: Dumbbell, key: "strength" },
 ];
 
 const Community = () => {
@@ -66,9 +27,7 @@ const Community = () => {
     if (searchParams.get("story") === "true") {
       setShowStoryVideo(true);
       setSearchParams({});
-      setTimeout(() => {
-        storyRef.current?.scrollIntoView({ behavior: "smooth" });
-      }, 100);
+      setTimeout(() => { storyRef.current?.scrollIntoView({ behavior: "smooth" }); }, 100);
     }
   }, [searchParams, setSearchParams]);
 
@@ -76,48 +35,27 @@ const Community = () => {
     <div className="min-h-screen bg-background">
       <Header />
 
-      {/* Hero */}
       <section className="pt-28 pb-16 bg-secondary">
         <div className="container mx-auto px-4 text-center">
-          <p className="text-sm uppercase tracking-widest text-muted-foreground mb-4">
-            {t("community.ourStory")}
-          </p>
+          <p className="text-sm uppercase tracking-widest text-muted-foreground mb-4">{t("community.ourStory")}</p>
           <h1 className="section-title mb-6">{t("community.whoWeAre")}</h1>
-          <p className="section-subtitle mx-auto max-w-2xl">
-            {communityData.description}
-          </p>
+          <p className="section-subtitle mx-auto max-w-2xl">{communityData.description}</p>
         </div>
       </section>
 
-      {/* Story Video Section */}
-      <section
-        ref={storyRef}
-        className="section-padding bg-foreground text-background"
-      >
+      <section ref={storyRef} className="section-padding bg-foreground text-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-display font-semibold mb-4">
-              {t("community.ourJourney")}
-            </h2>
-            <p className="text-background/70 max-w-xl mx-auto">
-              {t("community.watchOurStory")}
-            </p>
+            <h2 className="text-3xl md:text-4xl font-display font-semibold mb-4">{t("community.ourJourney")}</h2>
+            <p className="text-background/70 max-w-xl mx-auto">{t("community.watchOurStory")}</p>
           </div>
           <div className="relative aspect-video max-w-4xl mx-auto rounded-2xl overflow-hidden">
-            <video
-              autoPlay={showStoryVideo}
-              controls
-              playsInline
-              className="w-full h-full object-cover"
-              poster="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=80"
-            >
+            <video autoPlay={showStoryVideo} controls playsInline className="w-full h-full object-cover"
+              poster="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=80">
               <source src="src/assets/community/story.MP4" type="video/mp4" />
             </video>
             {!showStoryVideo && (
-              <button
-                onClick={() => setShowStoryVideo(true)}
-                className="absolute inset-0 flex items-center justify-center bg-black/30 hover:bg-black/40 transition-colors group"
-              >
+              <button onClick={() => setShowStoryVideo(true)} className="absolute inset-0 flex items-center justify-center bg-black/30 hover:bg-black/40 transition-colors group">
                 <div className="w-20 h-20 rounded-full bg-background flex items-center justify-center group-hover:scale-110 transition-transform">
                   <Play className="w-8 h-8 text-foreground ml-1" />
                 </div>
@@ -127,75 +65,50 @@ const Community = () => {
         </div>
       </section>
 
-      {/* Video Modal */}
-      <Dialog
-        open={showStoryVideo && searchParams.get("story") === "true"}
-        onOpenChange={setShowStoryVideo}
-      >
+      <Dialog open={showStoryVideo && searchParams.get("story") === "true"} onOpenChange={setShowStoryVideo}>
         <DialogContent className="max-w-4xl p-0 bg-black border-none">
-          <button
-            onClick={() => setShowStoryVideo(false)}
-            className="absolute top-4 right-4 z-10 text-white hover:text-white/80"
-          >
+          <button onClick={() => setShowStoryVideo(false)} className="absolute top-4 right-4 z-10 text-white hover:text-white/80">
             <X className="w-6 h-6" />
           </button>
           <video autoPlay controls playsInline className="w-full aspect-video">
-            <source
-              src="https://cdn.coverr.co/videos/coverr-people-working-out-in-the-gym-5306/1080p.mp4"
-              type="video/mp4"
-            />
+            <source src="https://cdn.coverr.co/videos/coverr-people-working-out-in-the-gym-5306/1080p.mp4" type="video/mp4" />
           </video>
         </DialogContent>
       </Dialog>
 
-      {/* Mission */}
       <section className="section-padding">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-display font-semibold mb-6">
-                {t("community.ourMission")}
-              </h2>
-              <p className="text-muted-foreground mb-6">
-                {communityData.mission}
-              </p>
-              <p className="text-muted-foreground">
-                Our mission is simple: to help you become the strongest, most
-                confident, most unstoppable version of yourself.
-              </p>
+              <h2 className="text-3xl md:text-4xl font-display font-semibold mb-6">{t("community.ourMission")}</h2>
+              <p className="text-muted-foreground mb-6">{communityData.mission}</p>
+              <p className="text-muted-foreground">{t("community.missionText")}</p>
             </div>
             <div className="relative">
-              <img
-                src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&q=80"
-                alt="Team training"
-                className="rounded-2xl"
-              />
+              <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&q=80" alt="Team training" className="rounded-2xl" />
               <div className="absolute -bottom-6 -left-6 bg-foreground text-background p-5 rounded-xl">
                 <p className="font-display text-3xl font-semibold">5+</p>
-                <p className="text-background/70 text-sm">
-                  {t("community.yearsStrong")}
-                </p>
+                <p className="text-background/70 text-sm">{t("community.yearsStrong")}</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Values */}
       <section className="section-padding bg-secondary">
         <div className="container mx-auto px-4">
           <div className="text-center mb-14">
             <h2 className="section-title mb-4">{t("community.ourValues")}</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {extendedValues.map((value) => (
-              <div key={value.title} className="card-clean group">
+            {valueKeys.map((value) => (
+              <div key={value.key} className="card-clean group">
                 <value.icon className="w-10 h-10 text-foreground mb-4 group-hover:scale-110 transition-transform" />
                 <h3 className="font-display text-xl font-semibold mb-2">
-                  {value.title}
+                  {t(`community.values.${value.key}`)}
                 </h3>
                 <p className="text-muted-foreground text-sm">
-                  {value.description}
+                  {t(`community.values.${value.key}Desc`)}
                 </p>
               </div>
             ))}
@@ -203,7 +116,6 @@ const Community = () => {
         </div>
       </section>
 
-      {/* Team */}
       <section className="section-padding">
         <div className="container mx-auto px-4">
           <div className="text-center mb-14">
@@ -213,15 +125,9 @@ const Community = () => {
             {communityData.team.map((member) => (
               <div key={member.name} className="text-center group">
                 <div className="relative mb-4 overflow-hidden rounded-2xl">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
+                  <img src={member.image} alt={member.name} className="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-105" />
                 </div>
-                <h3 className="font-display text-lg font-semibold">
-                  {member.name}
-                </h3>
+                <h3 className="font-display text-lg font-semibold">{member.name}</h3>
                 <p className="text-muted-foreground text-sm">{member.role}</p>
               </div>
             ))}
@@ -229,20 +135,11 @@ const Community = () => {
         </div>
       </section>
 
-      {/* CTA */}
       <section className="section-padding bg-foreground text-background">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-5xl font-display font-semibold mb-6">
-            {t("community.readyToJoin")}
-          </h2>
-          <p className="text-background/70 mb-8 max-w-xl mx-auto">
-            Become part of a global community of athletes pushing their limits
-            every day.
-          </p>
-          <Button
-            variant="hero"
-            className="bg-background text-foreground hover:bg-background/90"
-          >
+          <h2 className="text-3xl md:text-5xl font-display font-semibold mb-6">{t("community.readyToJoin")}</h2>
+          <p className="text-background/70 mb-8 max-w-xl mx-auto">{t("community.joinCtaDescription")}</p>
+          <Button variant="hero" className="bg-background text-foreground hover:bg-background/90">
             {t("community.joinCta")}
           </Button>
         </div>
