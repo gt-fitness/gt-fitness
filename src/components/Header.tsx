@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
-import { Menu, X, ArrowRight } from "lucide-react";
+import { Menu, X, ArrowRight, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
 import gtLogo from "@/assets/gt-logo-dark.png";
@@ -21,7 +21,12 @@ const Header = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const isHomePage = location.pathname === "/";
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const currentLang = i18n.language?.startsWith("fr") ? "fr" : "en";
+
+  const toggleLanguage = () => {
+    i18n.changeLanguage(currentLang === "en" ? "fr" : "en");
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -100,7 +105,14 @@ const Header = () => {
             </div>
           </nav>
 
-          <div className="hidden lg:flex items-center gap-4">
+          <div className="hidden lg:flex items-center gap-3">
+            <button
+              onClick={toggleLanguage}
+              className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-muted-foreground hover:text-foreground rounded-full bg-secondary/50 border border-border/30 transition-all duration-300 hover:bg-secondary"
+            >
+              <Globe className="w-3.5 h-3.5" />
+              {currentLang.toUpperCase()}
+            </button>
             <Button variant="clean" size="sm" className="group px-6" onClick={() => navigate("/join")}>
               {t("nav.joinNow")}
               <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -137,8 +149,15 @@ const Header = () => {
                 <ArrowRight className="w-4 h-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
               </button>
             ))}
-            <div className="pt-4 px-4">
-              <Button variant="clean" className="w-full h-12 group" onClick={() => { setIsOpen(false); navigate("/join"); }}>
+            <div className="pt-4 px-4 flex gap-3">
+              <button
+                onClick={toggleLanguage}
+                className="flex items-center justify-center gap-1.5 h-12 px-4 text-sm font-medium text-muted-foreground rounded-full bg-secondary/50 border border-border/30 transition-all duration-300"
+              >
+                <Globe className="w-4 h-4" />
+                {currentLang.toUpperCase()}
+              </button>
+              <Button variant="clean" className="flex-1 h-12 group" onClick={() => { setIsOpen(false); navigate("/join"); }}>
                 {t("nav.joinNow")}
                 <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
