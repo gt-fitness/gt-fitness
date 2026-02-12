@@ -100,6 +100,8 @@
     "completePreOrder": "Compléter la Pré-commande",
     "preOrderSuccess": "Pré-commande soumise avec succès!",
     "preOrderSuccessDesc": "Nous vous notifierons à {{email}} quand votre commande sera expédiée.",
+    "preOrderError": "Échec de la Pré-commande",
+    "preOrderErrorDesc": "Il y a eu une erreur lors du traitement de votre pré-commande. Veuillez réessayer.",
     "viewDetails": "Voir les Détails",
     "viewFullCollection": "Voir Toute la Collection",
     "expectedShipping": "Livraison prévue : 2-3 semaines",
@@ -173,7 +175,9 @@
     "fillRequired": "Veuillez remplir les champs obligatoires",
     "fillRequiredDesc": "Le prénom et l'email sont obligatoires.",
     "welcomeTitle": "Bienvenue chez GT Fitness !",
-    "welcomeDesc": "Nous vous contacterons bientôt."
+    "welcomeDesc": "Nous vous contacterons bientôt.",
+    "welcomeErrorTitle": "Bienvenue chez GT Fitness !",
+    "welcomeErrorDesc": "Il y a eu une erreur lors du traitement de votre demande. Veuillez réessayer."
   },
   "joinSection": {
     "readyToTransform": "Prêt à Te Transformer ?",
@@ -185,13 +189,16 @@
     "checkEmail": "Vérifie ton email pour les prochaines étapes.",
     "joinNow": "Rejoindre",
     "getStarted": "Commence avec GT Fitness aujourd'hui.",
-    "yourName": "Ton Nom",
+    "yourFirstName": "Ton Prénom",
+    "yourLastName": "Ton Nom",
     "emailAddress": "Adresse Email",
     "getStartedBtn": "Commencer",
     "fillAll": "Veuillez remplir tous les champs",
-    "fillAllDesc": "Le nom et l'email sont obligatoires.",
+    "fillAllDesc": "Le prénom, le nom et l'email sont obligatoires.",
     "onTheList": "Tu es sur la liste !",
-    "onTheListDesc": "Bienvenue dans la communauté GT Fitness."
+    "onTheListDesc": "Bienvenue dans la communauté GT Fitness.",
+    "error": "Erreur",
+    "errorDesc": "Il y a eu une erreur lors du traitement de votre demande. Veuillez réessayer."
   },
   "footer": {
     "description": "Plus Que Ça. Rejoins le mouvement qui redéfinit le fitness dans le monde entier.",

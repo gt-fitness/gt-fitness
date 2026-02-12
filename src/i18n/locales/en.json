@@ -100,6 +100,8 @@
     "completePreOrder": "Complete Pre-Order",
     "preOrderSuccess": "Pre-order submitted successfully!",
     "preOrderSuccessDesc": "We'll notify you at {{email}} when your order ships.",
+    "preOrderError": "Pre-order failed",
+    "preOrderErrorDesc": "There was an error processing your pre-order. Please try again.",
     "viewDetails": "View Details",
     "viewFullCollection": "View Full Collection",
     "expectedShipping": "Expected shipping: 2-3 weeks",
@@ -173,7 +175,9 @@
     "fillRequired": "Please fill required fields",
     "fillRequiredDesc": "First name and email are required.",
     "welcomeTitle": "Welcome to GT Fitness!",
-    "welcomeDesc": "We'll be in touch soon."
+    "welcomeDesc": "We'll be in touch soon.",
+    "welcomeErrorTitle": "Welcome to GT Fitness!",
+    "welcomeErrorDesc": "There was an error processing your request. Please try again."
   },
   "joinSection": {
     "readyToTransform": "Ready to Transform?",
@@ -185,13 +189,16 @@
     "checkEmail": "Check your email for next steps.",
     "joinNow": "Join Now",
     "getStarted": "Get started with GT Fitness today.",
-    "yourName": "Your Name",
+    "yourFirstName": "Your First Name",
+    "yourLastName": "Your Last Name",
     "emailAddress": "Email Address",
     "getStartedBtn": "Get Started",
     "fillAll": "Please fill all fields",
-    "fillAllDesc": "Name and email are required.",
+    "fillAllDesc": "First name, last name and email are required.",
     "onTheList": "You're on the list!",
-    "onTheListDesc": "Welcome to the GT Fitness community."
+    "onTheListDesc": "Welcome to the GT Fitness community.",
+    "error": "Error",
+    "errorDesc": "There was an error processing your request. Please try again."
   },
   "footer": {
     "description": "More Than That. Join the movement that's redefining fitness worldwide.",
