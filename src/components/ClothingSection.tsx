@@ -38,7 +38,7 @@ const ClothingSection = () => {
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="font-display text-xl font-semibold">${product.price}</span>
-                  <Button variant="athletic" size="sm" onClick={(e) => e.stopPropagation()}>
+                  <Button variant="athletic" size="sm" onClick={(e) => { e.stopPropagation(); navigate(`/shop?product=${product.id}`); }}>
                     {t("shop.preOrder")}
                   </Button>
                 </div>
