@@ -175,7 +175,7 @@ const Shop = () => {
 
       {selectedProduct && !showPreOrder && (
         <div
-          className="fixed inset-0 z-50 bg-foreground/95 flex items-center justify-center p-4 overflow-y-auto"
+          className="fixed inset-0 z-50 bg-foreground/95 flex items-start md:items-center justify-center p-4 overflow-y-auto"
           onClick={closeProductModal}
         >
           <button
