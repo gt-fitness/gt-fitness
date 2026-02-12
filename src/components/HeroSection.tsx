@@ -21,8 +21,14 @@ const HeroSection = () => {
   return (
     <section className="relative h-screen w-full overflow-hidden bg-foreground">
       <div className="absolute inset-0">
-        <video autoPlay loop muted playsInline className="w-full h-full object-cover opacity-60"
-          poster="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=80">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover opacity-60"
+          poster="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=80"
+        >
           <source src="src/assets/hero-section/main.MP4" type="video/mp4" />
         </video>
         <div className="video-overlay-clean" />
@@ -30,25 +36,40 @@ const HeroSection = () => {
 
       <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
         <div className="max-w-4xl mx-auto">
-          <img src={gtLogoWhite} alt="GT Fitness" className="h-24 md:h-32 lg:h-40 w-auto mx-auto mb-8 animate-fade-up" />
+          <img
+            src={gtLogoWhite}
+            alt="GT Fitness"
+            className="h-24 md:h-32 lg:h-40 w-auto mx-auto mb-8 animate-fade-up"
+          />
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-semibold text-background tracking-tight mb-6 animate-fade-up stagger-1">
             {t("hero.tagline")}
           </h1>
           <p className="text-lg md:text-xl text-background/70 max-w-xl mx-auto mb-10 animate-fade-up stagger-2">
             {t("hero.subtitle")}
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up stagger-3">
-            <Button variant="hero" className="bg-background text-foreground hover:bg-background/90" onClick={() => navigate("/workouts")}>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up stagger-3 mb-9">
+            <Button
+              variant="hero"
+              className="bg-background text-foreground hover:bg-background/90"
+              onClick={() => navigate("/workouts")}
+            >
               {t("hero.startTraining")}
             </Button>
-            <Button variant="heroOutline" className="border-background text-background hover:bg-background hover:text-foreground gap-3" onClick={() => navigate("/community?story=true")}>
+            <Button
+              variant="heroOutline"
+              className="border-background text-background hover:bg-background hover:text-foreground gap-3"
+              onClick={() => navigate("/community?story=true")}
+            >
               <Play className="w-5 h-5" />
               {t("hero.watchStory")}
             </Button>
           </div>
         </div>
 
-        <button onClick={scrollToContent} className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-float text-background/60 hover:text-background transition-colors">
+        <button
+          onClick={scrollToContent}
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-float text-background/60 hover:text-background transition-colors"
+        >
           <ChevronDown className="w-8 h-8" />
         </button>
       </div>
@@ -58,7 +79,9 @@ const HeroSection = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             {communityData.stats.map((stat, index) => (
               <div key={stat.label}>
-                <p className="font-display text-2xl md:text-3xl font-semibold">{stat.value}</p>
+                <p className="font-display text-2xl md:text-3xl font-semibold">
+                  {stat.value}
+                </p>
                 <p className="text-xs md:text-sm text-muted-foreground uppercase tracking-wider">
                   {t(`stats.${statKeys[index]}`)}
                 </p>
