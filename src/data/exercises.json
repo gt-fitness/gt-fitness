@@ -1,5 +1,16 @@
 {
-  "categories": ["All", "Legs", "Full Body", "Core", "Cardio", "Biceps", "chest", "Shoulders", "Abs", "Triceps"],
+  "categories": [
+    "All",
+    "Legs",
+    "Full Body",
+    "Core",
+    "Cardio",
+    "Biceps",
+    "chest",
+    "Shoulders",
+    "Abs",
+    "Triceps"
+  ],
   "exercises": [
     {
       "id": 1,
@@ -20,7 +31,7 @@
       "video": ""
     },
     {
-      "id":3,
+      "id": 3,
       "name": "Lunges",
       "target": "Quads, Glutes",
       "category": "Legs",
@@ -185,86 +196,234 @@
       "video": ""
     },
 
-    
     {
-      "id": 21, "name": "Concentration Curls", "target": "Biceps", "category": "Biceps", "description": "Curling a dumbbell while sitting and bracing the arm against the leg.", "image": "src/assets/photos/GREG ET TONY.JPEG", "video": "src/assets/workouts/biceps/Concentration Curls.MP4"
+      "id": 21,
+      "name": "Concentration Curls",
+      "target": "Biceps",
+      "category": "Biceps",
+      "description": "Curling a dumbbell while sitting and bracing the arm against the leg.",
+      "image": "src/assets/workouts/GREG ET TONY.JPEG",
+      "video": "src/assets/workouts/biceps/Concentration Curls.MP4"
     },
     {
-      "id": 22, "name": "Preacher Curls", "target": "Biceps", "category": "Biceps", "description": "Curls performed on a slanted bench to isolate the bicep.", "image": "src/assets/photos/GREG ET TONY.JPEG", "video": "src/assets/workouts/biceps/Preacher Curls.MP4"
+      "id": 22,
+      "name": "Preacher Curls",
+      "target": "Biceps",
+      "category": "Biceps",
+      "description": "Curls performed on a slanted bench to isolate the bicep.",
+      "image": "src/assets/workouts/GREG ET TONY.JPEG",
+      "video": "src/assets/workouts/biceps/Preacher Curls.MP4"
     },
     {
-      "id": 23, "name": "Cable Curls", "target": "Biceps", "category": "Biceps", "description": "Curls using a cable machine for constant tension.", "image": "src/assets/photos/GREG ET TONY.JPEG", "video": "src/assets/workouts/biceps/Cable Curl.MP4"
+      "id": 23,
+      "name": "Cable Curls",
+      "target": "Biceps",
+      "category": "Biceps",
+      "description": "Curls using a cable machine for constant tension.",
+      "image": "src/assets/workouts/GREG ET TONY.JPEG",
+      "video": "src/assets/workouts/biceps/Cable Curl.MP4"
     },
     {
-      "id": 24, "name": "Incline DB Curls", "target": "Biceps", "category": "Biceps", "description": "Curls while sitting on an incline bench to stretch the bicep.", "image": "src/assets/photos/GREG ET TONY.JPEG", "video": "src/assets/workouts/biceps/Incline DB Curls.MP4"
+      "id": 24,
+      "name": "Incline DB Curls",
+      "target": "Biceps",
+      "category": "Biceps",
+      "description": "Curls while sitting on an incline bench to stretch the bicep.",
+      "image": "src/assets/workouts/GREG ET TONY.JPEG",
+      "video": "src/assets/workouts/biceps/Incline DB Curls.MP4"
     },
     {
-      "id": 25, "name": "Spider Curls", "target": "Biceps", "category": "Biceps", "description": "Curls while lying face down on an incline bench.", "image": "src/assets/photos/GREG ET TONY.JPEG", "video": "src/assets/workouts/biceps/Spider Curl.MP4"
-    },
-
-    {
-      "id": 26, "name": "Bench Press", "target": "Chest", "category": "chest", "description": "Standard barbell chest press.", "image": "src/assets/photos/bench press.jpeg", "video": "src/assets/workouts/chest/bench press.MP4"
-    },
-    {
-      "id": 27, "name": "Incline Press", "target": "Upper Chest", "category": "chest", "description": "Pressing dumbbells or barbell on an incline bench.", "image": "src/assets/photos/incline press.jpeg", "video": "src/assets/workouts/chest/incline press.MP4"
-    },
-    {
-      "id": 28, "name": "Chest Flyes", "target": "Chest", "category": "chest", "description": "Opening arms wide with dumbbells while lying down.", "image": "src/assets/photos/chest flyes.jpeg", "video": "src/assets/workouts/chest/chest flyes.MP4"
-    },
-    {
-      "id": 29, "name": "Dips (Chest focus)", "target": "Lower Chest", "category": "chest", "description": "Leaning forward while doing dips to target pecs.", "image": "src/assets/photos/dips.jpeg", "video": "src/assets/workouts/chest/dips.MP4"
-    },
-    {
-      "id": 30, "name": "Cable Crossover", "target": "Inner Chest", "category": "chest", "description": "Pulling cables together in front of the chest.", "image": "src/assets/photos/cable crossover.jpeg", "video": "src/assets/workouts/chest/cable curls.MP4"
-    },
-
-    {
-      "id": 31, "name": "Military Press", "target": "Shoulders", "category": "Shoulders", "description": "Strict overhead press with a barbell.", "image": "src/assets/photos/GREG ET TONY.JPEG", "video": "src/assets/workouts/shoulder/military Press.MP4"
-    },
-    {
-      "id": 32, "name": "Lateral Raises", "target": "Side Delts", "category": "Shoulders", "description": "Lifting dumbbells out to the sides.", "image": "src/assets/photos/GREG ET TONY.JPEG", "video": "src/assets/workouts/shoulder/lateral raise.MP4"
-    },
-    {
-      "id": 33, "name": "Front Raises", "target": "Front Delts", "category": "Shoulders", "description": "Lifting dumbbells straight in front.", "image": "src/assets/photos/GREG ET TONY.JPEG", "video": "src/assets/workouts/shoulder/front raise.MP4"
-    },
-    {
-      "id": 34, "name": "Face Pulls", "target": "Rear Delts", "category": "Shoulders", "description": "Pulling a rope towards your face.", "image": "src/assets/photos/GREG ET TONY.JPEG", "video": "src/assets/workouts/shoulder/face pull.MP4"
-    },
-    {
-      "id": 35, "name": "Arnold Press", "target": "Shoulders", "category": "Shoulders", "description": "Shoulder press with a rotating motion.", "image": "src/assets/photos/GREG ET TONY.JPEG", "video": "src/assets/workouts/shoulder/arnold press.MP4"
+      "id": 25,
+      "name": "Spider Curls",
+      "target": "Biceps",
+      "category": "Biceps",
+      "description": "Curls while lying face down on an incline bench.",
+      "image": "src/assets/workouts/GREG ET TONY.JPEG",
+      "video": "src/assets/workouts/biceps/Spider Curl.MP4"
     },
 
     {
-      "id": 36, "name": "Crunches", "target": "Upper Abs", "category": "Abs", "description": "Standard abdominal contraction.", "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80", "video": ""
+      "id": 26,
+      "name": "Bench Press",
+      "target": "Chest",
+      "category": "chest",
+      "description": "Standard barbell chest press.",
+      "image": "src/assets/workouts/bench press.jpeg",
+      "video": "src/assets/workouts/chest/bench press.MP4"
     },
     {
-      "id": 37, "name": "Leg Raises", "target": "Lower Abs", "category": "Abs", "description": "Lifting legs from a lying position.", "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80", "video": ""
+      "id": 27,
+      "name": "Incline Press",
+      "target": "Upper Chest",
+      "category": "chest",
+      "description": "Pressing dumbbells or barbell on an incline bench.",
+      "image": "src/assets/workouts/incline press.jpeg",
+      "video": "src/assets/workouts/chest/incline press.MP4"
     },
     {
-      "id": 38, "name": "Bicycle Crunches", "target": "Obliques", "category": "Abs", "description": "Alternating knee-to-elbow movement.", "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80", "video": ""
+      "id": 28,
+      "name": "Chest Flyes",
+      "target": "Chest",
+      "category": "chest",
+      "description": "Opening arms wide with dumbbells while lying down.",
+      "image": "src/assets/workouts/chest flyes.jpeg",
+      "video": "src/assets/workouts/chest/chest flyes.MP4"
     },
     {
-      "id": 39, "name": "Hanging Knee Raises", "target": "Lower Abs", "category": "Abs", "description": "Lifting knees while hanging from a bar.", "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80", "video": ""
+      "id": 29,
+      "name": "Dips (Chest focus)",
+      "target": "Lower Chest",
+      "category": "chest",
+      "description": "Leaning forward while doing dips to target pecs.",
+      "image": "src/assets/workouts/dips.jpeg",
+      "video": "src/assets/workouts/chest/dips.MP4"
     },
     {
-      "id": 40, "name": "V-Ups", "target": "Full Abs", "category": "Abs", "description": "Lifting torso and legs together to form a V.", "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80", "video": ""
+      "id": 30,
+      "name": "Cable Crossover",
+      "target": "Inner Chest",
+      "category": "chest",
+      "description": "Pulling cables together in front of the chest.",
+      "image": "src/assets/workouts/cable crossover.jpeg",
+      "video": "src/assets/workouts/chest/cable curls.MP4"
     },
 
     {
-      "id": 41, "name": "Tricep Pushdown", "target": "Triceps", "category": "Triceps", "description": "Pushing a cable bar down to your thighs.", "image": "https://images.unsplash.com/photo-1530822847156-5df684ec5ee1?w=600&q=80", "video": ""
+      "id": 31,
+      "name": "Military Press",
+      "target": "Shoulders",
+      "category": "Shoulders",
+      "description": "Strict overhead press with a barbell.",
+      "image": "src/assets/workouts/GREG ET TONY.JPEG",
+      "video": "src/assets/workouts/shoulder/military Press.MP4"
     },
     {
-      "id": 42, "name": "Skull Crushers", "target": "Triceps", "category": "Triceps", "description": "Lowering a bar to the forehead and extending.", "image": "https://images.unsplash.com/photo-1530822847156-5df684ec5ee1?w=600&q=80", "video": ""
+      "id": 32,
+      "name": "Lateral Raises",
+      "target": "Side Delts",
+      "category": "Shoulders",
+      "description": "Lifting dumbbells out to the sides.",
+      "image": "src/assets/workouts/GREG ET TONY.JPEG",
+      "video": "src/assets/workouts/shoulder/lateral raise.MP4"
     },
     {
-      "id": 43, "name": "Diamond Pushups", "target": "Triceps", "category": "Triceps", "description": "Pushups with hands close together.", "image": "https://images.unsplash.com/photo-1530822847156-5df684ec5ee1?w=600&q=80", "video": ""
+      "id": 33,
+      "name": "Front Raises",
+      "target": "Front Delts",
+      "category": "Shoulders",
+      "description": "Lifting dumbbells straight in front.",
+      "image": "src/assets/workouts/GREG ET TONY.JPEG",
+      "video": "src/assets/workouts/shoulder/front raise.MP4"
     },
     {
-      "id": 44, "name": "Cable Overhead Extension", "target": "Triceps", "category": "Triceps", "description": "Extending cable over head.", "image": "https://images.unsplash.com/photo-1530822847156-5df684ec5ee1?w=600&q=80", "video": ""
+      "id": 34,
+      "name": "Face Pulls",
+      "target": "Rear Delts",
+      "category": "Shoulders",
+      "description": "Pulling a rope towards your face.",
+      "image": "src/assets/workouts/GREG ET TONY.JPEG",
+      "video": "src/assets/workouts/shoulder/face pull.MP4"
     },
     {
-      "id": 45, "name": "Bench Dips", "target": "Triceps", "category": "Triceps", "description": "Dips using the edge of a bench.", "image": "https://images.unsplash.com/photo-1530822847156-5df684ec5ee1?w=600&q=80", "video": ""
+      "id": 35,
+      "name": "Arnold Press",
+      "target": "Shoulders",
+      "category": "Shoulders",
+      "description": "Shoulder press with a rotating motion.",
+      "image": "src/assets/workouts/GREG ET TONY.JPEG",
+      "video": "src/assets/workouts/shoulder/arnold press.MP4"
+    },
+
+    {
+      "id": 36,
+      "name": "Crunches",
+      "target": "Upper Abs",
+      "category": "Abs",
+      "description": "Standard abdominal contraction.",
+      "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80",
+      "video": ""
+    },
+    {
+      "id": 37,
+      "name": "Leg Raises",
+      "target": "Lower Abs",
+      "category": "Abs",
+      "description": "Lifting legs from a lying position.",
+      "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80",
+      "video": ""
+    },
+    {
+      "id": 38,
+      "name": "Bicycle Crunches",
+      "target": "Obliques",
+      "category": "Abs",
+      "description": "Alternating knee-to-elbow movement.",
+      "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80",
+      "video": ""
+    },
+    {
+      "id": 39,
+      "name": "Hanging Knee Raises",
+      "target": "Lower Abs",
+      "category": "Abs",
+      "description": "Lifting knees while hanging from a bar.",
+      "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80",
+      "video": ""
+    },
+    {
+      "id": 40,
+      "name": "V-Ups",
+      "target": "Full Abs",
+      "category": "Abs",
+      "description": "Lifting torso and legs together to form a V.",
+      "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80",
+      "video": ""
+    },
+
+    {
+      "id": 41,
+      "name": "Tricep Pushdown",
+      "target": "Triceps",
+      "category": "Triceps",
+      "description": "Pushing a cable bar down to your thighs.",
+      "image": "https://images.unsplash.com/photo-1530822847156-5df684ec5ee1?w=600&q=80",
+      "video": ""
+    },
+    {
+      "id": 42,
+      "name": "Skull Crushers",
+      "target": "Triceps",
+      "category": "Triceps",
+      "description": "Lowering a bar to the forehead and extending.",
+      "image": "https://images.unsplash.com/photo-1530822847156-5df684ec5ee1?w=600&q=80",
+      "video": ""
+    },
+    {
+      "id": 43,
+      "name": "Diamond Pushups",
+      "target": "Triceps",
+      "category": "Triceps",
+      "description": "Pushups with hands close together.",
+      "image": "https://images.unsplash.com/photo-1530822847156-5df684ec5ee1?w=600&q=80",
+      "video": ""
+    },
+    {
+      "id": 44,
+      "name": "Cable Overhead Extension",
+      "target": "Triceps",
+      "category": "Triceps",
+      "description": "Extending cable over head.",
+      "image": "https://images.unsplash.com/photo-1530822847156-5df684ec5ee1?w=600&q=80",
+      "video": ""
+    },
+    {
+      "id": 45,
+      "name": "Bench Dips",
+      "target": "Triceps",
+      "category": "Triceps",
+      "description": "Dips using the edge of a bench.",
+      "image": "https://images.unsplash.com/photo-1530822847156-5df684ec5ee1?w=600&q=80",
+      "video": ""
     }
   ]
 }
-  
