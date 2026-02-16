@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Play, ChevronDown } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useLocalized } from "@/hooks/use-localized";
 import gtLogoWhite from "@/assets/gt-logo-white.png";
 import communityData from "@/data/community.json";
 
@@ -10,6 +11,7 @@ const statKeys = ["members", "workouts", "challenges", "newContent"];
 const HeroSection = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();
+  const { l } = useLocalized();
 
   const scrollToContent = () => {
     const element = document.querySelector("#community");
@@ -78,7 +80,7 @@ const HeroSection = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             {communityData.stats.map((stat, index) => (
-              <div key={stat.label}>
+              <div key={l(stat.label)}>
                 <p className="font-display text-2xl md:text-3xl font-semibold">
                   {stat.value}
                 </p>

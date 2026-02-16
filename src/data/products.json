@@ -2,22 +2,22 @@
   "products": [
     {
       "id": 1,
-      "name": "GT-Fitness Seamless Set",
-      "description": "Where Elegance Meets Performance. Dominate your workouts with the GT-Fitness Crimson Pulse set, a perfect fusion of bold style and advanced textile technology. Designed for the active woman who refuses to compromise between comfort and aesthetics, this vibrant red set is a true confidence booster.",
+      "name": { "en": "GT-Fitness Seamless Set", "fr": "Ensemble Sans Couture GT-Fitness" },
+      "description": { "en": "Where Elegance Meets Performance. Dominate your workouts with the GT-Fitness Crimson Pulse set, a perfect fusion of bold style and advanced textile technology. Designed for the active woman who refuses to compromise between comfort and aesthetics, this vibrant red set is a true confidence booster.", "fr": "Là où l'Élégance Rencontre la Performance. Dominez vos entraînements avec l'ensemble GT-Fitness Crimson Pulse, une fusion parfaite de style audacieux et de technologie textile avancée. Conçu pour la femme active qui refuse de faire des compromis entre confort et esthétique, cet ensemble rouge vibrant est un véritable boost de confiance." },
       "price": 69.99,
       "colors": [
-        { "name": "Red", "hex": "#FF0000" }
+        { "name": { "en": "Red", "fr": "Rouge" }, "hex": "#FF0000" }
       ],
       "sizes": ["S", "M", "L", "XL"],
       "image": "src/assets/gt-fitness clothes/Red clothes.PNG"
     },
     {
       "id": 2,
-      "name": "GT-Fitness Seamless Set",
-      "description": "Where Elegance Meets Performance. Dominate your workouts with the GT-Fitness Crimson Pulse set, a perfect fusion of bold style and advanced textile technology. Designed for the active woman who refuses to compromise between comfort and aesthetics, this vibrant red set is a true confidence booster.",
+      "name": { "en": "GT-Fitness Seamless Set", "fr": "Ensemble Sans Couture GT-Fitness" },
+      "description": { "en": "Where Elegance Meets Performance. Dominate your workouts with the GT-Fitness Crimson Pulse set, a perfect fusion of bold style and advanced textile technology. Designed for the active woman who refuses to compromise between comfort and aesthetics, this vibrant red set is a true confidence booster.", "fr": "Là où l'Élégance Rencontre la Performance. Dominez vos entraînements avec l'ensemble GT-Fitness Crimson Pulse, une fusion parfaite de style audacieux et de technologie textile avancée. Conçu pour la femme active qui refuse de faire des compromis entre confort et esthétique, cet ensemble orange brûlé est un véritable boost de confiance." },
       "price": 69.99,
       "colors": [
-        { "name": "Burnt Orange", "hex": "#C06143" }
+        { "name": { "en": "Burnt Orange", "fr": "Orange Brûlé" }, "hex": "#C06143" }
       ],
       "sizes": ["S", "M", "L", "XL"],
       "image": "src/assets/gt-fitness clothes/Orange clothes.JPG"

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useLocalized } from "@/hooks/use-localized";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -11,6 +12,7 @@ const Challenges = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const [selectedChallenge, setSelectedChallenge] = useState<(typeof challengesData.challenges)[0] | null>(null);
   const { t } = useTranslation();
+  const { l } = useLocalized();
 
   useEffect(() => {
     const challengeId = searchParams.get("challenge");
@@ -44,7 +46,7 @@ const Challenges = () => {
               <div key={challenge.id} className="group rounded-2xl overflow-hidden bg-card shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer"
                 onClick={() => openChallenge(challenge)}>
                 <div className="relative aspect-video overflow-hidden">
-                  <img src={challenge.thumbnail} alt={challenge.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                  <img src={challenge.thumbnail} alt={l(challenge.title)} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-foreground/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                     <div className="w-14 h-14 rounded-full bg-background flex items-center justify-center">
                       <Play className="w-6 h-6 text-foreground ml-1" />
@@ -53,12 +55,12 @@ const Challenges = () => {
                 </div>
                 <div className="p-5">
                   <div className="flex flex-wrap items-center gap-3 mb-3">
-                    <span className="flex items-center gap-1.5 text-xs text-muted-foreground"><Clock className="w-3.5 h-3.5" />{challenge.duration}</span>
-                    <span className="flex items-center gap-1.5 text-xs font-medium"><Flame className="w-3.5 h-3.5" />{challenge.intensity}</span>
+                    <span className="flex items-center gap-1.5 text-xs text-muted-foreground"><Clock className="w-3.5 h-3.5" />{l(challenge.duration)}</span>
+                    <span className="flex items-center gap-1.5 text-xs font-medium"><Flame className="w-3.5 h-3.5" />{l(challenge.intensity)}</span>
                     <span className="flex items-center gap-1.5 text-xs text-muted-foreground"><Users className="w-3.5 h-3.5" />{challenge.participants}</span>
                   </div>
-                  <h3 className="font-display text-xl font-semibold mb-2">{challenge.title}</h3>
-                  <p className="text-muted-foreground text-sm mb-5">{challenge.description}</p>
+                  <h3 className="font-display text-xl font-semibold mb-2">{l(challenge.title)}</h3>
+                  <p className="text-muted-foreground text-sm mb-5">{l(challenge.description)}</p>
                 </div>
               </div>
             ))}
@@ -75,16 +77,16 @@ const Challenges = () => {
             {selectedChallenge.video ? (
               <video autoPlay controls className="w-full aspect-video" src={selectedChallenge.video} poster={selectedChallenge.thumbnail} />
             ) : (
-              <img src={selectedChallenge.thumbnail} alt={selectedChallenge.title} className="w-full aspect-video object-cover" />
+              <img src={selectedChallenge.thumbnail} alt={l(selectedChallenge.title)} className="w-full aspect-video object-cover" />
             )}
             <div className="p-6">
               <div className="flex flex-wrap items-center gap-4 mb-4">
-                <span className="flex items-center gap-1.5 text-sm text-muted-foreground"><Clock className="w-4 h-4" />{selectedChallenge.duration}</span>
-                <span className="flex items-center gap-1.5 text-sm font-medium"><Flame className="w-4 h-4" />{selectedChallenge.intensity}</span>
+                <span className="flex items-center gap-1.5 text-sm text-muted-foreground"><Clock className="w-4 h-4" />{l(selectedChallenge.duration)}</span>
+                <span className="flex items-center gap-1.5 text-sm font-medium"><Flame className="w-4 h-4" />{l(selectedChallenge.intensity)}</span>
                 <span className="flex items-center gap-1.5 text-sm text-muted-foreground"><Users className="w-4 h-4" />{selectedChallenge.participants} {t("challenges.participantsLabel")}</span>
               </div>
-              <h2 className="font-display text-3xl font-semibold mb-3">{selectedChallenge.title}</h2>
-              <p className="text-muted-foreground mb-6">{selectedChallenge.description}</p>
+              <h2 className="font-display text-3xl font-semibold mb-3">{l(selectedChallenge.title)}</h2>
+              <p className="text-muted-foreground mb-6">{l(selectedChallenge.description)}</p>
             </div>
           </div>
         </div>

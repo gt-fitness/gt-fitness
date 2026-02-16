@@ -1,44 +1,50 @@
 {
-  "tagline": "More Than That.",
-  "description": "GT Fitness isn't just a fitness community — it's a movement. We believe that every person has untapped potential waiting to be unleashed. We provide the tools, the guidance, and the support to help you become the strongest version of yourself.",
-  "mission": "Founded by athletes who saw something missing in the fitness world — a community that truly supports, challenges, and elevates its members. Today, GT Fitness spans across 50+ countries with thousands of active members pushing their limits every single day.",
+  "tagline": { "en": "More Than That.", "fr": "Plus Que Ça." },
+  "description": {
+    "en": "GT Fitness isn't just a fitness community — it's a movement. We believe that every person has untapped potential waiting to be unleashed. We provide the tools, the guidance, and the support to help you become the strongest version of yourself.",
+    "fr": "GT Fitness n'est pas qu'une communauté fitness — c'est un mouvement. Nous croyons que chaque personne possède un potentiel inexploité qui attend d'être libéré. Nous fournissons les outils, les conseils et le soutien pour vous aider à devenir la version la plus forte de vous-même."
+  },
+  "mission": {
+    "en": "Founded by athletes who saw something missing in the fitness world — a community that truly supports, challenges, and elevates its members. Today, GT Fitness spans across 50+ countries with thousands of active members pushing their limits every single day.",
+    "fr": "Fondé par des athlètes qui voyaient quelque chose de manquant dans le monde du fitness — une communauté qui soutient, défie et élève véritablement ses membres. Aujourd'hui, GT Fitness s'étend dans plus de 50 pays avec des milliers de membres actifs qui repoussent leurs limites chaque jour."
+  },
   "values": [
     {
       "icon": "Users",
-      "title": "Brotherhood",
-      "description": "We train together, we grow together. Every member is family."
+      "title": { "en": "Brotherhood", "fr": "Fraternité" },
+      "description": { "en": "We train together, we grow together. Every member is family.", "fr": "On s'entraîne ensemble, on grandit ensemble. Chaque membre fait partie de la famille." }
     },
     {
       "icon": "Target",
-      "title": "Discipline",
-      "description": "Consistency beats intensity. Show up every single day."
+      "title": { "en": "Discipline", "fr": "Discipline" },
+      "description": { "en": "Consistency beats intensity. Show up every single day.", "fr": "La constance bat l'intensité. Présente-toi chaque jour." }
     },
     {
       "icon": "Trophy",
-      "title": "Excellence",
-      "description": "Good enough is never good enough. We push for greatness."
+      "title": { "en": "Excellence", "fr": "Excellence" },
+      "description": { "en": "Good enough is never good enough. We push for greatness.", "fr": "Le suffisant n'est jamais suffisant. On vise la grandeur." }
     },
     {
       "icon": "Heart",
-      "title": "Passion",
-      "description": "Love the process. The results will follow."
+      "title": { "en": "Passion", "fr": "Passion" },
+      "description": { "en": "Love the process. The results will follow.", "fr": "Aime le processus. Les résultats suivront." }
     }
   ],
   "stats": [
-    { "value": "10+", "label": "Members" },
-    { "value": "40+", "label": "Workouts" },
-    { "value": "10+", "label": "Challenges" },
-    { "value": "Weekly", "label": "New Content" }
+    { "value": "10+", "label": { "en": "Members", "fr": "Membres" } },
+    { "value": "40+", "label": { "en": "Workouts", "fr": "Entraînements" } },
+    { "value": "10+", "label": { "en": "Challenges", "fr": "Défis" } },
+    { "value": "Weekly", "label": { "en": "New Content", "fr": "Nouveau Contenu" } }
   ],
   "team": [
     {
       "name": "Greg Nathan",
-      "role": "Co-Founder & Head Coach",
+      "role": { "en": "Co-Founder & Head Coach", "fr": "Co-Fondateur & Coach Principal" },
       "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80"
     },
     {
       "name": "Tony Adams",
-      "role": "Co-Founder & Head Coach",
+      "role": { "en": "Co-Founder & Head Coach", "fr": "Co-Fondateur & Coach Principal" },
       "image": "https://images.unsplash.com/photo-1594381898411-846e7d193883?w=400&q=80"
     }
   ]

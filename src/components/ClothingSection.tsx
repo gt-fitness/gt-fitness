@@ -2,11 +2,13 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useLocalized } from "@/hooks/use-localized";
 import productsData from "@/data/products.json";
 
 const ClothingSection = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();
+  const { l } = useLocalized();
 
   return (
     <section id="clothing" className="section-padding bg-secondary">
@@ -26,14 +28,14 @@ const ClothingSection = () => {
             <div key={product.id} className="group bg-background rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-lg cursor-pointer"
               onClick={() => navigate(`/shop?product=${product.id}`)}>
               <div className="relative aspect-square overflow-hidden bg-muted">
-                <img src={product.image} alt={product.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                <img src={product.image} alt={l(product.name)} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
               </div>
               <div className="p-4">
-                <h3 className="font-display text-lg font-semibold mb-1">{product.name}</h3>
-                <p className="text-muted-foreground text-sm mb-3 line-clamp-1">{product.description}</p>
+                <h3 className="font-display text-lg font-semibold mb-1">{l(product.name)}</h3>
+                <p className="text-muted-foreground text-sm mb-3 line-clamp-1">{l(product.description)}</p>
                 <div className="flex items-center gap-2 mb-3">
                   {product.colors.map((color, index) => (
-                    <div key={index} className="w-5 h-5 rounded-full border border-border" style={{ backgroundColor: color.hex }} title={color.name} />
+                    <div key={index} className="w-5 h-5 rounded-full border border-border" style={{ backgroundColor: color.hex }} title={l(color.name)} />
                   ))}
                 </div>
                 <div className="flex items-center justify-between">
