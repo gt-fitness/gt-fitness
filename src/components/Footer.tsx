@@ -18,37 +18,116 @@ const Footer = () => {
               {t("footer.description")}
             </p>
             <div className="flex gap-4">
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors"><Instagram className="w-5 h-5" /></a>
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors"><Twitter className="w-5 h-5" /></a>
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors"><Youtube className="w-5 h-5" /></a>
+              <a
+                href="https://www.instagram.com/gt_fitnesss?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
             </div>
           </div>
 
           <div>
-            <h4 className="font-display font-semibold mb-4">{t("footer.explore")}</h4>
+            <h4 className="font-display font-semibold mb-4">
+              {t("footer.explore")}
+            </h4>
             <ul className="space-y-2.5">
-              <li><Link to="/community" className="text-muted-foreground hover:text-foreground transition-colors text-sm">{t("nav.community")}</Link></li>
-              <li><Link to="/challenges" className="text-muted-foreground hover:text-foreground transition-colors text-sm">{t("nav.challenges")}</Link></li>
-              <li><Link to="/workouts" className="text-muted-foreground hover:text-foreground transition-colors text-sm">{t("nav.workouts")}</Link></li>
-              <li><Link to="/gallery" className="text-muted-foreground hover:text-foreground transition-colors text-sm">{t("nav.gallery")}</Link></li>
+              <li>
+                <Link
+                  to="/community"
+                  className="text-muted-foreground hover:text-foreground transition-colors text-sm"
+                >
+                  {t("nav.community")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/challenges"
+                  className="text-muted-foreground hover:text-foreground transition-colors text-sm"
+                >
+                  {t("nav.challenges")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/workouts"
+                  className="text-muted-foreground hover:text-foreground transition-colors text-sm"
+                >
+                  {t("nav.workouts")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/gallery"
+                  className="text-muted-foreground hover:text-foreground transition-colors text-sm"
+                >
+                  {t("nav.gallery")}
+                </Link>
+              </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-display font-semibold mb-4">{t("footer.shop")}</h4>
+            <h4 className="font-display font-semibold mb-4">
+              {t("footer.shop")}
+            </h4>
             <ul className="space-y-2.5">
-              <li><Link to="/shop" className="text-muted-foreground hover:text-foreground transition-colors text-sm">{t("footer.allProducts")}</Link></li>
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors text-sm">{t("footer.newArrivals")}</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors text-sm">{t("footer.bestSellers")}</a></li>
+              <li>
+                <Link
+                  to="/shop"
+                  className="text-muted-foreground hover:text-foreground transition-colors text-sm"
+                >
+                  {t("footer.allProducts")}
+                </Link>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-muted-foreground hover:text-foreground transition-colors text-sm"
+                >
+                  {t("footer.newArrivals")}
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-muted-foreground hover:text-foreground transition-colors text-sm"
+                >
+                  {t("footer.bestSellers")}
+                </a>
+              </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-display font-semibold mb-4">{t("footer.support")}</h4>
+            <h4 className="font-display font-semibold mb-4">
+              {t("footer.support")}
+            </h4>
             <ul className="space-y-2.5">
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors text-sm">{t("footer.contactUs")}</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors text-sm">{t("footer.faq")}</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors text-sm">{t("footer.shipping")}</a></li>
+              <li>
+                <a
+                  href="#"
+                  className="text-muted-foreground hover:text-foreground transition-colors text-sm"
+                >
+                  {t("footer.contactUs")}
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-muted-foreground hover:text-foreground transition-colors text-sm"
+                >
+                  {t("footer.faq")}
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-muted-foreground hover:text-foreground transition-colors text-sm"
+                >
+                  {t("footer.shipping")}
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -58,8 +137,18 @@ const Footer = () => {
             {t("footer.copyright", { year: new Date().getFullYear() })}
           </p>
           <div className="flex gap-6">
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors text-sm">{t("footer.privacy")}</a>
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors text-sm">{t("footer.terms")}</a>
+            <a
+              href="#"
+              className="text-muted-foreground hover:text-foreground transition-colors text-sm"
+            >
+              {t("footer.privacy")}
+            </a>
+            <a
+              href="#"
+              className="text-muted-foreground hover:text-foreground transition-colors text-sm"
+            >
+              {t("footer.terms")}
+            </a>
           </div>
         </div>
       </div>
