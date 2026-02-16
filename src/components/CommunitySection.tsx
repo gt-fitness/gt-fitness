@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Users, Target, Trophy, Heart } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useLocalized } from "@/hooks/use-localized";
 import communityData from "@/data/community.json";
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
@@ -12,6 +13,7 @@ const valueKeys = ["brotherhood", "discipline", "excellence", "passion"];
 
 const CommunitySection = () => {
   const { t } = useTranslation();
+  const { l } = useLocalized();
 
   return (
     <section id="community" className="section-padding bg-background">
@@ -25,8 +27,8 @@ const CommunitySection = () => {
               {t("community.builtByAthletes")}<br />
               {t("community.forAthletes")}
             </h2>
-            <p className="section-subtitle mb-6">{communityData.description}</p>
-            <p className="text-muted-foreground mb-8">{communityData.mission}</p>
+            <p className="section-subtitle mb-6">{l(communityData.description)}</p>
+            <p className="text-muted-foreground mb-8">{l(communityData.mission)}</p>
             <Link to="/community">
               <Button variant="athleticOutline" size="lg">
                 {t("community.learnMore")}
@@ -38,7 +40,7 @@ const CommunitySection = () => {
             {communityData.values.map((value, index) => {
               const IconComponent = iconMap[value.icon];
               return (
-                <div key={value.title} className="card-clean group" style={{ animationDelay: `${index * 0.1}s` }}>
+                <div key={l(value.title)} className="card-clean group" style={{ animationDelay: `${index * 0.1}s` }}>
                   {IconComponent && <IconComponent className="w-10 h-10 text-foreground mb-4 group-hover:scale-110 transition-transform" />}
                   <h3 className="font-display text-xl font-semibold mb-2">
                     {t(`community.values.${valueKeys[index]}`)}

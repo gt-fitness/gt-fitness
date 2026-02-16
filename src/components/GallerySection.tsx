@@ -3,11 +3,13 @@ import { Button } from "@/components/ui/button";
 import { Play, X, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useLocalized } from "@/hooks/use-localized";
 import galleryData from "@/data/gallery.json";
 
 const GallerySection = () => {
   const [selectedMedia, setSelectedMedia] = useState<typeof galleryData.items[0] | null>(null);
   const { t } = useTranslation();
+  const { l } = useLocalized();
 
   return (
     <section id="gallery" className="section-padding bg-background">
@@ -25,7 +27,7 @@ const GallerySection = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
           {galleryData.items.slice(0, 6).map((item) => (
             <div key={item.id} className="group relative aspect-square rounded-xl overflow-hidden cursor-pointer" onClick={() => setSelectedMedia(item)}>
-              <img src={item.type === "video" ? item.thumbnail : item.src} alt={item.alt} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <img src={item.type === "video" ? item.thumbnail : item.src} alt={l(item.alt)} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
               <div className="absolute inset-0 bg-foreground/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                 {item.type === "video" && (
                   <div className="w-12 h-12 rounded-full bg-background flex items-center justify-center">
@@ -56,7 +58,7 @@ const GallerySection = () => {
             {selectedMedia.type === "video" ? (
               <video autoPlay controls className="w-full h-full rounded-xl" src={selectedMedia.src} />
             ) : (
-              <img src={selectedMedia.src} alt={selectedMedia.alt} className="w-full h-full object-contain rounded-xl" />
+              <img src={selectedMedia.src} alt={l(selectedMedia.alt)} className="w-full h-full object-contain rounded-xl" />
             )}
           </div>
         </div>

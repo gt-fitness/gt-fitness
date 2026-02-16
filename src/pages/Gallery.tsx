@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useLocalized } from "@/hooks/use-localized";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Play, X, ChevronLeft, ChevronRight } from "lucide-react";
@@ -9,6 +10,7 @@ const Gallery = () => {
   const [activeCategory, setActiveCategory] = useState("All");
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const { t } = useTranslation();
+  const { l } = useLocalized();
 
   const filteredItems = activeCategory === "All"
     ? galleryData.items
@@ -34,11 +36,11 @@ const Gallery = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-center gap-2 mb-10">
             {galleryData.categories.map((category) => (
-              <button key={category} onClick={() => setActiveCategory(category)}
+              <button key={l(category)} onClick={() => setActiveCategory(category.en)}
                 className={`px-5 py-2.5 text-sm font-medium rounded-full transition-all duration-300 ${
-                  activeCategory === category ? "bg-foreground text-background" : "bg-secondary text-muted-foreground hover:text-foreground"
+                  activeCategory === category.en ? "bg-foreground text-background" : "bg-secondary text-muted-foreground hover:text-foreground"
                 }`}>
-                {category}
+                {l(category)}
               </button>
             ))}
           </div>
@@ -46,7 +48,7 @@ const Gallery = () => {
           <div className="columns-2 md:columns-3 lg:columns-4 gap-3 space-y-3">
             {filteredItems.map((item, index) => (
               <div key={item.id} className="group relative rounded-xl overflow-hidden cursor-pointer break-inside-avoid" onClick={() => setSelectedIndex(index)}>
-                <img src={item.type === "video" ? item.thumbnail : item.src} alt={item.alt} className="w-full transition-transform duration-500 group-hover:scale-105" />
+                <img src={item.type === "video" ? item.thumbnail : item.src} alt={l(item.alt)} className="w-full transition-transform duration-500 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-foreground/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                   {item.type === "video" && (
                     <div className="w-12 h-12 rounded-full bg-background flex items-center justify-center">
@@ -54,7 +56,9 @@ const Gallery = () => {
                     </div>
                   )}
                 </div>
-                <span className="absolute bottom-2 left-2 px-2 py-1 bg-background/80 text-xs font-medium rounded-full">{item.category}</span>
+                <span className="absolute bottom-2 left-2 px-2 py-1 bg-background/80 text-xs font-medium rounded-full">
+                  {l(galleryData.categories.find(c => c.en === item.category) || item.category)}
+                </span>
               </div>
             ))}
           </div>
@@ -80,9 +84,9 @@ const Gallery = () => {
             {selectedMedia.type === "video" ? (
               <video autoPlay controls className="w-full h-full rounded-xl" src={selectedMedia.src} />
             ) : (
-              <img src={selectedMedia.src} alt={selectedMedia.alt} className="w-full h-full object-contain rounded-xl" />
+              <img src={selectedMedia.src} alt={l(selectedMedia.alt)} className="w-full h-full object-contain rounded-xl" />
             )}
-            <p className="text-center mt-4 text-background/70">{selectedMedia.alt}</p>
+            <p className="text-center mt-4 text-background/70">{l(selectedMedia.alt)}</p>
           </div>
         </div>
       )}

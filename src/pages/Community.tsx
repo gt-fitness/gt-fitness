@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useLocalized } from "@/hooks/use-localized";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -22,6 +23,7 @@ const Community = () => {
   const [showStoryVideo, setShowStoryVideo] = useState(false);
   const storyRef = useRef<HTMLDivElement>(null);
   const { t } = useTranslation();
+  const { l } = useLocalized();
 
   useEffect(() => {
     if (searchParams.get("story") === "true") {
@@ -39,7 +41,7 @@ const Community = () => {
         <div className="container mx-auto px-4 text-center">
           <p className="text-sm uppercase tracking-widest text-muted-foreground mb-4">{t("community.ourStory")}</p>
           <h1 className="section-title mb-6">{t("community.whoWeAre")}</h1>
-          <p className="section-subtitle mx-auto max-w-2xl">{communityData.description}</p>
+          <p className="section-subtitle mx-auto max-w-2xl">{l(communityData.description)}</p>
         </div>
       </section>
 
@@ -81,7 +83,7 @@ const Community = () => {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-display font-semibold mb-6">{t("community.ourMission")}</h2>
-              <p className="text-muted-foreground mb-6">{communityData.mission}</p>
+              <p className="text-muted-foreground mb-6">{l(communityData.mission)}</p>
               <p className="text-muted-foreground">{t("community.missionText")}</p>
             </div>
             <div className="relative">
@@ -128,7 +130,7 @@ const Community = () => {
                   <img src={member.image} alt={member.name} className="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-105" />
                 </div>
                 <h3 className="font-display text-lg font-semibold">{member.name}</h3>
-                <p className="text-muted-foreground text-sm">{member.role}</p>
+                <p className="text-muted-foreground text-sm">{l(member.role)}</p>
               </div>
             ))}
           </div>

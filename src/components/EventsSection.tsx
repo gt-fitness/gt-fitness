@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Calendar, MapPin, Clock, ExternalLink } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useLocalized } from "@/hooks/use-localized";
 import { format } from "date-fns";
 import eventsData from "@/data/events.json";
 
@@ -15,9 +16,9 @@ const statusColors: Record<string, string> = {
 
 const EventsSection = () => {
   const { t } = useTranslation();
+  const { l } = useLocalized();
   const navigate = useNavigate();
   
-  // Show only first 3 upcoming/ongoing events
   const displayedEvents = eventsData.events
     .filter(e => e.status === "upcoming" || e.status === "ongoing")
     .slice(0, 3);
@@ -49,7 +50,7 @@ const EventsSection = () => {
               <div className="relative aspect-video mb-4 overflow-hidden rounded-lg">
                 <img
                   src={event.image}
-                  alt={event.name}
+                  alt={l(event.name)}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <Badge className={`absolute top-3 right-3 ${statusColors[event.status]}`}>
@@ -58,11 +59,11 @@ const EventsSection = () => {
               </div>
               
               <h3 className="font-display text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
-                {event.name}
+                {l(event.name)}
               </h3>
               
               <p className="text-muted-foreground text-sm mb-4 line-clamp-2">
-                {event.description}
+                {l(event.description)}
               </p>
               
               <div className="space-y-2 text-sm text-muted-foreground">

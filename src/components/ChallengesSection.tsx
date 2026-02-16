@@ -2,11 +2,13 @@ import { Button } from "@/components/ui/button";
 import { Play, Clock, Flame, ArrowRight } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useLocalized } from "@/hooks/use-localized";
 import challengesData from "@/data/challenges.json";
 
 const ChallengesSection = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();
+  const { l } = useLocalized();
 
   return (
     <section id="challenges" className="section-padding bg-secondary">
@@ -26,7 +28,7 @@ const ChallengesSection = () => {
             <div key={challenge.id} className="group rounded-2xl overflow-hidden bg-background shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer"
               onClick={() => navigate(`/challenges?challenge=${challenge.id}`)}>
               <div className="relative aspect-video overflow-hidden">
-                <img src={challenge.thumbnail} alt={challenge.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                <img src={challenge.thumbnail} alt={l(challenge.title)} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-foreground/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                   <div className="w-14 h-14 rounded-full bg-background flex items-center justify-center">
                     <Play className="w-6 h-6 text-foreground ml-1" />
@@ -36,14 +38,14 @@ const ChallengesSection = () => {
               <div className="p-5">
                 <div className="flex items-center gap-4 mb-3">
                   <span className="flex items-center gap-1.5 text-xs text-muted-foreground">
-                    <Clock className="w-3.5 h-3.5" />{challenge.duration}
+                    <Clock className="w-3.5 h-3.5" />{l(challenge.duration)}
                   </span>
                   <span className="flex items-center gap-1.5 text-xs text-foreground font-medium">
-                    <Flame className="w-3.5 h-3.5" />{challenge.intensity}
+                    <Flame className="w-3.5 h-3.5" />{l(challenge.intensity)}
                   </span>
                 </div>
-                <h3 className="font-display text-xl font-semibold mb-2">{challenge.title}</h3>
-                <p className="text-muted-foreground text-sm mb-4 line-clamp-2">{challenge.description}</p>
+                <h3 className="font-display text-xl font-semibold mb-2">{l(challenge.title)}</h3>
+                <p className="text-muted-foreground text-sm mb-4 line-clamp-2">{l(challenge.description)}</p>
               </div>
             </div>
           ))}
