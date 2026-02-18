@@ -5,8 +5,8 @@
     "fr": "GT Fitness n'est pas qu'une communauté fitness — c'est un mouvement. Nous croyons que chaque personne possède un potentiel inexploité qui attend d'être libéré. Nous fournissons les outils, les conseils et le soutien pour vous aider à devenir la version la plus forte de vous-même."
   },
   "mission": {
-    "en": "Founded by athletes who saw something missing in the fitness world — a community that truly supports, challenges, and elevates its members. Today, GT Fitness spans across 50+ countries with thousands of active members pushing their limits every single day.",
-    "fr": "Fondé par des athlètes qui voyaient quelque chose de manquant dans le monde du fitness — une communauté qui soutient, défie et élève véritablement ses membres. Aujourd'hui, GT Fitness s'étend dans plus de 50 pays avec des milliers de membres actifs qui repoussent leurs limites chaque jour."
+    "en": "Founded by athletes who saw something missing in the fitness world — a community that truly supports, challenges, and elevates its members. GT Fitness arrives in Canada with a clear mission: inspiring everyone to break through their barriers and achieve continuous growth, day after day.",
+    "fr": "Fondé par des athlètes qui voyaient quelque chose de manquant dans le monde du fitness — une communauté qui soutient, défie et élève véritablement ses membres. GT Fitness s'installe au Canada avec une mission claire : inspirer chacun à franchir ses propres barrières et à cultiver une croissance continue, jour après jour."
   },
   "values": [
     {
@@ -40,7 +40,7 @@
     {
       "name": "Greg Nathan",
       "role": { "en": "Co-Founder & Head Coach", "fr": "Co-Fondateur & Coach Principal" },
-      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80"
+      "image": "src/data/Pictures/chest flyes.jpeg"
     },
     {
       "name": "Tony Adams",

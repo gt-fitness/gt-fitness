@@ -39,66 +39,6 @@
       "participants": "10.4K",
       "thumbnail": "https://images.unsplash.com/photo-1519331379826-f10be5486c6f?w=800&q=80",
       "video": "src/assets/hero-section/main.MP4"
-    },
-    {
-      "id": 5,
-      "title": { "en": "Push-Up Power Up", "fr": "Montée en Puissance Pompes" },
-      "description": { "en": "Master the foundational upper body movement. Whether on your knees or toes, build chest volume and endurance.", "fr": "Maîtrisez le mouvement de base du haut du corps. Que vous fassiez vos pompes sur les genoux ou sur les pieds, gagnez en volume et en endurance pectorale." },
-      "duration": { "en": "30 Days", "fr": "30 Jours" },
-      "intensity": { "en": "High", "fr": "Élevé" },
-      "participants": "1.9K",
-      "thumbnail": "https://images.unsplash.com/photo-1598971639058-fab3c3109a00?w=800&q=80",
-      "video": "src/assets/hero-section/main.MP4"
-    },
-    {
-      "id": 6,
-      "title": { "en": "HIIT Burnout", "fr": "HIIT Intensif" },
-      "description": { "en": "7 minutes of high intensity per day. Burn maximum calories in minimum time. Ideal for busy schedules.", "fr": "7 minutes de haute intensité par jour. Brûlez un maximum de calories en un minimum de temps. Idéal pour les agendas chargés." },
-      "duration": { "en": "7 Days", "fr": "7 Jours" },
-      "intensity": { "en": "High", "fr": "Élevé" },
-      "participants": "4.1K",
-      "thumbnail": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&q=80",
-      "video": "src/assets/hero-section/main.MP4"
-    },
-    {
-      "id": 7,
-      "title": { "en": "Yoga Balance Quest", "fr": "Quête d'Équilibre Yoga" },
-      "description": { "en": "Work on your balance and inner calm. A mix of warrior poses and breathing to destress after work.", "fr": "Travaillez votre équilibre et votre calme intérieur. Un mélange de poses de guerrier et de respiration pour déstresser après le travail." },
-      "duration": { "en": "21 Days", "fr": "21 Jours" },
-      "intensity": { "en": "Medium", "fr": "Moyen" },
-      "participants": "2.3K",
-      "thumbnail": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80",
-      "video": "src/assets/hero-section/main.MP4"
-    },
-    {
-      "id": 8,
-      "title": { "en": "Jump Rope Master", "fr": "Maître de la Corde à Sauter" },
-      "description": { "en": "Improve your coordination and cardio with jump rope. A fun and rhythmic challenge to transform your fitness.", "fr": "Améliorez votre coordination et votre cardio avec la corde à sauter. Un défi fun et rythmé pour transformer votre condition physique." },
-      "duration": { "en": "14 Days", "fr": "14 Jours" },
-      "intensity": { "en": "Medium", "fr": "Moyen" },
-      "participants": "1.5K",
-      "thumbnail": "https://images.unsplash.com/photo-1544033527-b192daee1f5b?w=800&q=80",
-      "video": "src/assets/hero-section/main.MP4"
-    },
-    {
-      "id": 9,
-      "title": { "en": "Lower Body Blast", "fr": "Explosion Bas du Corps" },
-      "description": { "en": "Lunges, glute bridges and lateral jumps. A complete challenge to sculpt the lower body with no equipment required.", "fr": "Fentes, ponts fessiers et sauts latéraux. Un défi complet pour sculpter le bas du corps sans aucun matériel requis." },
-      "duration": { "en": "21 Days", "fr": "21 Jours" },
-      "intensity": { "en": "Medium", "fr": "Moyen" },
-      "participants": "3.2K",
-      "thumbnail": "https://images.unsplash.com/photo-1434682881908-b43d0467b798?w=800&q=80",
-      "video": "src/assets/hero-section/main.MP4"
-    },
-    {
-      "id": 10,
-      "title": { "en": "Zero to 5K Run", "fr": "De Zéro à 5 km" },
-      "description": { "en": "Learn to run 5km without stopping. A gentle progression alternating walking and running to become a real runner.", "fr": "Apprenez à courir 5km sans s'arrêter. Une progression douce alternant marche et course pour devenir un véritable runner." },
-      "duration": { "en": "30 Days", "fr": "30 Jours" },
-      "intensity": { "en": "Medium", "fr": "Moyen" },
-      "participants": "6.7K",
-      "thumbnail": "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=800&q=80",
-      "video": "src/assets/hero-section/main.MP4"
     }
   ]
 }

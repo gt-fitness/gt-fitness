@@ -1,25 +1,12 @@
 {
   "events": [
     {
-      "id": "Run club-2026",
-      "name": { "en": "Run club summer 2026", "fr": "Club de course été 2026" },
-      "description": { "en": "An intensive 3-day outdoor fitness bootcamp featuring HIIT workouts, strength training, and nutrition workshops.", "fr": "Un bootcamp fitness extérieur intensif de 3 jours avec des entraînements HIIT, de la musculation et des ateliers nutrition." },
-      "image": "https://images.unsplash.com/photo-1452626038306-9aae5e071dd3?w=800&h=600&fit=crop",
-      "startDate": "2026-07-15",
-      "startTime": "",
-      "endDate": "",
-      "endTime": "",
-      "location": "",
-      "organizer": { "en": "GT Fitness Team", "fr": "Équipe GT Fitness" },
-      "status": "upcoming",
-      "registrationUrl": ""
-    },
-    {
+  
       "id": "gt-fitness-bodyweight-blitz",
-      "name": { "en": "GT-Fitness: Bodyweight Workouts", "fr": "GT-Fitness: Entraînements au Poids du Corps" },
+      "name": { "en": "Bodyweight Workouts", "fr": "Entraînements au Poids du Corps" },
       "description": { "en": "Push your limits with our outdoor bodyweight training collective. An intense session focused on functional strength, endurance, and team spirit, with no equipment needed. Perfect for all fitness levels!", "fr": "Repoussez vos limites avec notre collectif d'entraînement au poids du corps en extérieur. Une session intense axée sur la force fonctionnelle, l'endurance et l'esprit d'équipe, sans aucun équipement. Parfait pour tous les niveaux !" },
       "image": "src/assets/photos/GT-Fitness.png",
-      "startDate": "2026-05-03",
+      "startDate": "2026-03-15",
       "startTime": "",
       "endDate": "",
       "endTime": "",
@@ -27,6 +14,20 @@
       "organizer": "",
       "status": "upcoming",
       "registrationUrl": "https://gt-fitness.com/register/bodyweight-blitz"
+    },
+    {
+      "id": "Run club-2026",
+      "name": { "en": "Run club summer 2026", "fr": "Club de course été 2026" },
+      "description": { "en": "An intensive 3-day outdoor fitness bootcamp featuring HIIT workouts, strength training, and nutrition workshops.", "fr": "Un bootcamp fitness extérieur intensif de 3 jours avec des entraînements HIIT, de la musculation et des ateliers nutrition." },
+      "image": "https://images.unsplash.com/photo-1452626038306-9aae5e071dd3?w=800&h=600&fit=crop",
+      "startDate": "2026-06-01",
+      "startTime": "",
+      "endDate": "",
+      "endTime": "",
+      "location": "",
+      "organizer": { "en": "GT Fitness Team", "fr": "Équipe GT Fitness" },
+      "status": "upcoming",
+      "registrationUrl": ""
     }
   ]
 }
