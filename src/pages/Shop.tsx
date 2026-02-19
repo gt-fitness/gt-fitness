@@ -24,6 +24,7 @@ const Shop = () => {
   const [selectedSize, setSelectedSize] = useState("");
   const [showOrder, setShowOrder] = useState(false);
   const [orderEmail, setOrderEmail] = useState("");
+  const [orderPhoneNumber, setOrderPhoneNumber] = useState("");
   const [orderQuantity, setOrderQuantity] = useState(1);
 
   useEffect(() => {
@@ -72,6 +73,16 @@ const Shop = () => {
       });
       return;
     }
+
+    if (!orderPhoneNumber) {
+      toast({
+        title: t("shop.invalidPhoneNumber"),
+        description: t("shop.invalidPhoneNumberDesc"),
+        variant: "destructive",
+      });
+      return;
+    }
+
     emailjs
       .send(
         "service_72t9ydk",
@@ -79,6 +90,7 @@ const Shop = () => {
         {
           name: selectedProduct ? l(selectedProduct.name) : "Unknown Product",
           email: orderEmail,
+          phone: orderPhoneNumber,
           size: selectedSize,
           color: selectedProduct
             ? l(selectedProduct.colors[selectedColor].name)
@@ -99,6 +111,7 @@ const Shop = () => {
           });
           setShowOrder(false);
           setOrderEmail("");
+          setOrderPhoneNumber("");
           setOrderQuantity(1);
           closeProductModal();
         },
@@ -305,6 +318,16 @@ const Shop = () => {
                 placeholder="your@email.com"
                 value={orderEmail}
                 onChange={(e) => setOrderEmail(e.target.value)}
+                className="w-full"
+              />
+              <label className="text-sm font-medium mb-2 mt-5 block">
+                {t("shop.phoneNumber")}
+              </label>
+              <Input
+                type="tel"
+                placeholder="+1 414-115-1245"
+                value={orderPhoneNumber}
+                onChange={(e) => setOrderPhoneNumber(e.target.value)}
                 className="w-full"
               />
             </div>

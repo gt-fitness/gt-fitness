@@ -106,10 +106,13 @@
     "viewFullCollection": "Voir Toute la Collection",
     "expectedShipping": "Livraison prévue : 2-3 semaines",
     "confirmationEmail": "Vous recevrez un email de confirmation avec les détails de paiement.",
+    "phoneNumber": "Numéro de Téléphone",
     "pleaseFillSize": "Veuillez choisir une taille",
     "pleaseFillSizeDesc": "Vous devez choisir une taille avant de pré-commander.",
     "invalidEmail": "Email invalide",
-    "invalidEmailDesc": "Veuillez entrer une adresse email valide."
+    "invalidEmailDesc": "Veuillez entrer une adresse email valide.",
+    "invalidPhoneNumber": "Numéro de téléphone",
+    "invalidPhoneNumberDesc": "Veuillez entrer un numéro de téléphone valide."
   },
   "gallery": {
     "title": "Galerie",
