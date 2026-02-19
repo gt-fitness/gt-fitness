@@ -7,17 +7,9 @@
     { "en": "Community", "fr": "Communauté" }
   ],
   "items": [
-    { "id": 1, "type": "image", "src": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&q=80", "alt": { "en": "Team training session", "fr": "Session d'entraînement en équipe" }, "category": "Training" },
-    { "id": 2, "type": "video", "thumbnail": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&q=80", "src": "https://cdn.coverr.co/videos/coverr-doing-push-ups-at-the-gym-5310/1080p.mp4", "alt": { "en": "Workout highlight", "fr": "Temps fort d'entraînement" }, "category": "Workouts" },
-    { "id": 3, "type": "image", "src": "https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=800&q=80", "alt": { "en": "Competition day", "fr": "Jour de compétition" }, "category": "Events" },
-    { "id": 4, "type": "image", "src": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=800&q=80", "alt": { "en": "Victory moment", "fr": "Moment de victoire" }, "category": "Events" },
-    { "id": 5, "type": "video", "thumbnail": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&q=80", "src": "https://cdn.coverr.co/videos/coverr-man-doing-abs-workout-1573/1080p.mp4", "alt": { "en": "Training montage", "fr": "Montage d'entraînement" }, "category": "Training" },
-    { "id": 6, "type": "image", "src": "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=800&q=80", "alt": { "en": "Team celebration", "fr": "Célébration d'équipe" }, "category": "Community" },
-    { "id": 7, "type": "image", "src": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80", "alt": { "en": "Morning run", "fr": "Course matinale" }, "category": "Training" },
-    { "id": 8, "type": "image", "src": "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=800&q=80", "alt": { "en": "Outdoor training", "fr": "Entraînement en extérieur" }, "category": "Training" },
-    { "id": 9, "type": "video", "thumbnail": "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=800&q=80", "src": "https://cdn.coverr.co/videos/coverr-woman-training-in-a-gym-7421/1080p.mp4", "alt": { "en": "Strength training", "fr": "Entraînement de force" }, "category": "Workouts" },
-    { "id": 10, "type": "image", "src": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=800&q=80", "alt": { "en": "Community event", "fr": "Événement communautaire" }, "category": "Community" },
-    { "id": 11, "type": "image", "src": "https://images.unsplash.com/photo-1599058917765-a780eda07a3e?w=800&q=80", "alt": { "en": "Personal record", "fr": "Record personnel" }, "category": "Events" },
-    { "id": 12, "type": "image", "src": "https://images.unsplash.com/photo-1434682881908-b43d0467b798?w=800&q=80", "alt": { "en": "Group workout", "fr": "Entraînement de groupe" }, "category": "Community" }
+    { "id": 1, "type": "image", "src": "src/data/pictures/GREG ET TONY.jpeg", "alt": { "en": "Team training session", "fr": "Session d'entraînement en équipe" }, "category": "Training" },
+    { "id": 2, "type": "image", "src": "src/data/pictures/gt-fitness pictures.jpeg", "alt": { "en": "Workout highlight", "fr": "Temps fort d'entraînement" }, "category": "Community" },
+    { "id": 3, "type": "image", "src": "src/data/pictures/image gt.jpeg", "alt": { "en": "Competition day", "fr": "Jour de compétition" }, "category": "Events" },
+    { "id": 4, "type": "image", "src": "src/data/pictures/IMG_6785 (1).JPG", "alt": { "en": "Victory moment", "fr": "Moment de victoire" }, "category": "Community"  }
   ]
 }
