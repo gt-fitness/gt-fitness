@@ -18,9 +18,9 @@ const EventsSection = () => {
   const { t } = useTranslation();
   const { l } = useLocalized();
   const navigate = useNavigate();
-  
+
   const displayedEvents = eventsData.events
-    .filter(e => e.status === "upcoming" || e.status === "ongoing")
+    .filter((e) => e.status === "upcoming" || e.status === "ongoing")
     .slice(0, 3);
 
   const handleEventClick = (eventId: string) => {
@@ -53,23 +53,29 @@ const EventsSection = () => {
                   alt={l(event.name)}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <Badge className={`absolute top-3 right-3 ${statusColors[event.status]}`}>
+                <Badge
+                  className={`absolute top-3 right-3 ${statusColors[event.status]}`}
+                >
                   {t(`events.status.${event.status}`, event.status)}
                 </Badge>
               </div>
-              
+
               <h3 className="font-display text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
                 {l(event.name)}
               </h3>
-              
+
               <p className="text-muted-foreground text-sm mb-4 line-clamp-2">
                 {l(event.description)}
               </p>
-              
+
               <div className="space-y-2 text-sm text-muted-foreground">
                 <div className="flex items-center gap-2">
                   <Calendar className="w-4 h-4" />
-                  <span>{format(new Date(event.startDate), "MMM d, yyyy")}</span>
+                  <span>
+                    {event.startDate
+                      ? format(new Date(event.startDate), "MMM d, yyyy")
+                      : t("events.noDate", "To be announced")}
+                  </span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Clock className="w-4 h-4" />
@@ -80,7 +86,7 @@ const EventsSection = () => {
                   <span className="truncate">{event.location}</span>
                 </div>
               </div>
-              
+
               <Button
                 variant="athleticOutline"
                 size="sm"

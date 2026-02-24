@@ -12,40 +12,61 @@
     {
       "icon": "Users",
       "title": { "en": "Brotherhood", "fr": "Fraternité" },
-      "description": { "en": "We train together, we grow together. Every member is family.", "fr": "On s'entraîne ensemble, on grandit ensemble. Chaque membre fait partie de la famille." }
+      "description": {
+        "en": "We train together, we grow together. Every member is family.",
+        "fr": "On s'entraîne ensemble, on grandit ensemble. Chaque membre fait partie de la famille."
+      }
     },
     {
       "icon": "Target",
       "title": { "en": "Discipline", "fr": "Discipline" },
-      "description": { "en": "Consistency beats intensity. Show up every single day.", "fr": "La constance bat l'intensité. Présente-toi chaque jour." }
+      "description": {
+        "en": "Consistency beats intensity. Show up every single day.",
+        "fr": "La constance bat l'intensité. Présente-toi chaque jour."
+      }
     },
     {
       "icon": "Trophy",
       "title": { "en": "Excellence", "fr": "Excellence" },
-      "description": { "en": "Good enough is never good enough. We push for greatness.", "fr": "Le suffisant n'est jamais suffisant. On vise la grandeur." }
+      "description": {
+        "en": "Good enough is never good enough. We push for greatness.",
+        "fr": "Le suffisant n'est jamais suffisant. On vise la grandeur."
+      }
     },
     {
       "icon": "Heart",
       "title": { "en": "Passion", "fr": "Passion" },
-      "description": { "en": "Love the process. The results will follow.", "fr": "Aime le processus. Les résultats suivront." }
+      "description": {
+        "en": "Love the process. The results will follow.",
+        "fr": "Aime le processus. Les résultats suivront."
+      }
     }
   ],
   "stats": [
     { "value": "10+", "label": { "en": "Members", "fr": "Membres" } },
-    { "value": "40+", "label": { "en": "Workouts", "fr": "Entraînements" } },
-    { "value": "10+", "label": { "en": "Challenges", "fr": "Défis" } },
-    { "value": "Weekly", "label": { "en": "New Content", "fr": "Nouveau Contenu" } }
+    { "value": "35+", "label": { "en": "Workouts", "fr": "Entraînements" } },
+    { "value": "5+", "label": { "en": "Challenges", "fr": "Défis" } },
+    {
+      "value": "Weekly",
+      "label": { "en": "New Content", "fr": "Nouveau Contenu" }
+    }
   ],
   "team": [
     {
       "name": "Greg Nathan",
-      "role": { "en": "Co-Founder & Head Coach", "fr": "Co-Fondateur & Coach Principal" },
+      "role": {
+        "en": "Co-Founder & Head Coach",
+        "fr": "Co-Fondateur & Coach Principal"
+      },
       "image": "src/data/Pictures/chest flyes.jpeg"
     },
     {
       "name": "Tony Adams",
-      "role": { "en": "Co-Founder & Head Coach", "fr": "Co-Fondateur & Coach Principal" },
-      "image": "src/assets/workouts/legs/lunge quad.png"
+      "role": {
+        "en": "Co-Founder & Head Coach",
+        "fr": "Co-Fondateur & Coach Principal"
+      },
+      "image": "src/assets/community/coach_tony.jpeg"
     }
   ]
 }

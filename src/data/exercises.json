@@ -12,50 +12,512 @@
     { "en": "Triceps", "fr": "Triceps" }
   ],
   "exercises": [
-    { "id": 1, "name": { "en": "Lateral Squat", "fr": "Squat Latéral" }, "target": { "en": "Adductors, Glutes, Quads", "fr": "Adducteurs, Fessiers, Quadriceps" }, "category": "Legs", "description": { "en": "Stand wide, shift weight to one side by bending one knee while keeping the other leg straight.", "fr": "Position large, transférez le poids sur un côté en pliant un genou tout en gardant l'autre jambe tendue." }, "image": "src/assets/workouts/legs/lateral squad.png", "video": "src/assets/workouts/legs/lateral-squat.mp4" },
-    { "id": 2, "name": { "en": "Quad-Focused Lunges", "fr": "Fentes Focus Quadriceps" }, "target": { "en": "Quadriceps", "fr": "Quadriceps" }, "category": "Legs", "description": { "en": "Take a shorter step forward and keep torso upright to maximize tension on the front thigh.", "fr": "Faites un pas plus court vers l'avant et gardez le buste droit pour maximiser la tension sur la cuisse avant." }, "image": "src/assets/workouts/legs/lunge quad.png", "video": "src/assets/workouts/legs/lunges-quad.mp4" },
-    { "id": 3, "name": { "en": "Romanian Deadlift (RDL)", "fr": "Soulevé de Terre Roumain (RDL)" }, "target": { "en": "Hamstrings, Glutes", "fr": "Ischio-jambiers, Fessiers" }, "category": "Legs", "description": { "en": "Hinge at hips with a slight knee bend, lowering weights along shins while keeping back flat.", "fr": "Basculez les hanches avec une légère flexion des genoux, descendez les poids le long des tibias avec le dos plat." }, "image": "src/assets/workouts/legs/rdl.png", "video": "src/assets/workouts/legs/rdl.mp4" },
-    { "id": 4, "name": { "en": "Bodyweight Squat", "fr": "Squat au Poids du Corps" }, "target": { "en": "Quadriceps, Glutes", "fr": "Quadriceps, Fessiers" }, "category": "Legs", "description": { "en": "Lower hips as if sitting in a chair, keeping chest up and heels on the ground.", "fr": "Descendez les hanches comme pour vous asseoir, en gardant la poitrine haute et les talons au sol." }, "image": "src/assets/workouts/legs/squat.png", "video": "src/assets/workouts/legs/squat .mp4" },
-    { "id": 5, "name": { "en": "Sumo Squat", "fr": "Squat Sumo" }, "target": { "en": "Inner Thighs, Glutes", "fr": "Adducteurs, Fessiers" }, "category": "Legs", "description": { "en": "Take a very wide stance with toes pointed out, then lower hips deeply.", "fr": "Prenez une position très large avec les orteils vers l'extérieur, puis descendez les hanches profondément." }, "image": "src/assets/workouts/legs/sumo squat.png", "video": "src/assets/workouts/legs/sumo squat.mp4" },
-    { "id": 6, "name": { "en": "Burpees", "fr": "Burpees" }, "target": { "en": "Full Body, Cardio", "fr": "Corps Entier, Cardio" }, "category": "Full Body", "description": { "en": "Squat, kick feet back, push-up, jump feet to hands, and jump up.", "fr": "Accroupissez-vous, lancez les pieds en arrière, pompe, ramenez les pieds et sautez." }, "image": "https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?w=600&q=80", "video": "https://cdn.coverr.co/videos/coverr-doing-push-ups-at-the-gym-5310/1080p.mp4" },
-    { "id": 7, "name": { "en": "Mountain Climbers", "fr": "Mountain Climbers" }, "target": { "en": "Core, Cardio, Full Body", "fr": "Gainage, Cardio, Corps Entier" }, "category": "Full Body", "description": { "en": "High plank position, drive knees toward chest rapidly.", "fr": "Position de planche haute, ramenez les genoux vers la poitrine rapidement." }, "image": "https://images.unsplash.com/photo-1601422407692-ec73c6de0dd8?w=600&q=80", "video": "" },
-    { "id": 8, "name": { "en": "Clean and Press", "fr": "Épaulé-Jeté" }, "target": { "en": "Full Body, Power", "fr": "Corps Entier, Puissance" }, "category": "Full Body", "description": { "en": "Lift barbell from floor to shoulders (clean) then press overhead.", "fr": "Soulevez la barre du sol aux épaules (épaulé) puis pressez au-dessus de la tête." }, "image": "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=600&q=80", "video": "" },
-    { "id": 9, "name": { "en": "Thrusters", "fr": "Thrusters" }, "target": { "en": "Legs, Shoulders, Core", "fr": "Jambes, Épaules, Gainage" }, "category": "Full Body", "description": { "en": "A front squat followed immediately by an overhead press in one motion.", "fr": "Un squat avant suivi immédiatement d'un développé au-dessus de la tête en un seul mouvement." }, "image": "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=600&q=80", "video": "" },
-    { "id": 10, "name": { "en": "Kettlebell Swings", "fr": "Swings de Kettlebell" }, "target": { "en": "Glutes, Back, Shoulders", "fr": "Fessiers, Dos, Épaules" }, "category": "Full Body", "description": { "en": "Swing a kettlebell from between legs up to shoulder height using hip drive.", "fr": "Balancez une kettlebell d'entre les jambes à la hauteur des épaules en utilisant la poussée des hanches." }, "image": "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=600&q=80", "video": "" },
-    { "id": 11, "name": { "en": "Plank Hold", "fr": "Gainage" }, "target": { "en": "Core, Shoulders", "fr": "Gainage, Épaules" }, "category": "Core", "description": { "en": "Forearm plank position, maintain straight line from head to heels.", "fr": "Position de planche sur les avant-bras, maintenez une ligne droite de la tête aux talons." }, "image": "src/assets/workouts/core/plank.png", "video": "src/assets/workouts/core/plank.mp4" },
-    { "id": 12, "name": { "en": "Shoulder Taps", "fr": "Touches d'Épaules" }, "target": { "en": "Core, Shoulders", "fr": "Gainage, Épaules" }, "category": "Core", "description": { "en": "In plank position, tap each shoulder with the opposite hand while keeping hips still.", "fr": "En position de planche, touchez chaque épaule avec la main opposée en gardant les hanches stables." }, "image": "src/assets/workouts/core/shoulder tap.png", "video": "src/assets/workouts/core/shoulder-tap.mp4" },
-    { "id": 13, "name": { "en": "Side Plank Dips", "fr": "Side Dips" }, "target": { "en": "Obliques, Core", "fr": "Obliques, Gainage" }, "category": "Core", "description": { "en": "In side plank, lower your hips toward the floor and lift them back up.", "fr": "En planche latérale, baissez vos hanches vers le sol puis remontez-les." }, "image": "src/assets/workouts/core/side dips.png", "video": "src/assets/workouts/core/side-dip.mp4" },
-    { "id": 14, "name": { "en": "Side Plank", "fr": "Planche Latérale" }, "target": { "en": "Obliques, Stability", "fr": "Obliques, Stabilité" }, "category": "Core", "description": { "en": "Hold your body in a straight line on one forearm and the side of your foot.", "fr": "Maintenez votre corps en ligne droite sur un avant-bras et le côté de votre pied." }, "image": "src/assets/workouts/core/side plank.png", "video": "src/assets/workouts/core/side-plank.mp4" },
-    { "id": 15, "name": { "en": "Side Plank Rotation", "fr": "Rotation en Planche Latérale" }, "target": { "en": "Obliques, Core", "fr": "Obliques, Gainage" }, "category": "Core", "description": { "en": "From side plank, reach your top arm under your torso and then back up.", "fr": "En planche latérale, passez votre bras supérieur sous votre torse puis remontez-le." }, "image": "src/assets/workouts/core/sidePlank rotation.png", "video": "src/assets/workouts/core/sidePlank-rotation.mp4" },
-    { "id": 16, "name": { "en": "Box Jumps", "fr": "Sauts sur Box" }, "target": { "en": "Legs, Explosiveness", "fr": "Jambes, Explosivité" }, "category": "Cardio", "description": { "en": "Jump onto a sturdy box, land softly, step down.", "fr": "Sautez sur une boîte solide, atterrissez en douceur, descendez." }, "image": "https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=600&q=80", "video": "" },
-    { "id": 17, "name": { "en": "Jumping Jacks", "fr": "Jumping Jacks" }, "target": { "en": "Full Body, Cardio", "fr": "Corps Entier, Cardio" }, "category": "Cardio", "description": { "en": "Jump feet out while clapping hands overhead, then return.", "fr": "Sautez les pieds écartés en frappant des mains au-dessus de la tête, puis revenez." }, "image": "https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=600&q=80", "video": "" },
-    { "id": 18, "name": { "en": "High Knees", "fr": "Montées de Genoux" }, "target": { "en": "Cardio, Legs", "fr": "Cardio, Jambes" }, "category": "Cardio", "description": { "en": "Run in place while driving knees up towards the chest.", "fr": "Courez sur place en montant les genoux vers la poitrine." }, "image": "https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=600&q=80", "video": "" },
-    { "id": 19, "name": { "en": "Battle Ropes", "fr": "Cordes de Combat" }, "target": { "en": "Arms, Cardio", "fr": "Bras, Cardio" }, "category": "Cardio", "description": { "en": "Create waves in heavy ropes using your arms while maintaining a squat.", "fr": "Créez des vagues dans des cordes lourdes avec vos bras tout en maintenant un squat." }, "image": "https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=600&q=80", "video": "" },
-    { "id": 20, "name": { "en": "Shadow Boxing", "fr": "Shadow Boxing" }, "target": { "en": "Agility, Cardio", "fr": "Agilité, Cardio" }, "category": "Cardio", "description": { "en": "Perform boxing combinations in the air with fast footwork.", "fr": "Effectuez des combinaisons de boxe dans l'air avec un jeu de jambes rapide." }, "image": "https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=600&q=80", "video": "" },
-    { "id": 21, "name": { "en": "Concentration Curls", "fr": "Curls Concentrés" }, "target": { "en": "Biceps", "fr": "Biceps" }, "category": "Biceps", "description": { "en": "Curling a dumbbell while sitting and bracing the arm against the leg.", "fr": "Curl d'un haltère assis, bras calé contre la cuisse." }, "image": "src/assets/workouts/biceps/concentration curls.png", "video": "src/assets/workouts/biceps/Concentration Curls.MP4" },
-    { "id": 22, "name": { "en": "Preacher Curls", "fr": "Curls au Pupitre" }, "target": { "en": "Biceps", "fr": "Biceps" }, "category": "Biceps", "description": { "en": "Curls performed on a slanted bench to isolate the bicep.", "fr": "Curls effectués sur un banc incliné pour isoler le biceps." }, "image": "src/assets/workouts/biceps/preacher curls.png", "video": "src/assets/workouts/biceps/Preacher Curls.MP4" },
-    { "id": 23, "name": { "en": "Cable Curls", "fr": "Curls à la Poulie" }, "target": { "en": "Biceps", "fr": "Biceps" }, "category": "Biceps", "description": { "en": "Curls using a cable machine for constant tension.", "fr": "Curls à la machine à câble pour une tension constante." }, "image": "src/assets/workouts/biceps/cable curls.png", "video": "src/assets/workouts/biceps/Cable Curl.MP4" },
-    { "id": 24, "name": { "en": "Incline DB Curls", "fr": "Curls Inclinés aux Haltères" }, "target": { "en": "Biceps", "fr": "Biceps" }, "category": "Biceps", "description": { "en": "Curls while sitting on an incline bench to stretch the bicep.", "fr": "Curls assis sur un banc incliné pour étirer le biceps." }, "image": "src/assets/workouts/biceps/Incline DB curls.png", "video": "src/assets/workouts/biceps/Incline DB Curls.MP4" },
-    { "id": 25, "name": { "en": "Spider Curls", "fr": "Curls Araignée" }, "target": { "en": "Biceps", "fr": "Biceps" }, "category": "Biceps", "description": { "en": "Curls while lying face down on an incline bench.", "fr": "Curls allongé face contre un banc incliné." }, "image": "src/assets/workouts/biceps/spider curls.png", "video": "src/assets/workouts/biceps/Spider Curl.MP4" },
-    { "id": 26, "name": { "en": "Bench Press", "fr": "Développé Couché" }, "target": { "en": "Chest", "fr": "Pectoraux" }, "category": "Chest", "description": { "en": "Standard barbell chest press.", "fr": "Développé couché classique à la barre." }, "image": "src/assets/workouts/chest/bench press.jpeg", "video": "src/assets/workouts/chest/bench press.MP4" },
-    { "id": 27, "name": { "en": "Incline Press", "fr": "Développé Incliné" }, "target": { "en": "Upper Chest", "fr": "Haut des Pectoraux" }, "category": "Chest", "description": { "en": "Pressing dumbbells or barbell on an incline bench.", "fr": "Développé aux haltères ou à la barre sur un banc incliné." }, "image": "src/assets/workouts/chest/incline press.jpeg", "video": "src/assets/workouts/chest/incline press.MP4" },
-    { "id": 28, "name": { "en": "Chest Flyes", "fr": "Écartés Pectoraux" }, "target": { "en": "Chest", "fr": "Pectoraux" }, "category": "Chest", "description": { "en": "Opening arms wide with dumbbells while lying down.", "fr": "Ouvrir les bras avec des haltères en position allongée." }, "image": "src/assets/workouts/chest/chest flyes.jpeg", "video": "src/assets/workouts/chest/chest flyes.MP4" },
-    { "id": 29, "name": { "en": "Dips (Chest focus)", "fr": "Dips (Focus Pectoraux)" }, "target": { "en": "Lower Chest", "fr": "Bas des Pectoraux" }, "category": "Chest", "description": { "en": "Leaning forward while doing dips to target pecs.", "fr": "Se pencher en avant pendant les dips pour cibler les pectoraux." }, "image": "src/assets/workouts/chest/dips.jpeg", "video": "src/assets/workouts/chest/dips.MP4" },
-    { "id": 30, "name": { "en": "Cable Crossover", "fr": "Croisé à la Poulie" }, "target": { "en": "Inner Chest", "fr": "Pectoraux Intérieurs" }, "category": "Chest", "description": { "en": "Pulling cables together in front of the chest.", "fr": "Tirer les câbles ensemble devant la poitrine." }, "image": "src/assets/workouts/chest/cable crossover.jpeg", "video": "src/assets/workouts/chest/cable curls.MP4" },
-    { "id": 31, "name": { "en": "Military Press", "fr": "Développé Militaire" }, "target": { "en": "Shoulders", "fr": "Épaules" }, "category": "Shoulders", "description": { "en": "Strict overhead press with a barbell.", "fr": "Développé strict au-dessus de la tête à la barre." }, "image": "src/assets/workouts/shoulder/military press.png", "video": "src/assets/workouts/shoulder/military Press.MP4" },
-    { "id": 32, "name": { "en": "Lateral Raises", "fr": "Élévations Latérales" }, "target": { "en": "Side Delts", "fr": "Deltoïdes Latéraux" }, "category": "Shoulders", "description": { "en": "Lifting dumbbells out to the sides.", "fr": "Soulever les haltères sur les côtés." }, "image": "src/assets/workouts/shoulder/lateral raises.png", "video": "src/assets/workouts/shoulder/lateral raise.MP4" },
-    { "id": 33, "name": { "en": "Front Raises", "fr": "Élévations Frontales" }, "target": { "en": "Front Delts", "fr": "Deltoïdes Antérieurs" }, "category": "Shoulders", "description": { "en": "Lifting dumbbells straight in front.", "fr": "Soulever les haltères droit devant." }, "image": "src/assets/workouts/shoulder/front raises.png", "video": "src/assets/workouts/shoulder/front raise.MP4" },
-    { "id": 34, "name": { "en": "Face Pulls", "fr": "Tirages Visage" }, "target": { "en": "Rear Delts", "fr": "Deltoïdes Postérieurs" }, "category": "Shoulders", "description": { "en": "Pulling a rope towards your face.", "fr": "Tirer une corde vers votre visage." }, "image": "src/assets/workouts/GREG ET TONY.JPEG", "video": "src/assets/workouts/shoulder/face pull.MP4" },
-    { "id": 35, "name": { "en": "Arnold Press", "fr": "Développé Arnold" }, "target": { "en": "Shoulders", "fr": "Épaules" }, "category": "Shoulders", "description": { "en": "Shoulder press with a rotating motion.", "fr": "Développé épaules avec un mouvement de rotation." }, "image": "src/assets/workouts/shoulder/arnold press.png", "video": "src/assets/workouts/shoulder/arnold press.MP4" },
-    { "id": 36, "name": { "en": "Crunches", "fr": "Crunchs" }, "target": { "en": "Upper Abs", "fr": "Abdos Supérieurs" }, "category": "Abs", "description": { "en": "Standard abdominal contraction.", "fr": "Contraction abdominale classique." }, "image": "src/assets/workouts/abs/crunch.png", "video": "src/assets/workouts/abs/crunch.mp4" },
-    { "id": 37, "name": { "en": "Leg Raises", "fr": "Relevés de Jambes" }, "target": { "en": "Lower Abs", "fr": "Abdos Inférieurs" }, "category": "Abs", "description": { "en": "Lifting legs from a lying position.", "fr": "Soulever les jambes depuis une position allongée." }, "image": "src/assets/workouts/abs/leg raises.png", "video": "src/assets/workouts/abs/legs raises.mp4" },
-    { "id": 38, "name": { "en": "Bicycle Crunches", "fr": "Crunchs Bicyclette" }, "target": { "en": "Obliques", "fr": "Obliques" }, "category": "Abs", "description": { "en": "Alternating knee-to-elbow movement.", "fr": "Mouvement alternant genou vers coude." }, "image": "src/assets/workouts/abs/bicycle crunch.png", "video": "src/assets/workouts/abs/bicycles crunch.mp4" },
-    { "id": 39, "name": { "en": "Hanging Knee Raises", "fr": "Relevés de Genoux Suspendus" }, "target": { "en": "Lower Abs", "fr": "Abdos Inférieurs" }, "category": "Abs", "description": { "en": "Lifting knees while hanging from a bar.", "fr": "Soulever les genoux en étant suspendu à une barre." }, "image": "src/assets/workouts/abs/Hanging knee raises.png", "video": "src/assets/workouts/abs/Hanging Knee Raises.mp4" },
-    { "id": 40, "name": { "en": "V-Ups", "fr": "V-Ups" }, "target": { "en": "Full Abs", "fr": "Abdos Complets" }, "category": "Abs", "description": { "en": "Lifting torso and legs together to form a V.", "fr": "Soulever le torse et les jambes ensemble pour former un V." }, "image": "src/assets/workouts/abs/v-ups.png", "video": "src/assets/workouts/abs/v-ups.mp4" },
-    { "id": 41, "name": { "en": "Tricep Pushdown", "fr": "Extension Triceps à la Poulie" }, "target": { "en": "Triceps", "fr": "Triceps" }, "category": "Triceps", "description": { "en": "Pushing a cable bar down to your thighs.", "fr": "Pousser une barre à câble vers vos cuisses." }, "image": "src/assets/workouts/triceps/triceps pushdown.png", "video": "src/assets/workouts/triceps/triceps pushdown.mp4" },
-    { "id": 42, "name": { "en": "Dips", "fr": "Dips" }, "target": { "en": "Triceps", "fr": "Triceps" }, "category": "Triceps", "description": { "en": "Lowering the body by bending the arms and pushing back up.", "fr": "Descendre le corps en fléchissant les bras puis remonter en poussant." }, "image": "src/assets/workouts/triceps/dips.png", "video": "src/assets/workouts/triceps/dips (3).mp4" },
-    { "id": 43, "name": { "en": "Diamond Pushups", "fr": "Pompes Diamant" }, "target": { "en": "Triceps", "fr": "Triceps" }, "category": "Triceps", "description": { "en": "Pushups with hands close together.", "fr": "Pompes avec les mains rapprochées." }, "image": "src/assets/workouts/triceps/diamond pushups.png", "video": "src/assets/workouts/triceps/diamond pushups.mp4 " },
-    { "id": 44, "name": { "en": "Cable Overhead Extension", "fr": "Extension au-dessus de la Tête à la Poulie" }, "target": { "en": "Triceps", "fr": "Triceps" }, "category": "Triceps", "description": { "en": "Extending cable over head.", "fr": "Extension du câble au-dessus de la tête." }, "image": "src/assets/workouts/triceps/cable overhead extension.png", "video": "src/assets/workouts/triceps/cable overhead extension.mp4" },
-    { "id": 45, "name": { "en": "Bench Dips", "fr": "Dips sur Banc" }, "target": { "en": "Triceps", "fr": "Triceps" }, "category": "Triceps", "description": { "en": "Dips using the edge of a bench.", "fr": "Dips en utilisant le bord d'un banc." }, "image": "src/assets/workouts/triceps/bench dips.png", "video": "src/assets/workouts/triceps/bench dips.mp4" }
+    {
+      "id": 1,
+      "name": { "en": "Lateral Squat", "fr": "Squat Latéral" },
+      "target": {
+        "en": "Adductors, Glutes, Quads",
+        "fr": "Adducteurs, Fessiers, Quadriceps"
+      },
+      "category": "Legs",
+      "description": {
+        "en": "Stand wide, shift weight to one side by bending one knee while keeping the other leg straight.",
+        "fr": "Position large, transférez le poids sur un côté en pliant un genou tout en gardant l'autre jambe tendue."
+      },
+      "image": "src/assets/workouts/legs/lateral squad.png",
+      "video": "src/assets/workouts/legs/lateral-squat.mp4"
+    },
+    {
+      "id": 2,
+      "name": { "en": "Quad-Focused Lunges", "fr": "Fentes Focus Quadriceps" },
+      "target": { "en": "Quadriceps", "fr": "Quadriceps" },
+      "category": "Legs",
+      "description": {
+        "en": "Take a shorter step forward and keep torso upright to maximize tension on the front thigh.",
+        "fr": "Faites un pas plus court vers l'avant et gardez le buste droit pour maximiser la tension sur la cuisse avant."
+      },
+      "image": "src/assets/workouts/legs/lunge quad.png",
+      "video": "src/assets/workouts/legs/lunges-quad.mp4"
+    },
+    {
+      "id": 3,
+      "name": {
+        "en": "Romanian Deadlift (RDL)",
+        "fr": "Soulevé de Terre Roumain (RDL)"
+      },
+      "target": {
+        "en": "Hamstrings, Glutes",
+        "fr": "Ischio-jambiers, Fessiers"
+      },
+      "category": "Legs",
+      "description": {
+        "en": "Hinge at hips with a slight knee bend, lowering weights along shins while keeping back flat.",
+        "fr": "Basculez les hanches avec une légère flexion des genoux, descendez les poids le long des tibias avec le dos plat."
+      },
+      "image": "src/assets/workouts/legs/rdl.png",
+      "video": "src/assets/workouts/legs/rdl.mp4"
+    },
+    {
+      "id": 4,
+      "name": { "en": "Bodyweight Squat", "fr": "Squat au Poids du Corps" },
+      "target": { "en": "Quadriceps, Glutes", "fr": "Quadriceps, Fessiers" },
+      "category": "Legs",
+      "description": {
+        "en": "Lower hips as if sitting in a chair, keeping chest up and heels on the ground.",
+        "fr": "Descendez les hanches comme pour vous asseoir, en gardant la poitrine haute et les talons au sol."
+      },
+      "image": "src/assets/workouts/legs/squat.png",
+      "video": "src/assets/workouts/legs/squat .mp4"
+    },
+    {
+      "id": 5,
+      "name": { "en": "Sumo Squat", "fr": "Squat Sumo" },
+      "target": { "en": "Inner Thighs, Glutes", "fr": "Adducteurs, Fessiers" },
+      "category": "Legs",
+      "description": {
+        "en": "Take a very wide stance with toes pointed out, then lower hips deeply.",
+        "fr": "Prenez une position très large avec les orteils vers l'extérieur, puis descendez les hanches profondément."
+      },
+      "image": "src/assets/workouts/legs/sumo squat.png",
+      "video": "src/assets/workouts/legs/sumo squat.mp4"
+    },
+    {
+      "id": 6,
+      "name": { "en": "Burpees", "fr": "Burpees" },
+      "target": { "en": "Full Body", "fr": "Corps Entier" },
+      "category": "Full Body",
+      "description": {
+        "en": "A high-intensity movement combining squat, push-up, and jump. Improves endurance, strength, and explosiveness.",
+        "fr": "Mouvement à haute intensité combinant squat, pompe et saut. Améliore endurance, force et explosivité."
+      },
+      "image": "src/assets/workouts/full-body/burpees.jpg",
+      "video": "src/assets/workouts/full-body/burpees.mp4"
+    },
+    {
+      "id": 10,
+      "name": { "en": "Kettlebell Swings", "fr": "Swings de Kettlebell" },
+      "target": {
+        "en": "Glutes, Back, Shoulders",
+        "fr": "Fessiers, Dos, Épaules"
+      },
+      "category": "Full Body",
+      "description": {
+        "en": "Swing a kettlebell from between legs up to shoulder height using hip drive.",
+        "fr": "Balancez une kettlebell d'entre les jambes à la hauteur des épaules en utilisant la poussée des hanches."
+      },
+      "image": "src/assets/workouts/full-body/kettlebell-swing.jpg",
+      "video": "src/assets/workouts/full-body/kettlebell-swing.mp4"
+    },
+    {
+      "id": 11,
+      "name": { "en": "Plank Hold", "fr": "Gainage" },
+      "target": { "en": "Core, Shoulders", "fr": "Gainage, Épaules" },
+      "category": "Core",
+      "description": {
+        "en": "Forearm plank position, maintain straight line from head to heels.",
+        "fr": "Position de planche sur les avant-bras, maintenez une ligne droite de la tête aux talons."
+      },
+      "image": "src/assets/workouts/core/plank.png",
+      "video": "src/assets/workouts/core/plank.mp4"
+    },
+    {
+      "id": 12,
+      "name": { "en": "Shoulder Taps", "fr": "Touches d'Épaules" },
+      "target": { "en": "Core, Shoulders", "fr": "Gainage, Épaules" },
+      "category": "Core",
+      "description": {
+        "en": "In plank position, tap each shoulder with the opposite hand while keeping hips still.",
+        "fr": "En position de planche, touchez chaque épaule avec la main opposée en gardant les hanches stables."
+      },
+      "image": "src/assets/workouts/core/shoulder tap.png",
+      "video": "src/assets/workouts/core/shoulder-tap.mp4"
+    },
+    {
+      "id": 13,
+      "name": { "en": "Side Plank Dips", "fr": "Side Dips" },
+      "target": { "en": "Obliques, Core", "fr": "Obliques, Gainage" },
+      "category": "Core",
+      "description": {
+        "en": "In side plank, lower your hips toward the floor and lift them back up.",
+        "fr": "En planche latérale, baissez vos hanches vers le sol puis remontez-les."
+      },
+      "image": "src/assets/workouts/core/side dips.png",
+      "video": "src/assets/workouts/core/side-dip.mp4"
+    },
+    {
+      "id": 14,
+      "name": { "en": "Side Plank", "fr": "Planche Latérale" },
+      "target": { "en": "Obliques, Stability", "fr": "Obliques, Stabilité" },
+      "category": "Core",
+      "description": {
+        "en": "Hold your body in a straight line on one forearm and the side of your foot.",
+        "fr": "Maintenez votre corps en ligne droite sur un avant-bras et le côté de votre pied."
+      },
+      "image": "src/assets/workouts/core/side plank.png",
+      "video": "src/assets/workouts/core/side-plank.mp4"
+    },
+    {
+      "id": 15,
+      "name": {
+        "en": "Side Plank Rotation",
+        "fr": "Rotation en Planche Latérale"
+      },
+      "target": { "en": "Obliques, Core", "fr": "Obliques, Gainage" },
+      "category": "Core",
+      "description": {
+        "en": "From side plank, reach your top arm under your torso and then back up.",
+        "fr": "En planche latérale, passez votre bras supérieur sous votre torse puis remontez-le."
+      },
+      "image": "src/assets/workouts/core/sidePlank rotation.png",
+      "video": "src/assets/workouts/core/sidePlank-rotation.mp4"
+    },
+    {
+      "id": 16,
+      "name": { "en": "Burpee Box Jump", "fr": "Burpee + Saut sur Box" },
+      "target": {
+        "en": "Full Body, Explosiveness",
+        "fr": "Corps Entier, Explosivité"
+      },
+      "category": "Full Body",
+      "description": {
+        "en": "Perform a burpee, then immediately jump onto a sturdy box. Land softly with control, step down safely, and repeat.",
+        "fr": "Effectuez un burpee puis enchaînez immédiatement avec un saut sur une box. Atterrissez avec contrôle, redescendez en sécurité et répétez."
+      },
+      "image": "src/assets/workouts/full-body/burpee-box-jump.jpg",
+      "video": "src/assets/workouts/full-body/burpee-box-jump.mp4"
+    },
+    {
+      "id": 21,
+      "name": { "en": "Concentration Curls", "fr": "Curls Concentrés" },
+      "target": { "en": "Biceps", "fr": "Biceps" },
+      "category": "Biceps",
+      "description": {
+        "en": "Curling a dumbbell while sitting and bracing the arm against the leg.",
+        "fr": "Curl d'un haltère assis, bras calé contre la cuisse."
+      },
+      "image": "src/assets/workouts/biceps/concentration curls.png",
+      "video": "src/assets/workouts/biceps/Concentration Curls.MP4"
+    },
+    {
+      "id": 22,
+      "name": { "en": "Preacher Curls", "fr": "Curls au Pupitre" },
+      "target": { "en": "Biceps", "fr": "Biceps" },
+      "category": "Biceps",
+      "description": {
+        "en": "Curls performed on a slanted bench to isolate the bicep.",
+        "fr": "Curls effectués sur un banc incliné pour isoler le biceps."
+      },
+      "image": "src/assets/workouts/biceps/preacher curls.png",
+      "video": "src/assets/workouts/biceps/Preacher Curls.MP4"
+    },
+    {
+      "id": 23,
+      "name": { "en": "Cable Curls", "fr": "Curls à la Poulie" },
+      "target": { "en": "Biceps", "fr": "Biceps" },
+      "category": "Biceps",
+      "description": {
+        "en": "Curls using a cable machine for constant tension.",
+        "fr": "Curls à la machine à câble pour une tension constante."
+      },
+      "image": "src/assets/workouts/biceps/cable curls.png",
+      "video": "src/assets/workouts/biceps/Cable Curl.MP4"
+    },
+    {
+      "id": 24,
+      "name": { "en": "Incline DB Curls", "fr": "Curls Inclinés aux Haltères" },
+      "target": { "en": "Biceps", "fr": "Biceps" },
+      "category": "Biceps",
+      "description": {
+        "en": "Curls while sitting on an incline bench to stretch the bicep.",
+        "fr": "Curls assis sur un banc incliné pour étirer le biceps."
+      },
+      "image": "src/assets/workouts/biceps/Incline DB curls.png",
+      "video": "src/assets/workouts/biceps/Incline DB Curls.MP4"
+    },
+    {
+      "id": 25,
+      "name": { "en": "Spider Curls", "fr": "Curls Araignée" },
+      "target": { "en": "Biceps", "fr": "Biceps" },
+      "category": "Biceps",
+      "description": {
+        "en": "Curls while lying face down on an incline bench.",
+        "fr": "Curls allongé face contre un banc incliné."
+      },
+      "image": "src/assets/workouts/biceps/spider curls.png",
+      "video": "src/assets/workouts/biceps/Spider Curl.MP4"
+    },
+    {
+      "id": 26,
+      "name": { "en": "Bench Press", "fr": "Développé Couché" },
+      "target": { "en": "Chest", "fr": "Pectoraux" },
+      "category": "Chest",
+      "description": {
+        "en": "Standard barbell chest press.",
+        "fr": "Développé couché classique à la barre."
+      },
+      "image": "src/assets/workouts/chest/bench press.jpeg",
+      "video": "src/assets/workouts/chest/bench press.MP4"
+    },
+    {
+      "id": 27,
+      "name": { "en": "Incline Press", "fr": "Développé Incliné" },
+      "target": { "en": "Upper Chest", "fr": "Haut des Pectoraux" },
+      "category": "Chest",
+      "description": {
+        "en": "Pressing dumbbells or barbell on an incline bench.",
+        "fr": "Développé aux haltères ou à la barre sur un banc incliné."
+      },
+      "image": "src/assets/workouts/chest/incline press.jpeg",
+      "video": "src/assets/workouts/chest/incline press.MP4"
+    },
+    {
+      "id": 28,
+      "name": { "en": "Chest Flyes", "fr": "Écartés Pectoraux" },
+      "target": { "en": "Chest", "fr": "Pectoraux" },
+      "category": "Chest",
+      "description": {
+        "en": "Opening arms wide with dumbbells while lying down.",
+        "fr": "Ouvrir les bras avec des haltères en position allongée."
+      },
+      "image": "src/assets/workouts/chest/chest flyes.jpeg",
+      "video": "src/assets/workouts/chest/chest flyes.MP4"
+    },
+    {
+      "id": 29,
+      "name": { "en": "Dips (Chest focus)", "fr": "Dips (Focus Pectoraux)" },
+      "target": { "en": "Lower Chest", "fr": "Bas des Pectoraux" },
+      "category": "Chest",
+      "description": {
+        "en": "Leaning forward while doing dips to target pecs.",
+        "fr": "Se pencher en avant pendant les dips pour cibler les pectoraux."
+      },
+      "image": "src/assets/workouts/chest/dips.jpeg",
+      "video": "src/assets/workouts/chest/dips.MP4"
+    },
+    {
+      "id": 30,
+      "name": { "en": "Cable Crossover", "fr": "Croisé à la Poulie" },
+      "target": { "en": "Inner Chest", "fr": "Pectoraux Intérieurs" },
+      "category": "Chest",
+      "description": {
+        "en": "Pulling cables together in front of the chest.",
+        "fr": "Tirer les câbles ensemble devant la poitrine."
+      },
+      "image": "src/assets/workouts/chest/cable crossover.jpeg",
+      "video": "src/assets/workouts/chest/cable curls.MP4"
+    },
+    {
+      "id": 31,
+      "name": { "en": "Military Press", "fr": "Développé Militaire" },
+      "target": { "en": "Shoulders", "fr": "Épaules" },
+      "category": "Shoulders",
+      "description": {
+        "en": "Strict overhead press with a barbell.",
+        "fr": "Développé strict au-dessus de la tête à la barre."
+      },
+      "image": "src/assets/workouts/shoulder/military press.png",
+      "video": "src/assets/workouts/shoulder/military Press.MP4"
+    },
+    {
+      "id": 32,
+      "name": { "en": "Lateral Raises", "fr": "Élévations Latérales" },
+      "target": { "en": "Side Delts", "fr": "Deltoïdes Latéraux" },
+      "category": "Shoulders",
+      "description": {
+        "en": "Lifting dumbbells out to the sides.",
+        "fr": "Soulever les haltères sur les côtés."
+      },
+      "image": "src/assets/workouts/shoulder/lateral raises.png",
+      "video": "src/assets/workouts/shoulder/lateral raise.MP4"
+    },
+    {
+      "id": 33,
+      "name": { "en": "Front Raises", "fr": "Élévations Frontales" },
+      "target": { "en": "Front Delts", "fr": "Deltoïdes Antérieurs" },
+      "category": "Shoulders",
+      "description": {
+        "en": "Lifting dumbbells straight in front.",
+        "fr": "Soulever les haltères droit devant."
+      },
+      "image": "src/assets/workouts/shoulder/front raises.png",
+      "video": "src/assets/workouts/shoulder/front raise.MP4"
+    },
+    {
+      "id": 35,
+      "name": { "en": "Arnold Press", "fr": "Développé Arnold" },
+      "target": { "en": "Shoulders", "fr": "Épaules" },
+      "category": "Shoulders",
+      "description": {
+        "en": "Shoulder press with a rotating motion.",
+        "fr": "Développé épaules avec un mouvement de rotation."
+      },
+      "image": "src/assets/workouts/shoulder/arnold press.png",
+      "video": "src/assets/workouts/shoulder/arnold press.MP4"
+    },
+    {
+      "id": 36,
+      "name": { "en": "Crunches", "fr": "Crunchs" },
+      "target": { "en": "Upper Abs", "fr": "Abdos Supérieurs" },
+      "category": "Abs",
+      "description": {
+        "en": "Standard abdominal contraction.",
+        "fr": "Contraction abdominale classique."
+      },
+      "image": "src/assets/workouts/abs/crunch.png",
+      "video": "src/assets/workouts/abs/crunch.mp4"
+    },
+    {
+      "id": 37,
+      "name": { "en": "Leg Raises", "fr": "Relevés de Jambes" },
+      "target": { "en": "Lower Abs", "fr": "Abdos Inférieurs" },
+      "category": "Abs",
+      "description": {
+        "en": "Lifting legs from a lying position.",
+        "fr": "Soulever les jambes depuis une position allongée."
+      },
+      "image": "src/assets/workouts/abs/leg raises.png",
+      "video": "src/assets/workouts/abs/legs raises.mp4"
+    },
+    {
+      "id": 38,
+      "name": { "en": "Bicycle Crunches", "fr": "Crunchs Bicyclette" },
+      "target": { "en": "Obliques", "fr": "Obliques" },
+      "category": "Abs",
+      "description": {
+        "en": "Alternating knee-to-elbow movement.",
+        "fr": "Mouvement alternant genou vers coude."
+      },
+      "image": "src/assets/workouts/abs/bicycle crunch.png",
+      "video": "src/assets/workouts/abs/bicycles crunch.mp4"
+    },
+    {
+      "id": 39,
+      "name": {
+        "en": "Hanging Knee Raises",
+        "fr": "Relevés de Genoux Suspendus"
+      },
+      "target": { "en": "Lower Abs", "fr": "Abdos Inférieurs" },
+      "category": "Abs",
+      "description": {
+        "en": "Lifting knees while hanging from a bar.",
+        "fr": "Soulever les genoux en étant suspendu à une barre."
+      },
+      "image": "src/assets/workouts/abs/Hanging knee raises.png",
+      "video": "src/assets/workouts/abs/Hanging Knee Raises.mp4"
+    },
+    {
+      "id": 40,
+      "name": { "en": "V-Ups", "fr": "V-Ups" },
+      "target": { "en": "Full Abs", "fr": "Abdos Complets" },
+      "category": "Abs",
+      "description": {
+        "en": "Lifting torso and legs together to form a V.",
+        "fr": "Soulever le torse et les jambes ensemble pour former un V."
+      },
+      "image": "src/assets/workouts/abs/v-ups.png",
+      "video": "src/assets/workouts/abs/v-ups.mp4"
+    },
+    {
+      "id": 41,
+      "name": {
+        "en": "Tricep Pushdown",
+        "fr": "Extension Triceps à la Poulie"
+      },
+      "target": { "en": "Triceps", "fr": "Triceps" },
+      "category": "Triceps",
+      "description": {
+        "en": "Pushing a cable bar down to your thighs.",
+        "fr": "Pousser une barre à câble vers vos cuisses."
+      },
+      "image": "src/assets/workouts/triceps/triceps pushdown.png",
+      "video": "src/assets/workouts/triceps/triceps pushdown.mp4"
+    },
+    {
+      "id": 42,
+      "name": { "en": "Dips", "fr": "Dips" },
+      "target": { "en": "Triceps", "fr": "Triceps" },
+      "category": "Triceps",
+      "description": {
+        "en": "Lowering the body by bending the arms and pushing back up.",
+        "fr": "Descendre le corps en fléchissant les bras puis remonter en poussant."
+      },
+      "image": "src/assets/workouts/triceps/dips.png",
+      "video": "src/assets/workouts/triceps/dips (3).mp4"
+    },
+    {
+      "id": 43,
+      "name": { "en": "Diamond Pushups", "fr": "Pompes Diamant" },
+      "target": { "en": "Triceps", "fr": "Triceps" },
+      "category": "Triceps",
+      "description": {
+        "en": "Pushups with hands close together.",
+        "fr": "Pompes avec les mains rapprochées."
+      },
+      "image": "src/assets/workouts/triceps/diamond pushups.png",
+      "video": "src/assets/workouts/triceps/diamond pushups.mp4 "
+    },
+    {
+      "id": 44,
+      "name": {
+        "en": "Cable Overhead Extension",
+        "fr": "Extension au-dessus de la Tête à la Poulie"
+      },
+      "target": { "en": "Triceps", "fr": "Triceps" },
+      "category": "Triceps",
+      "description": {
+        "en": "Extending cable over head.",
+        "fr": "Extension du câble au-dessus de la tête."
+      },
+      "image": "src/assets/workouts/triceps/cable overhead extension.png",
+      "video": "src/assets/workouts/triceps/cable overhead extension.mp4"
+    },
+    {
+      "id": 45,
+      "name": { "en": "Bench Dips", "fr": "Dips sur Banc" },
+      "target": { "en": "Triceps", "fr": "Triceps" },
+      "category": "Triceps",
+      "description": {
+        "en": "Dips using the edge of a bench.",
+        "fr": "Dips en utilisant le bord d'un banc."
+      },
+      "image": "src/assets/workouts/triceps/bench dips.png",
+      "video": "src/assets/workouts/triceps/bench dips.mp4"
+    },
+    {
+      "id": 46,
+      "name": { "en": "Rowing Machine", "fr": "Rameur" },
+      "target": { "en": "Full Body", "fr": "Corps Entier" },
+      "category": "Cardio",
+      "description": {
+        "en": "A full-body cardio exercise using a rowing machine. Drive through the legs, pull with the back, and control the return.",
+        "fr": "Exercice cardio complet sur rameur. Poussez avec les jambes, tirez avec le dos et contrôlez le retour."
+      },
+      "image": "src/assets/workouts/cardio/rower.jpg",
+      "video": "src/assets/workouts/cardio/rower.mp4"
+    },
+    {
+      "id": 47,
+      "name": { "en": "SkiErg", "fr": "SkiErg" },
+      "target": { "en": "Core & Shoulders", "fr": "Gainage & Épaules" },
+      "category": "Cardio",
+      "description": {
+        "en": "A powerful cardio movement inspired by cross-country skiing. Engage your core, lats, and shoulders in a rhythmic pulling motion.",
+        "fr": "Mouvement cardio inspiré du ski de fond. Engagez le gainage, les dorsaux et les épaules dans un mouvement rythmé."
+      },
+      "image": "src/assets/workouts/cardio/skiErg.jpg",
+      "video": "src/assets/workouts/cardio/skiErg.mp4"
+    },
+    {
+      "id": 48,
+      "name": { "en": "Treadmill Run", "fr": "Course sur Tapis" },
+      "target": { "en": "Legs", "fr": "Jambes" },
+      "category": "Cardio",
+      "description": {
+        "en": "Run or walk on a treadmill to improve cardiovascular endurance and leg stamina. Adjust speed and incline as needed.",
+        "fr": "Courez ou marchez sur tapis pour améliorer l’endurance cardiovasculaire et la résistance des jambes. Ajustez la vitesse et l’inclinaison."
+      },
+      "image": "src/assets/workouts/cardio/treadmill.jpg",
+      "video": "src/assets/workouts/cardio/treadmill.mp4"
+    }
   ]
 }

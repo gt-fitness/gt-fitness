@@ -29,7 +29,6 @@ const HeroSection = () => {
           muted
           playsInline
           className="w-full h-full object-cover opacity-60"
-          poster="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=80"
         >
           <source
             src="src/assets/hero-section/welcome-video.mp4"

@@ -189,6 +189,7 @@ const Join = () => {
                 className="w-full h-12 px-4 rounded-lg bg-secondary/50 border border-border/50 focus:border-primary focus:outline-none text-foreground"
               >
                 <option value="">{t("join.selectGoal")}</option>
+                <option value="meet-people">{t("join.meetPeople")}</option>
                 <option value="lose-weight">{t("join.loseWeight")}</option>
                 <option value="build-muscle">{t("join.buildMuscle")}</option>
                 <option value="improve-endurance">
