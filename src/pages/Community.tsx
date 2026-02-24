@@ -70,6 +70,7 @@ const Community = () => {
         <div className="relative w-full h-[60vh] md:h-[75vh] overflow-hidden">
           <video
             autoPlay={showStoryVideo}
+            loop={showStoryVideo}
             controls={showStoryVideo}
             playsInline
             className="absolute inset-0 w-full h-full object-cover"
