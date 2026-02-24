@@ -93,10 +93,17 @@ const EventsSection = () => {
                 className="mt-4 w-full group/btn"
                 onClick={(e) => {
                   e.stopPropagation();
-                  window.open(event.registrationUrl, "_blank");
+                  window.open(
+                    event.registrationUrl === ""
+                      ? "https://www.instagram.com/gt_fitnesss?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                      : event.registrationUrl,
+                    "_blank",
+                  );
                 }}
               >
-                {t("events.register", "Register")}
+                {event.registrationUrl === ""
+                  ? t("events.visitOurMedia", "Visit Our Media")
+                  : t("events.register", "Register")}
                 <ExternalLink className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
               </Button>
             </div>
