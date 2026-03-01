@@ -7,9 +7,36 @@
     { "en": "Community", "fr": "Communauté" }
   ],
   "items": [
-    { "id": 1, "type": "image", "src": "src/data/pictures/GREG ET TONY.jpeg", "alt": { "en": "Team training session", "fr": "Session d'entraînement en équipe" }, "category": "Training" },
-    { "id": 2, "type": "image", "src": "src/data/pictures/gt-fitness pictures.jpeg", "alt": { "en": "Workout highlight", "fr": "Temps fort d'entraînement" }, "category": "Community" },
-    { "id": 3, "type": "image", "src": "src/data/pictures/image gt.jpeg", "alt": { "en": "Competition day", "fr": "Jour de compétition" }, "category": "Events" },
-    { "id": 4, "type": "image", "src": "src/data/pictures/IMG_6785 (1).JPG", "alt": { "en": "Victory moment", "fr": "Moment de victoire" }, "category": "Community"  }
+    {
+      "id": 1,
+      "type": "image",
+      "src": "/assets/gallery/GREG ET TONY.jpeg",
+      "alt": {
+        "en": "Team training session",
+        "fr": "Session d'entraînement en équipe"
+      },
+      "category": "Training"
+    },
+    {
+      "id": 2,
+      "type": "image",
+      "src": "/assets/gallery/gt-fitness pictures.jpeg",
+      "alt": { "en": "Workout highlight", "fr": "Temps fort d'entraînement" },
+      "category": "Community"
+    },
+    {
+      "id": 3,
+      "type": "image",
+      "src": "/assets/gallery/image gt.jpeg",
+      "alt": { "en": "Competition day", "fr": "Jour de compétition" },
+      "category": "Events"
+    },
+    {
+      "id": 4,
+      "type": "image",
+      "src": "/assets/gallery/IMG_6785 (1).JPG",
+      "alt": { "en": "Victory moment", "fr": "Moment de victoire" },
+      "category": "Community"
+    }
   ]
 }
