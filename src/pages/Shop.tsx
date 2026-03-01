@@ -224,7 +224,7 @@ const Shop = () => {
               <p className="font-display text-2xl font-semibold mb-4">
                 ${selectedProduct.price}
               </p>
-              <p className="text-muted-foreground mb-6">
+              <p className="text-muted-foreground mb-6 whitespace-pre-line">
                 {l(selectedProduct.description)}
               </p>
               <div className="mb-5">

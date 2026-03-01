@@ -3,12 +3,12 @@
     {
       "id": 1,
       "name": {
-        "en": "GT-Fitness Seamless Set",
-        "fr": "Ensemble Sans Couture GT-Fitness"
+        "en": "GT-Fitness Premier 3-Piece Set",
+        "fr": "Ensemble 3 Pièces GT-Fitness Premier"
       },
       "description": {
-        "en": "Where Elegance Meets Performance. Dominate your workouts with the GT-Fitness Crimson Pulse set, a perfect fusion of bold style and advanced textile technology. Designed for the active woman who refuses to compromise between comfort and aesthetics, this vibrant red set is a true confidence booster.",
-        "fr": "Là où l'Élégance Rencontre la Performance. Dominez vos entraînements avec l'ensemble GT-Fitness Crimson Pulse, une fusion parfaite de style audacieux et de technologie textile avancée. Conçu pour la femme active qui refuse de faire des compromis entre confort et esthétique, cet ensemble rouge vibrant est un véritable boost de confiance."
+        "en": "The Ultimate Training Trio. Engineered with a premium blend of 80% Nylon and 20% Elastane, this high-performance set includes a compression sports bra, squat-proof high-waisted leggings, and a sleek contour jacket. \n The breathable, moisture-wicking fabric offers 4-way stretch for total freedom, while the seamless knit sculpts your silhouette for a flawless look from the gym to the street.",
+        "fr": "Le Trio d'Entraînement Ultime. Conçu avec un mélange premium de 80 % Nylon et 20 % Élasthanne, cet ensemble haute performance comprend un haut de sport à compression, un legging taille haute anti-transparence (squat-proof) et une veste de contouring élégante. \n Le tissu respirant évacue l'humidité et offre une extensibilité multidirectionnelle pour une liberté totale, tandis que la maille sans couture sculpte votre silhouette pour un look impeccable, de la salle à la rue."
       },
       "price": 69.99,
       "colors": [{ "name": { "en": "Red", "fr": "Rouge" }, "hex": "#FF0000" }],
@@ -22,12 +22,12 @@
     {
       "id": 2,
       "name": {
-        "en": "GT-Fitness Seamless Set",
-        "fr": "Ensemble Sans Couture GT-Fitness"
+        "en": "GT-Fitness Premier 3-Piece Set",
+        "fr": "Ensemble 3 Pièces GT-Fitness Premier"
       },
       "description": {
-        "en": "Where Elegance Meets Performance. Dominate your workouts with the GT-Fitness Crimson Pulse set, a perfect fusion of bold style and advanced textile technology. Designed for the active woman who refuses to compromise between comfort and aesthetics, this vibrant red set is a true confidence booster.",
-        "fr": "Là où l'Élégance Rencontre la Performance. Dominez vos entraînements avec l'ensemble GT-Fitness Crimson Pulse, une fusion parfaite de style audacieux et de technologie textile avancée. Conçu pour la femme active qui refuse de faire des compromis entre confort et esthétique, cet ensemble orange brûlé est un véritable boost de confiance."
+        "en": "The Ultimate Training Trio. Engineered with a premium blend of 80% Nylon and 20% Elastane, this high-performance set includes a compression sports bra, squat-proof high-waisted leggings, and a sleek contour jacket. \n The breathable, moisture-wicking fabric offers 4-way stretch for total freedom, while the seamless knit sculpts your silhouette for a flawless look from the gym to the street.",
+        "fr": "Le Trio d'Entraînement Ultime. Conçu avec un mélange premium de 80 % Nylon et 20 % Élasthanne, cet ensemble haute performance comprend un haut de sport à compression, un legging taille haute anti-transparence (squat-proof) et une veste de contouring élégante. \nLe tissu respirant évacue l'humidité et offre une extensibilité multidirectionnelle pour une liberté totale, tandis que la maille sans couture sculpte votre silhouette pour un look impeccable, de la salle à la rue."
       },
       "price": 69.99,
       "colors": [
