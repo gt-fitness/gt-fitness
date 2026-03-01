@@ -15,7 +15,8 @@
       "sizes": ["S", "M", "L", "XL"],
       "image": "/assets/gt-fitness clothes/Red clothes.PNG",
       "images": [
-        "/assets/gt-fitness clothes/Red clothes.PNG"
+        "/assets/gt-fitness clothes/Red clothes.PNG",
+        "/assets/gt-fitness clothes/red_athletic.JPG"
       ]
     },
     {
@@ -38,7 +39,9 @@
       "sizes": ["S", "M", "L", "XL"],
       "image": "/assets/gt-fitness clothes/Orange clothes.JPG",
       "images": [
-        "/assets/gt-fitness clothes/Orange clothes.JPG"
+        "/assets/gt-fitness clothes/Orange clothes.JPG",
+        "/assets/gt-fitness clothes/orange_back.JPG",
+        "/assets/gt-fitness clothes/orange_front.JPG"
       ]
     }
   ]
