@@ -3,7 +3,7 @@ import { Play, ChevronDown } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useLocalized } from "@/hooks/use-localized";
-import gtLogoWhite from "@/assets/gt-logo-white.png";
+import gtLogoWhite from "/assets/gt-logo-white.png";
 import communityData from "@/data/community.json";
 
 const statKeys = ["members", "workouts", "challenges", "newContent"];
@@ -31,7 +31,7 @@ const HeroSection = () => {
           className="w-full h-full object-cover opacity-60"
         >
           <source
-            src="src/assets/hero-section/welcome-video.mp4"
+            src="/assets/hero-section/welcome-video.mp4"
             type="video/mp4"
           />
         </video>

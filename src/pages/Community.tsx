@@ -76,7 +76,7 @@ const Community = () => {
             className="absolute inset-0 w-full h-full object-cover"
             poster=""
           >
-            <source src="src/assets/community/the_work.MP4" type="video/mp4" />
+            <source src="/assets/community/the_work.MP4" type="video/mp4" />
           </video>
 
           {/* Dark Overlay */}

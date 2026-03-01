@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Instagram, Twitter, Youtube } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import gtLogo from "@/assets/gt-logo-dark.png";
+import gtLogo from "/assets/gt-logo-dark.png";
 
 const Footer = () => {
   const { t } = useTranslation();

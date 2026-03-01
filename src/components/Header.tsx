@@ -3,7 +3,7 @@ import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Menu, X, ArrowRight, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
-import gtLogo from "@/assets/gt-logo-dark.png";
+import gtLogo from "/assets/gt-logo-dark.png";
 
 const navKeys = [
   { key: "community", href: "#community", page: "/community" },

@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
 import { useTranslation } from "react-i18next";
-import moreThanThat from "@/assets/more-than-that.png";
+import moreThanThat from "/assets/more-than-that.png";
 import emailjs from "@emailjs/browser";
 
 const JoinSection = () => {
