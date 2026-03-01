@@ -17,7 +17,8 @@
       "images": [
         "/assets/gt-fitness clothes/Red clothes.PNG",
         "/assets/gt-fitness clothes/red_athletic.JPG"
-      ]
+      ],
+      "status": { "en": "Coming Soon", "fr": "Bientôt disponible" }
     },
     {
       "id": 2,
@@ -42,7 +43,8 @@
         "/assets/gt-fitness clothes/Orange clothes.JPG",
         "/assets/gt-fitness clothes/orange_back.JPG",
         "/assets/gt-fitness clothes/orange_front.JPG"
-      ]
+      ],
+      "status": { "en": "Coming Soon", "fr": "Bientôt disponible" }
     }
   ]
 }
