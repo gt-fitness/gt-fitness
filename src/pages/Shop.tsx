@@ -157,6 +157,11 @@ const Shop = () => {
                     alt={l(product.name)}
                     className="w-full h-full"
                   />
+                  {product.status && (
+                    <span className="absolute top-3 left-3 bg-foreground text-background text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full">
+                      {l(product.status)}
+                    </span>
+                  )}
                 </div>
                 <div className="p-5">
                   <h3 className="font-display text-xl font-semibold mb-1">
