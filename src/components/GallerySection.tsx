@@ -27,7 +27,7 @@ const GallerySection = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
           {galleryData.items.slice(0, 6).map((item) => (
             <div key={item.id} className="group relative aspect-square rounded-xl overflow-hidden cursor-pointer" onClick={() => setSelectedMedia(item)}>
-              <img src={item.type === "video" ? item.thumbnail : item.src} alt={l(item.alt)} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <img src={item.src} alt={l(item.alt)} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
               <div className="absolute inset-0 bg-foreground/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                 {item.type === "video" && (
                   <div className="w-12 h-12 rounded-full bg-background flex items-center justify-center">

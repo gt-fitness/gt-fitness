@@ -48,7 +48,7 @@ const Gallery = () => {
           <div className="columns-2 md:columns-3 lg:columns-4 gap-3 space-y-3">
             {filteredItems.map((item, index) => (
               <div key={item.id} className="group relative rounded-xl overflow-hidden cursor-pointer break-inside-avoid" onClick={() => setSelectedIndex(index)}>
-                <img src={item.type === "video" ? item.thumbnail : item.src} alt={l(item.alt)} className="w-full transition-transform duration-500 group-hover:scale-105" />
+                <img src={item.src} alt={l(item.alt)} className="w-full transition-transform duration-500 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-foreground/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                   {item.type === "video" && (
                     <div className="w-12 h-12 rounded-full bg-background flex items-center justify-center">

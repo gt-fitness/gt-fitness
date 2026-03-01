@@ -13,7 +13,10 @@
       "price": 69.99,
       "colors": [{ "name": { "en": "Red", "fr": "Rouge" }, "hex": "#FF0000" }],
       "sizes": ["S", "M", "L", "XL"],
-      "image": "/assets/gt-fitness clothes/Red clothes.PNG"
+      "image": "/assets/gt-fitness clothes/Red clothes.PNG",
+      "images": [
+        "/assets/gt-fitness clothes/Red clothes.PNG"
+      ]
     },
     {
       "id": 2,
@@ -33,7 +36,10 @@
         }
       ],
       "sizes": ["S", "M", "L", "XL"],
-      "image": "/assets/gt-fitness clothes/Orange clothes.JPG"
+      "image": "/assets/gt-fitness clothes/Orange clothes.JPG",
+      "images": [
+        "/assets/gt-fitness clothes/Orange clothes.JPG"
+      ]
     }
   ]
 }

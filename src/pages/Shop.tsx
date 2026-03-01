@@ -10,6 +10,7 @@ import { X, Check, ShoppingBag } from "lucide-react";
 import productsData from "@/data/products.json";
 import { useToast } from "@/hooks/use-toast";
 import emailjs from "@emailjs/browser";
+import ProductImageCarousel from "@/components/ProductImageCarousel";
 
 const Shop = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -151,10 +152,10 @@ const Shop = () => {
                 onClick={() => openProduct(product)}
               >
                 <div className="relative aspect-square overflow-hidden bg-muted">
-                  <img
-                    src={product.image}
+                  <ProductImageCarousel
+                    images={product.images}
                     alt={l(product.name)}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="w-full h-full"
                   />
                 </div>
                 <div className="p-5">
@@ -205,10 +206,10 @@ const Shop = () => {
             onClick={(e) => e.stopPropagation()}
           >
             <div className="aspect-square">
-              <img
-                src={selectedProduct.image}
+              <ProductImageCarousel
+                images={selectedProduct.images}
                 alt={l(selectedProduct.name)}
-                className="w-full h-full object-cover"
+                className="w-full h-full"
               />
             </div>
             <div className="p-6 flex flex-col">

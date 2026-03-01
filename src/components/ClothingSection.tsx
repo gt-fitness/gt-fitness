@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useLocalized } from "@/hooks/use-localized";
 import productsData from "@/data/products.json";
+import ProductImageCarousel from "@/components/ProductImageCarousel";
 
 const ClothingSection = () => {
   const navigate = useNavigate();
@@ -27,9 +28,13 @@ const ClothingSection = () => {
           {productsData.products.slice(0, 4).map((product) => (
             <div key={product.id} className="group bg-background rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-lg cursor-pointer"
               onClick={() => navigate(`/shop?product=${product.id}`)}>
-              <div className="relative aspect-square overflow-hidden bg-muted">
-                <img src={product.image} alt={l(product.name)} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-              </div>
+                <div className="relative aspect-square overflow-hidden bg-muted">
+                  <ProductImageCarousel
+                    images={product.images}
+                    alt={l(product.name)}
+                    className="w-full h-full"
+                  />
+                </div>
               <div className="p-4">
                 <h3 className="font-display text-lg font-semibold mb-1">{l(product.name)}</h3>
                 <p className="text-muted-foreground text-sm mb-3 line-clamp-1">{l(product.description)}</p>
