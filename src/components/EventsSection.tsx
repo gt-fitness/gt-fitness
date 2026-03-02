@@ -73,7 +73,10 @@ const EventsSection = () => {
                   <Calendar className="w-4 h-4" />
                   <span>
                     {event.startDate
-                      ? format(new Date(event.startDate), "MMM d, yyyy")
+                      ? format(
+                          new Date(event.startDate + "T00:00:00"),
+                          "MMM d, yyyy",
+                        )
                       : t("events.noDate", "To be announced")}
                   </span>
                 </div>

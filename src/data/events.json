@@ -3,22 +3,22 @@
     {
       "id": "gt-fitness-bodyweight-blitz",
       "name": {
-        "en": "Bodyweight Workouts",
-        "fr": "Entraînements au Poids du Corps"
+        "en": "The Power Squad Session",
+        "fr": "La Séance Power Squad"
       },
       "description": {
-        "en": "Push your limits with our outdoor bodyweight training collective. An intense session focused on functional strength, endurance, and team spirit, with no equipment needed. Perfect for all fitness levels!",
-        "fr": "Repoussez vos limites avec notre collectif d'entraînement au poids du corps en extérieur. Une session intense axée sur la force fonctionnelle, l'endurance et l'esprit d'équipe, sans aucun équipement. Parfait pour tous les niveaux !"
+        "en": "Train in a dynamic gym environment with professional coaches and full access to equipment. This session focuses on functional strength, endurance, and teamwork, while keeping hydration and energy high. Perfect for all levels looking to push their limits in a motivating group atmosphere.",
+        "fr": "Entraînez-vous dans un environnement de gym dynamique avec des coachs professionnels et un accès complet aux équipements. Cette séance met l’accent sur la force fonctionnelle, l’endurance et l’esprit d’équipe, tout en restant bien hydraté et motivé. Parfait pour tous les niveaux souhaitant repousser leurs limites dans une atmosphère stimulante."
       },
-      "image": "/assets/photos/GT-Fitness.png",
-      "startDate": "",
-      "startTime": "",
-      "endDate": "",
-      "endTime": "",
-      "location": "",
+      "image": "/assets/photos/group-workout2.jpeg",
+      "startDate": "2026-03-21",
+      "startTime": "14:00",
+      "endDate": "2026-03-22",
+      "endTime": "15:30",
+      "location": "1290 Trim Rd - Ottawa, ON",
       "organizer": { "en": "GT Fitness Team", "fr": "Équipe GT Fitness" },
-      "status": "upcoming",
-      "registrationUrl": ""
+      "status": "ongoing",
+      "registrationUrl": "https://www.eventbrite.com/e/gt-fitness-the-power-squad-session-tickets-1984243487686?aff=oddtdtcreator"
     },
     {
       "id": "Run club-2026",

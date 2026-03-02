@@ -120,7 +120,10 @@ const Events = () => {
                     <Calendar className="w-4 h-4 flex-shrink-0" />
                     <span>
                       {event.startDate
-                        ? format(new Date(event.startDate), "MMM d, yyyy")
+                        ? format(
+                            new Date(event.startDate + "T00:00:00"),
+                            "MMM d, yyyy",
+                          )
                         : t("events.noDate", "To be announced")}
                     </span>
                   </div>
@@ -206,7 +209,7 @@ const Events = () => {
                         <p className="font-medium">
                           {selectedEvent.startDate
                             ? format(
-                                new Date(selectedEvent.startDate),
+                                new Date(selectedEvent.startDate + "T00:00:00"),
                                 "MMM d, yyyy",
                               )
                             : t("events.noDate", "To be announced")}
