@@ -273,9 +273,15 @@ const Events = () => {
                   variant="athletic"
                   size="lg"
                   className="w-full"
-                  onClick={() =>
-                    window.open(selectedEvent.registrationUrl, "_blank")
-                  }
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    window.open(
+                      selectedEvent.registrationUrl === ""
+                        ? "https://www.instagram.com/gt_fitnesss?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        : selectedEvent.registrationUrl,
+                      "_blank",
+                    );
+                  }}
                 >
                   {t("events.registerNow", "Register Now")}
                   <ExternalLink className="w-5 h-5 ml-2" />
