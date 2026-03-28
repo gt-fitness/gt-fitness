@@ -72,6 +72,7 @@ const Community = () => {
             autoPlay={showStoryVideo}
             loop={showStoryVideo}
             controls={showStoryVideo}
+            preload="auto"
             playsInline
             className="absolute inset-0 w-full h-full object-cover"
             poster=""

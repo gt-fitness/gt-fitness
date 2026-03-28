@@ -121,6 +121,8 @@ const Challenges = () => {
               <video
                 autoPlay
                 controls
+                playsInline
+                preload="auto"
                 className="w-full aspect-video"
                 src={selectedChallenge.video}
                 poster={selectedChallenge.thumbnail}

@@ -77,7 +77,13 @@ const GallerySection = () => {
             onClick={(e) => e.stopPropagation()}
           >
             {selectedMedia.type === "video" ? (
-              <video autoPlay controls className="w-full h-full rounded-xl">
+              <video
+                autoPlay
+                controls
+                playsInline
+                preload="auto"
+                className="w-full h-full rounded-xl"
+              >
                 <source src={selectedMedia.src} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
