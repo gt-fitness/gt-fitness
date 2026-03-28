@@ -7,7 +7,9 @@ import { useLocalized } from "@/hooks/use-localized";
 import galleryData from "@/data/gallery.json";
 
 const GallerySection = () => {
-  const [selectedMedia, setSelectedMedia] = useState<typeof galleryData.items[0] | null>(null);
+  const [selectedMedia, setSelectedMedia] = useState<
+    (typeof galleryData.items)[0] | null
+  >(null);
   const { t } = useTranslation();
   const { l } = useLocalized();
 
@@ -18,7 +20,9 @@ const GallerySection = () => {
           <p className="text-sm uppercase tracking-widest text-muted-foreground mb-4">
             {t("gallery.ourJourney")}
           </p>
-          <h2 className="section-title mb-4">{t("gallery.communityGallery")}</h2>
+          <h2 className="section-title mb-4">
+            {t("gallery.communityGallery")}
+          </h2>
           <p className="section-subtitle mx-auto max-w-2xl">
             {t("gallery.fullSubtitle")}
           </p>
@@ -26,8 +30,16 @@ const GallerySection = () => {
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
           {galleryData.items.slice(0, 6).map((item) => (
-            <div key={item.id} className="group relative aspect-square rounded-xl overflow-hidden cursor-pointer" onClick={() => setSelectedMedia(item)}>
-              <img src={item.src} alt={l(item.alt)} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+            <div
+              key={item.id}
+              className="group relative aspect-square rounded-xl overflow-hidden cursor-pointer"
+              onClick={() => setSelectedMedia(item)}
+            >
+              <img
+                src={item.src}
+                alt={l(item.alt)}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
               <div className="absolute inset-0 bg-foreground/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                 {item.type === "video" && (
                   <div className="w-12 h-12 rounded-full bg-background flex items-center justify-center">
@@ -50,15 +62,31 @@ const GallerySection = () => {
       </div>
 
       {selectedMedia && (
-        <div className="fixed inset-0 z-50 bg-foreground/95 flex items-center justify-center p-4" onClick={() => setSelectedMedia(null)}>
-          <button className="absolute top-6 right-6 text-background hover:text-background/80 transition-colors" onClick={() => setSelectedMedia(null)}>
+        <div
+          className="fixed inset-0 z-50 bg-foreground/95 flex items-center justify-center p-4"
+          onClick={() => setSelectedMedia(null)}
+        >
+          <button
+            className="absolute top-6 right-6 text-background hover:text-background/80 transition-colors"
+            onClick={() => setSelectedMedia(null)}
+          >
             <X className="w-8 h-8" />
           </button>
-          <div className="max-w-4xl max-h-[85vh] w-full" onClick={(e) => e.stopPropagation()}>
+          <div
+            className="max-w-4xl max-h-[85vh] w-full"
+            onClick={(e) => e.stopPropagation()}
+          >
             {selectedMedia.type === "video" ? (
-              <video autoPlay controls className="w-full h-full rounded-xl" src={selectedMedia.src} />
+              <video autoPlay controls className="w-full h-full rounded-xl">
+                <source src={selectedMedia.src} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             ) : (
-              <img src={selectedMedia.src} alt={l(selectedMedia.alt)} className="w-full h-full object-contain rounded-xl" />
+              <img
+                src={selectedMedia.src}
+                alt={l(selectedMedia.alt)}
+                className="w-full h-full object-contain rounded-xl"
+              />
             )}
           </div>
         </div>

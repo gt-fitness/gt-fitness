@@ -90,8 +90,10 @@ const Workouts = () => {
           </button>
           <div className="max-w-3xl w-full bg-background rounded-2xl overflow-hidden" onClick={(e) => e.stopPropagation()}>
             {selectedExercise.video ? (
-              <video autoPlay muted controls={false} loop playsInline className="w-full aspect-video"
-                src={selectedExercise.video} poster={selectedExercise.image} />
+              <video autoPlay muted controls={false} loop playsInline className="w-full aspect-video" poster={selectedExercise.image}>
+                <source src={selectedExercise.video} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             ) : (
               <img src={selectedExercise.image} alt={l(selectedExercise.name)} className="w-full aspect-video object-cover" />
             )}
