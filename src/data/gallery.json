@@ -34,9 +34,44 @@
     {
       "id": 4,
       "type": "image",
-      "src": "/assets/gallery/IMG_6785 (1).JPG",
+      "src": "/assets/gallery/GT-fitness all together.jpeg",
       "alt": { "en": "Victory moment", "fr": "Moment de victoire" },
       "category": "Community"
-    }
+    },
+    {
+      "id": 5,
+      "type": "image",
+      "src": "/assets/gallery/naomi et arielle.jpeg",
+      "alt": { "en": "Team celebration", "fr": "Célébration d'équipe" },
+      "category": "Community"
+    },
+    {
+      "id": 6,
+      "type": "image",
+      "src": "/assets/gallery/michelle workout.jpeg",
+      "alt": { "en": "Training intensity", "fr": "Intensité d'entraînement" },
+      "category": "Training"
+    },
+    {
+      "id": 7,
+      "type": "image",
+      "src": "/assets/gallery/borel community.jpeg",
+      "alt": { "en": "Workout focus", "fr": "Concentration d'entraînement" },
+      "category": "Community"
+    },
+    {
+      "id": 8,
+      "type": "image",
+      "src": "/assets/gallery/chest flyes.jpeg",
+      "alt": { "en": "Chest flyes exercise", "fr": "tony workout.jpeg" },
+      "category": "Training"
+    },
+      {
+        "id": 9,
+        "type": "image",
+        "src": "/assets/gallery/GT-fitness coach.jpeg",
+        "alt": { "en": "Team unity", "fr": "Unité d'équipe" },
+        "category": "Community"
+      }
   ]
 }
