@@ -20,9 +20,9 @@
     {
       "id": 2,
       "type": "image",
-      "src": "/assets/gallery/gt-fitness pictures.jpeg",
+      "src": "/assets/gallery/tony workout.jpeg",
       "alt": { "en": "Workout highlight", "fr": "Temps fort d'entraînement" },
-      "category": "Community"
+      "category": "Training"
     },
     {
       "id": 3,
@@ -66,12 +66,12 @@
       "alt": { "en": "Chest flyes exercise", "fr": "tony workout.jpeg" },
       "category": "Training"
     },
-      {
-        "id": 9,
-        "type": "image",
-        "src": "/assets/gallery/GT-fitness coach.jpeg",
-        "alt": { "en": "Team unity", "fr": "Unité d'équipe" },
-        "category": "Community"
-      }
+    {
+      "id": 9,
+      "type": "image",
+      "src": "/assets/gallery/GT-fitness coach.jpeg",
+      "alt": { "en": "Team unity", "fr": "Unité d'équipe" },
+      "category": "Community"
+    }
   ]
 }
