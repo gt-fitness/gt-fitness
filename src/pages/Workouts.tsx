@@ -128,30 +128,32 @@ const Workouts = () => {
             <X className="w-8 h-8" />
           </button>
           <div
-            className="max-w-3xl w-full bg-background rounded-2xl overflow-hidden"
+            className="max-w-3xl w-full bg-background rounded-2xl overflow-hidden p-0"
             onClick={(e) => e.stopPropagation()}
           >
-            {selectedExercise.video ? (
-              <video
-                autoPlay
-                preload="auto"
-                muted
-                controls={false}
-                loop
-                playsInline
-                className="w-full aspect-video"
-                poster={selectedExercise.image}
-              >
-                <source src={selectedExercise.video} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            ) : (
-              <img
-                src={selectedExercise.image}
-                alt={l(selectedExercise.name)}
-                className="w-full aspect-video object-cover"
-              />
-            )}
+            <div className="w-full aspect-video overflow-hidden">
+              {selectedExercise.video ? (
+                <video
+                  autoPlay
+                  preload="auto"
+                  muted
+                  controls={false}
+                  loop
+                  playsInline
+                  className="w-full h-full object-cover"
+                  poster={selectedExercise.image}
+                >
+                  <source src={selectedExercise.video} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              ) : (
+                <img
+                  src={selectedExercise.image}
+                  alt={l(selectedExercise.name)}
+                  className="w-full h-full object-cover"
+                />
+              )}
+            </div>
             <div className="p-6">
               <span className="text-sm font-medium uppercase tracking-wider text-muted-foreground">
                 {l(

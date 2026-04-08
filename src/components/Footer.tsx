@@ -80,14 +80,6 @@ const Footer = () => {
                   {t("footer.allProducts")}
                 </Link>
               </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-muted-foreground hover:text-foreground transition-colors text-sm"
-                >
-                  {t("footer.newArrivals")}
-                </a>
-              </li>
             </ul>
           </div>
 
